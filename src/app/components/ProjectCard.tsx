@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -83,8 +84,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </CardFooter>
       </Card>
 
-      <DialogContent className="sm:max-w-2xl max-h-[90vh] flex flex-col">
-        <DialogHeader>
+      <DialogContent className="sm:max-w-2xl max-h-[90vh] flex flex-col p-0">
+        <DialogHeader className="p-6 pb-0">
           <DialogTitle className="text-2xl text-primary">{project.title}</DialogTitle>
           <div className="relative aspect-video my-4 rounded-lg overflow-hidden">
             <Image
@@ -103,12 +104,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
             ))}
           </div>
         </DialogHeader>
-        <ScrollArea className="flex-grow pr-2">
+        <ScrollArea className="flex-grow min-h-0 px-6"> {/* Added min-h-0 and adjusted padding */}
           <DialogDescription className="text-base text-muted-foreground whitespace-pre-line py-4">
             {project.longDescription || project.description}
           </DialogDescription>
         </ScrollArea>
-        <div className="flex gap-2 mt-4 pt-4 border-t">
+        <div className="flex gap-2 p-6 pt-4 border-t"> {/* Adjusted padding */}
             {project.liveLink && (
               <Button asChild>
                 <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
@@ -128,3 +129,4 @@ export function ProjectCard({ project }: ProjectCardProps) {
     </Dialog>
   );
 }
+
