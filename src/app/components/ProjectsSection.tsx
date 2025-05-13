@@ -1,3 +1,4 @@
+
 "use client";
 import { Section } from "@/components/layout/Section";
 import { ProjectCard } from "./ProjectCard";
@@ -59,6 +60,33 @@ const sampleProjects: ProjectType[] = [
     liveLink: "https://agustyle.com/",
     imageAiHint: "barbershop booking",
   },
+  {
+    id: "proj6",
+    title: "Food Store System",
+    description: "A web system developed to improve fast food preparation and delivery, encompassing roles for kitchen, delivery, and administration.",
+    longDescription: `A web system has been developed with the aim of improving the process of fast food preparation and delivery. The system encompasses various roles for kitchen, delivery, and administration. Its implementation arose from the overwhelming influx of orders experienced by a local company. The system significantly aided in streamlining and expediting the delivery process, ensuring prompt service to customers in record time.
+
+Some of the main features of the system include:
+- Customer registration through Google accounts.
+- Online purchases for convenient ordering.
+- Real-time order tracking.
+- Automatic stock control to maintain inventory levels.
+- Raffles for registered customers as an additional incentive.
+- Visualization of orders on a map by administrators and delivery personnel.
+- Real-time wallet for deliveries.
+- Charts and reports generation to analyze sales and average delivery times.
+
+Following its remarkable success, in 2023, a new client from a different location began utilizing the system.
+
+Client Implementations:
+- Burger House (https://burgerhouseuy.com/)
+- Befe Burgers (https://befeburgers.com/)
+- Pio Pio (In business process) (https://piopio-paysandu.web.app/)`,
+    imageUrl: "https://picsum.photos/seed/foodstore/600/400",
+    tags: ["Web System", "Food Delivery", "Order Management", "Google Login", "Real-time Tracking", "Stock Control", "Reporting"],
+    liveLink: "https://foodstoreuy.web.app/",
+    imageAiHint: "food delivery system",
+  },
 ];
 
 export function ProjectsSection() {
@@ -73,3 +101,4 @@ export function ProjectsSection() {
     </Section>
   );
 }
+

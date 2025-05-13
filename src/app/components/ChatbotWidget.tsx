@@ -1,3 +1,4 @@
+
 "use client";
 import React, { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
@@ -48,6 +49,8 @@ Projects:
 - Artisan E-commerce Platform: An online marketplace connecting local artisans with customers worldwide. Developed using React, Node.js (Express), MongoDB, and Stripe integration.
 - Interactive Data Visualization Tool: A web-based tool for creating and sharing interactive charts and dashboards. Built with Vue.js, D3.js, and Firebase.
 - Personal Portfolio Website (this site): Showcases skills and projects. Built with Next.js 14, TypeScript, Tailwind CSS, ShadCN UI, and features a GenAI-powered text optimizer.
+- Agustyle Barbershop Booking System: Streamlined appointment booking for Agustyle barbershop with an online system featuring social login (Facebook/Google) and calendar integration. Administrators can manage appointments, and clients can add reminders. Link: https://agustyle.com/
+- Food Store System: A web system for fast food preparation and delivery with roles for kitchen, delivery, and admin. Features Google login, online purchasing, real-time order tracking, stock control, customer raffles, map visualization, real-time delivery wallet, and sales/delivery time reporting. Main system link: https://foodstoreuy.web.app/. Client Implementations: Burger House (https://burgerhouseuy.com/), Befe Burgers (https://befeburgers.com/), Pio Pio (In business process) (https://piopio-paysandu.web.app/).
 
 Contact: brian.bentancourt.dev@example.com
 `;
@@ -84,6 +87,8 @@ Proyectos:
 - Plataforma de E-commerce Artesanal: Un mercado en línea que conecta a artesanos locales con clientes de todo el mundo. Desarrollado con React, Node.js (Express), MongoDB e integración con Stripe.
 - Herramienta Interactiva de Visualización de Datos: Una herramienta basada en web para crear y compartir gráficos y dashboards interactivos. Construida con Vue.js, D3.js y Firebase.
 - Sitio Web de Portafolio Personal (este sitio): Muestra habilidades y proyectos. Construido con Next.js 14, TypeScript, Tailwind CSS, ShadCN UI y cuenta con un optimizador de texto impulsado por GenAI.
+- Sistema de Reservas para Barbería Agustyle: Agilizó la reserva de citas para la barbería Agustyle con un sistema en línea que incluye inicio de sesión social (Facebook/Google) e integración de calendario. Los administradores pueden gestionar citas y los clientes añadir recordatorios. Enlace: https://agustyle.com/
+- Sistema Food Store: Un sistema web para la preparación y entrega de comida rápida con roles para cocina, reparto y administración. Incluye inicio de sesión con Google, compras en línea, seguimiento de pedidos en tiempo real, control de stock, sorteos para clientes, visualización de pedidos en mapa, billetera en tiempo real para repartidores y reportes de ventas/tiempos de entrega. Enlace principal del sistema: https://foodstoreuy.web.app/. Implementaciones en Clientes: Burger House (https://burgerhouseuy.com/), Befe Burgers (https://befeburgers.com/), Pio Pio (En proceso de negocio) (https://piopio-paysandu.web.app/).
 
 Contacto: brian.bentancourt.dev@example.com
 `;
@@ -236,3 +241,4 @@ export function ChatbotWidget() {
     </>
   );
 }
+
