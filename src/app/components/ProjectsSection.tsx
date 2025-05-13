@@ -16,6 +16,7 @@ const sampleProjects: ProjectType[] = [
     tags: ["Next.js", "Python", "AI/ML", "PostgreSQL", "Tailwind CSS"],
     liveLink: "#",
     sourceLink: "https://github.com",
+    imageAiHint: "task manager",
   },
   {
     id: "proj2",
@@ -26,6 +27,7 @@ const sampleProjects: ProjectType[] = [
     tags: ["React", "Node.js", "MongoDB", "Stripe", "Material UI"],
     liveLink: "#",
     sourceLink: "https://github.com",
+    imageAiHint: "e-commerce marketplace",
   },
   {
     id: "proj3",
@@ -35,6 +37,7 @@ const sampleProjects: ProjectType[] = [
     imageUrl: "https://picsum.photos/seed/dataviz/600/400",
     tags: ["Vue.js", "D3.js", "Firebase", "Data Visualization", "Sass"],
     liveLink: "#",
+    imageAiHint: "data dashboard",
   },
    {
     id: "proj4",
@@ -44,6 +47,17 @@ const sampleProjects: ProjectType[] = [
     imageUrl: "https://picsum.photos/seed/portfolio/600/400",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "ShadCN UI", "GenAI"],
     sourceLink: "https://github.com",
+    imageAiHint: "website design",
+  },
+  {
+    id: "proj5",
+    title: "Agustyle Barbershop Booking System",
+    description: "Streamlined appointment booking for Agustyle barbershop with an online system featuring social login and calendar integration.",
+    longDescription: "Agustyle barbershop streamlined its appointment booking process by implementing an online system. Clients can now easily view available time slots and book appointments by registering through Facebook or Google. Administrators have the ability to manage and cancel appointments as needed, and clients can add reminders to their personal calendars upon booking. This solution has resulted in a more consistent schedule throughout the month and a significant increase in reservations, optimizing scheduling efficiency for both the barbershop and its clientele.",
+    imageUrl: "https://picsum.photos/seed/agustyle/600/400",
+    tags: ["Online Booking", "Facebook Login", "Google Login", "Calendar Integration", "Admin Panel"],
+    liveLink: "https://agustyle.com/",
+    imageAiHint: "barbershop booking",
   },
 ];
 

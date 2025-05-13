@@ -33,6 +33,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                data-ai-hint={project.imageAiHint || "project image"}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent group-hover:from-black/80 transition-opacity duration-300" />
               <div className="absolute bottom-0 left-0 p-4">
@@ -91,6 +92,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 alt={project.title}
                 fill
                 className="object-cover"
+                data-ai-hint={project.imageAiHint || "project image"}
               />
           </div>
           <div className="flex flex-wrap gap-2 mt-2">

@@ -7,6 +7,7 @@ export interface ProjectType {
   tags: string[];
   liveLink?: string;
   sourceLink?: string;
+  imageAiHint?: string;
 }
 
 export interface SkillType {
