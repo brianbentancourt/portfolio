@@ -108,12 +108,12 @@ Key features of the Food Store System include:
 - **Real-time Delivery Wallet:** Tracks earnings and transactions for delivery personnel.
 - **Advanced Reporting:** Generates charts and reports on sales, average delivery times, and other key performance indicators.
 
-The system's success led to its adoption by a new client in a different location in 2023, demonstrating its adaptability and effectiveness.
+Following its remarkable success, in 2023, a new client from a different location began utilizing the system.
 
 **Client Implementations:**
-- **Burger House:** [https://burgerhouseuy.com/](https://burgerhouseuy.com/)
-- **Befe Burgers:** [https://befeburgers.com/](https://befeburgers.com/)
-- **Pio Pio:** (In business process) [https://piopio-paysandu.web.app/](https://piopio-paysandu.web.app/)`,
+- Burger House: [https://burgerhouseuy.com/](https://burgerhouseuy.com/)
+- Befe Burgers: [https://befeburgers.com/](https://befeburgers.com/)
+- Pio Pio (In business process): [https://piopio-paysandu.web.app/](https://piopio-paysandu.web.app/)`,
     imageUrl: "https://picsum.photos/seed/foodstore/600/400",
     tags: ["Web System", "Food Delivery", "Order Management", "Google Login", "Real-time Tracking", "Stock Control", "Reporting", "React", "Firebase"],
     liveLink: "https://foodstoreuy.web.app/",
