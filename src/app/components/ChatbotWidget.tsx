@@ -18,7 +18,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 // This context is a simplified representation. In a real app, derive this from a single source of truth.
 const staticPortfolioContextEN = `
-Brian Bentancourt is a passionate and results-driven software developer based in Montevideo, Uruguay.
+Brian Bentancourt is a passionate and results-driven software developer based in Uruguay.
 He specializes in creating engaging and user-friendly digital experiences using modern web technologies and AI integration.
 
 Skills:
@@ -56,7 +56,7 @@ Contact: brian.bentancourt.dev@example.com
 `;
 
 const staticPortfolioContextES = `
-Brian Bentancourt es un desarrollador de software apasionado y orientado a resultados, radicado en Montevideo, Uruguay.
+Brian Bentancourt es un desarrollador de software apasionado y orientado a resultados, radicado en Uruguay.
 Se especializa en crear experiencias digitales atractivas y fáciles de usar utilizando tecnologías web modernas e integración de IA.
 
 Habilidades:

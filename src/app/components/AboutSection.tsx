@@ -1,3 +1,4 @@
+
 "use client";
 import { Section } from "@/components/layout/Section";
 import { Badge } from "@/components/ui/badge";
@@ -6,7 +7,7 @@ import type { SkillType, ExperienceType } from "@/lib/types";
 import { User, Code, Briefcase, Brain, Palette } from "lucide-react"; 
 import { useLanguage } from "@/contexts/LanguageContext";
 
-// Skills and Experience data remain in English for now as per plan.
+// Skills data remains in English for now as per plan.
 // Translation for these would require more complex data management.
 const skills: SkillType[] = [
   { id: "react", name: "React", icon: Code },
@@ -17,19 +18,37 @@ const skills: SkillType[] = [
   { id: "python", name: "Python", icon: Code },
   { id: "figma", name: "Figma", icon: Palette },
   { id: "ai", name: "AI Integration", icon: Brain },
+  { id: "sql", name: "SQL (PostgreSQL, MySQL)", icon: Code },
+  { id: "nosql", name: "NoSQL (MongoDB, Firebase)", icon: Code },
+  { id: "cloud", name: "Cloud (Firebase, GCP)", icon: Code },
+  { id: "docker", name: "Docker", icon: Code },
 ];
 
+// User: Please replace the content of this array with your actual professional experience from LinkedIn.
+// The following are examples to guide you.
 const experiences: ExperienceType[] = [
+  {
+    id: "exp_current", 
+    title: "Lead Full-Stack Engineer & AI Specialist", 
+    company: "Innovatech Solutions / Freelance Consultant", 
+    duration: "March 2022 - Present", 
+    descriptionItems: [
+      "Spearheaded the design and development of enterprise-level web applications, incorporating advanced AI/ML models for enhanced functionality.",
+      "Led cross-functional teams in agile environments, ensuring timely delivery of high-quality software products.",
+      "Consulted with clients to define technical requirements and deliver custom software solutions that meet business objectives.",
+      "Continuously researched and integrated emerging technologies to drive innovation and efficiency."
+    ],
+  },
   {
     id: "exp1",
     title: "Senior Frontend Developer",
     company: "Tech Solutions Inc.",
-    duration: "Jan 2021 - Present",
+    duration: "Jan 2021 - Feb 2022", 
     descriptionItems: [
-      "Led development of client-facing web applications using React and Next.js.",
-      "Collaborated with UX/UI designers to implement responsive and accessible interfaces.",
-      "Mentored junior developers and conducted code reviews.",
-      "Integrated AI-powered features for content personalization."
+      "Led development of high-performance, client-facing web applications using React, Next.js, and TypeScript.",
+      "Collaborated closely with UX/UI designers and product managers to implement responsive, accessible, and user-centric interfaces.",
+      "Mentored junior developers, conducted code reviews, and promoted best practices in frontend development, improving team velocity by 15%.",
+      "Pioneered the integration of AI-powered features for content personalization and recommendation engines, significantly improving user engagement metrics."
     ],
   },
   {
@@ -38,10 +57,10 @@ const experiences: ExperienceType[] = [
     company: "Web Innovators Co.",
     duration: "Jun 2018 - Dec 2020",
     descriptionItems: [
-      "Developed and maintained full-stack applications using MERN stack.",
-      "Designed and implemented RESTful APIs for various services.",
-      "Contributed to database design and optimization (MongoDB).",
-      "Worked in an Agile environment, participating in sprint planning and retrospectives."
+      "Developed and maintained full-stack applications using MERN stack (MongoDB, Express.js, React, Node.js).",
+      "Designed and implemented RESTful APIs for various microservices, ensuring scalability and reliability.",
+      "Contributed to database design and optimization (MongoDB), improving query performance by 25%.",
+      "Actively participated in an Agile development process, including sprint planning, daily stand-ups, and retrospectives."
     ],
   },
   {
@@ -50,10 +69,10 @@ const experiences: ExperienceType[] = [
     company: "Digital Creations Agency",
     duration: "Aug 2016 - May 2018",
     descriptionItems: [
-      "Assisted in the development of WordPress websites and custom themes.",
-      "Implemented frontend designs using HTML, CSS, and JavaScript.",
-      "Performed website maintenance and bug fixes.",
-      "Gained experience with version control systems (Git)."
+      "Assisted in the development of WordPress websites and custom PHP themes for diverse clients.",
+      "Implemented responsive frontend designs from mockups using HTML5, CSS3, and JavaScript (jQuery).",
+      "Performed website maintenance, bug-fixing, and content updates, ensuring 99% uptime for client sites.",
+      "Gained foundational experience with version control systems (Git) and collaborative development workflows."
     ],
   },
 ];
@@ -116,3 +135,4 @@ export function AboutSection() {
     </Section>
   );
 }
+
