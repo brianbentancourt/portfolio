@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth dark"> {/* Added dark class */}
+    <html lang="en" className="scroll-smooth dark">
       <body className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased`}>
         <LanguageProvider>
           {children}
@@ -35,3 +35,4 @@ export default function RootLayout({
     </html>
   );
 }
+
