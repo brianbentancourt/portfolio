@@ -1,0 +1,72 @@
+{
+  "header": {
+    "about": "Sobre Mí",
+    "projects": "Proyectos",
+    "optimizer": "Optimizador",
+    "contact": "Contacto",
+    "title": "Portafolio Pro"
+  },
+  "hero": {
+    "name": "Brian Bentancourt",
+    "title": "Desarrollador de Software",
+    "subtitle": "Apasionado por crear soluciones de software robustas, escalables y eficientes. Especializado en tecnologías web modernas y sistemas backend.",
+    "myWork": "Mis Proyectos",
+    "contactMe": "Contáctame"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "greeting": "¡Hola! Soy Brian Bentancourt, un desarrollador de software apasionado y orientado a resultados con un don para crear experiencias digitales atractivas y fáciles de usar. Con varios años en la industria, he perfeccionado mis habilidades en desarrollo front-end y back-end, diseño de interfaces de usuario e integración de tecnologías de vanguardia como la IA.",
+    "journey": "Mi trayectoria en la tecnología comenzó con una fascinación por cómo el software puede resolver problemas del mundo real y mejorar la interacción humana. Esta curiosidad me ha llevado a aprender y adaptarme continuamente, buscando siempre nuevos desafíos y oportunidades para crecer. Prospero en entornos colaborativos y disfruto dando vida a las ideas, desde el concepto inicial hasta la implementación final.",
+    "hobbies": "Cuando no estoy programando, me puedes encontrar explorando nuevas investigaciones sobre IA, contribuyendo a proyectos de código abierto o disfrutando del tiempo con mi familia y amigos. Creo en un enfoque equilibrado del trabajo y la vida, fomentando la creatividad y la innovación.",
+    "skillsTitle": "Habilidades Clave",
+    "experienceTitle": "Experiencia Profesional"
+  },
+  "projectsSection": {
+    "title": "Mis Proyectos"
+  },
+  "aiOptimizerSection": {
+    "title": "Optimizador de Texto con IA",
+    "description": "Mejora las descripciones de tus proyectos o resúmenes de currículum con IA. Ingresa tu texto a continuación y deja que nuestra IA elabore una versión más atractiva y profesional.",
+    "form": {
+      "yourText": "Tu Texto",
+      "placeholder": "Pega aquí la descripción de tu proyecto o resumen de currículum...",
+      "description": "Ingresa el texto que quieres mejorar (20-1500 caracteres).",
+      "submitButton": "Optimizar con IA",
+      "optimizingButton": "Optimizando..."
+    },
+    "resultCard": {
+      "title": "Resultado Optimizado",
+      "loading": "La IA está haciendo su magia...",
+      "placeholder": "Tu texto mejorado por IA aparecerá aquí."
+    },
+    "toast": {
+      "successTitle": "¡Texto Optimizado!",
+      "successDescription": "Tu texto ha sido mejorado exitosamente por la IA.",
+      "errorTitle": "Falló la Optimización",
+      "errorDescription": "Ocurrió un error al optimizar tu texto. Por favor, inténtalo de nuevo."
+    }
+  },
+  "contactSection": {
+    "title": "Ponte en Contacto",
+    "description": "Siempre estoy emocionado de discutir nuevos proyectos, ideas creativas u oportunidades para colaborar. No dudes en contactarme usando el formulario o a través de los detalles proporcionados.",
+    "email": "brian.bentancourt.dev@example.com",
+    "phone": "(555) 123-4567",
+    "location": "Montevideo, Uruguay"
+  },
+  "contactForm": {
+    "nameLabel": "Nombre Completo",
+    "namePlaceholder": "Tu Nombre",
+    "emailLabel": "Correo Electrónico",
+    "emailPlaceholder": "tu.correo@ejemplo.com",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Tu mensaje aquí...",
+    "messageDescription": "Describe brevemente tu consulta (máx 500 caracteres).",
+    "submitButton": "Enviar Mensaje",
+    "sendingButton": "Enviando...",
+    "toastSuccessTitle": "¡Mensaje Enviado!",
+    "toastSuccessDescription": "Gracias por contactarme. Te responderé pronto."
+  },
+  "footer": {
+    "copyright": "© {year} Brian Bentancourt. Todos los derechos reservados."
+  }
+}

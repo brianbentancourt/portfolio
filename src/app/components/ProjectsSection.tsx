@@ -1,8 +1,11 @@
+"use client";
 import { Section } from "@/components/layout/Section";
 import { ProjectCard } from "./ProjectCard";
 import type { ProjectType } from "@/lib/types";
 import { Briefcase } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
+// Sample projects data remains in English. Full i18n would require translating this data.
 const sampleProjects: ProjectType[] = [
   {
     id: "proj1",
@@ -45,8 +48,9 @@ const sampleProjects: ProjectType[] = [
 ];
 
 export function ProjectsSection() {
+  const { t } = useLanguage();
   return (
-    <Section id="projects" title="My Projects" icon={Briefcase} className="bg-muted/50">
+    <Section id="projects" title={t('projectsSection.title')} icon={Briefcase} className="bg-muted/50">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {sampleProjects.map((project) => (
           <ProjectCard key={project.id} project={project} />

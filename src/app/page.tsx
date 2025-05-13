@@ -1,3 +1,4 @@
+"use client"; // Ensure HomePage can use client components like ChatbotWidget if needed by providers
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "./components/HeroSection";
@@ -5,6 +6,8 @@ import { AboutSection } from "./components/AboutSection";
 import { ProjectsSection } from "./components/ProjectsSection";
 import { AiOptimizerSection } from "./components/AiOptimizerSection";
 import { ContactSection } from "./components/ContactSection";
+import { ChatbotWidget } from "./components/ChatbotWidget";
+
 
 export default function HomePage() {
   return (
@@ -18,6 +21,7 @@ export default function HomePage() {
         <ContactSection />
       </main>
       <Footer />
+      <ChatbotWidget />
     </div>
   );
 }

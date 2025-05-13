@@ -1,0 +1,72 @@
+{
+  "header": {
+    "about": "About",
+    "projects": "Projects",
+    "optimizer": "Optimizer",
+    "contact": "Contact",
+    "title": "Portfolio Pro"
+  },
+  "hero": {
+    "name": "Brian Bentancourt",
+    "title": "Software Developer",
+    "subtitle": "Passionate about crafting robust, scalable, and efficient software solutions. Specializing in modern web technologies and backend systems.",
+    "myWork": "My Work",
+    "contactMe": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "greeting": "Hello! I'm Brian Bentancourt, a passionate and results-driven software developer with a knack for creating engaging and user-friendly digital experiences. With several years in the industry, I've honed my skills in front-end and back-end development, user interface design, and integrating cutting-edge technologies like AI.",
+    "journey": "My journey in tech began with a fascination for how software can solve real-world problems and enhance human interaction. This curiosity has led me to continuously learn and adapt, always seeking new challenges and opportunities to grow. I thrive in collaborative environments and enjoy bringing ideas to life, from initial concept to final deployment.",
+    "hobbies": "When I'm not coding, you can find me exploring new AI research, contributing to open-source projects, or enjoying time with family and friends. I believe in a balanced approach to work and life, fostering creativity and innovation.",
+    "skillsTitle": "Key Skills",
+    "experienceTitle": "Professional Experience"
+  },
+  "projectsSection": {
+    "title": "My Projects"
+  },
+  "aiOptimizerSection": {
+    "title": "AI Text Optimizer",
+    "description": "Elevate your project descriptions or resume summaries with AI. Enter your text below and let our AI craft a more compelling and professional version.",
+    "form": {
+      "yourText": "Your Text",
+      "placeholder": "Paste your project description or resume summary here...",
+      "description": "Enter the text you want to improve (20-1500 characters).",
+      "submitButton": "Optimize with AI",
+      "optimizingButton": "Optimizing..."
+    },
+    "resultCard": {
+      "title": "Optimized Result",
+      "loading": "AI is working its magic...",
+      "placeholder": "Your AI-enhanced text will appear here."
+    },
+    "toast": {
+      "successTitle": "Text Optimized!",
+      "successDescription": "Your text has been successfully enhanced by AI.",
+      "errorTitle": "Optimization Failed",
+      "errorDescription": "An error occurred while optimizing your text. Please try again."
+    }
+  },
+  "contactSection": {
+    "title": "Get In Touch",
+    "description": "I'm always excited to discuss new projects, creative ideas, or opportunities to collaborate. Feel free to reach out using the form, or connect with me through the details provided.",
+    "email": "brian.bentancourt.dev@example.com",
+    "phone": "(555) 123-4567",
+    "location": "Montevideo, Uruguay"
+  },
+  "contactForm": {
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your Name",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "your.email@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Your message here...",
+    "messageDescription": "Briefly describe your inquiry (max 500 characters).",
+    "submitButton": "Send Message",
+    "sendingButton": "Sending...",
+    "toastSuccessTitle": "Message Sent!",
+    "toastSuccessDescription": "Thanks for reaching out. I'll get back to you soon."
+  },
+  "footer": {
+    "copyright": "© {year} Brian Bentancourt. All rights reserved."
+  }
+}

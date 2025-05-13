@@ -20,12 +20,13 @@ import { useToast } from "@/hooks/use-toast";
 import { Section } from "@/components/layout/Section";
 import { Wand2, Sparkles, Loader2 } from "lucide-react";
 import { optimizeProjectDescription, OptimizeProjectDescriptionInput } from "@/ai/flows/optimize-project-description";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const formSchema = z.object({
   text: z.string().min(20, {
-    message: "Text must be at least 20 characters.",
+    message: "Text must be at least 20 characters.", // This validation message could also be translated if needed
   }).max(1500, {
-    message: "Text must not exceed 1500 characters."
+    message: "Text must not exceed 1500 characters." // This validation message could also be translated
   }),
 });
 
@@ -35,6 +36,7 @@ export function AiOptimizerSection() {
   const [optimizedText, setOptimizedText] = React.useState<string | null>(null);
   const [isLoading, setIsLoading] = React.useState(false);
   const { toast } = useToast();
+  const { t } = useLanguage();
 
   const form = useForm<OptimizerFormValues>({
     resolver: zodResolver(formSchema),
@@ -52,8 +54,8 @@ export function AiOptimizerSection() {
       if (result.optimizedText) {
         setOptimizedText(result.optimizedText);
         toast({
-          title: "Text Optimized!",
-          description: "Your text has been successfully enhanced by AI.",
+          title: t('aiOptimizerSection.toast.successTitle'),
+          description: t('aiOptimizerSection.toast.successDescription'),
         });
       } else {
         throw new Error("Optimization failed to produce text.");
@@ -61,8 +63,8 @@ export function AiOptimizerSection() {
     } catch (error) {
       console.error("Optimization error:", error);
       toast({
-        title: "Optimization Failed",
-        description: "An error occurred while optimizing your text. Please try again.",
+        title: t('aiOptimizerSection.toast.errorTitle'),
+        description: t('aiOptimizerSection.toast.errorDescription'),
         variant: "destructive",
       });
     } finally {
@@ -71,16 +73,16 @@ export function AiOptimizerSection() {
   }
 
   return (
-    <Section id="optimizer" title="AI Text Optimizer" icon={Wand2}>
+    <Section id="optimizer" title={t('aiOptimizerSection.title')} icon={Wand2}>
       <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
-        Elevate your project descriptions or resume summaries with AI. Enter your text below and let our AI craft a more compelling and professional version.
+        {t('aiOptimizerSection.description')}
       </p>
       <div className="grid md:grid-cols-2 gap-8 items-start">
         <Card className="shadow-lg">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Sparkles className="h-5 w-5 text-primary" />
-              Optimize Your Text
+              {t('aiOptimizerSection.form.yourText')}
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -91,16 +93,16 @@ export function AiOptimizerSection() {
                   name="text"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Your Text</FormLabel>
+                      <FormLabel>{t('aiOptimizerSection.form.yourText')}</FormLabel>
                       <FormControl>
                         <Textarea
-                          placeholder="Paste your project description or resume summary here..."
+                          placeholder={t('aiOptimizerSection.form.placeholder')}
                           className="min-h-[200px] resize-y"
                           {...field}
                         />
                       </FormControl>
                       <FormDescription>
-                        Enter the text you want to improve (20-1500 characters).
+                        {t('aiOptimizerSection.form.description')}
                       </FormDescription>
                       <FormMessage />
                     </FormItem>
@@ -110,10 +112,10 @@ export function AiOptimizerSection() {
                   {isLoading ? (
                     <>
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Optimizing...
+                      {t('aiOptimizerSection.form.optimizingButton')}
                     </>
                   ) : (
-                    "Optimize with AI"
+                    t('aiOptimizerSection.form.submitButton')
                   )}
                 </Button>
               </form>
@@ -125,14 +127,14 @@ export function AiOptimizerSection() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Sparkles className="h-5 w-5 text-primary" />
-              Optimized Result
+              {t('aiOptimizerSection.resultCard.title')}
             </CardTitle>
           </CardHeader>
           <CardContent>
             {isLoading && !optimizedText && (
               <div className="flex flex-col items-center justify-center h-full text-muted-foreground">
                 <Loader2 className="h-12 w-12 animate-spin text-primary mb-4" />
-                <p>AI is working its magic...</p>
+                <p>{t('aiOptimizerSection.resultCard.loading')}</p>
               </div>
             )}
             {optimizedText && !isLoading && (
@@ -142,7 +144,7 @@ export function AiOptimizerSection() {
             )}
             {!optimizedText && !isLoading && (
               <p className="text-muted-foreground text-center py-10">
-                Your AI-enhanced text will appear here.
+                {t('aiOptimizerSection.resultCard.placeholder')}
               </p>
             )}
           </CardContent>

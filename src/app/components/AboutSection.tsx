@@ -1,9 +1,13 @@
+"use client";
 import { Section } from "@/components/layout/Section";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import type { SkillType, ExperienceType } from "@/lib/types";
-import { User, Code, Briefcase, Brain, Palette } from "lucide-react"; // Example icons for skills
+import { User, Code, Briefcase, Brain, Palette } from "lucide-react"; 
+import { useLanguage } from "@/contexts/LanguageContext";
 
+// Skills and Experience data remain in English for now as per plan.
+// Translation for these would require more complex data management.
 const skills: SkillType[] = [
   { id: "react", name: "React", icon: Code },
   { id: "nextjs", name: "Next.js", icon: Code },
@@ -55,24 +59,26 @@ const experiences: ExperienceType[] = [
 ];
 
 export function AboutSection() {
+  const { t } = useLanguage();
+
   return (
-    <Section id="about" title="About Me" icon={User}>
+    <Section id="about" title={t('about.title')} icon={User}>
       <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-12 items-start">
         <div className="lg:col-span-2 space-y-6">
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Hello! I&apos;m Alex Johnson, a passionate and results-driven developer with a knack for creating engaging and user-friendly digital experiences. With several years in the industry, I&apos;ve honed my skills in front-end and back-end development, user interface design, and integrating cutting-edge technologies like AI.
+            {t('about.greeting')}
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            My journey in tech began with a fascination for how software can solve real-world problems and enhance human interaction. This curiosity has led me to continuously learn and adapt, always seeking new challenges and opportunities to grow. I thrive in collaborative environments and enjoy bringing ideas to life, from initial concept to final deployment.
+            {t('about.journey')}
           </p>
            <p className="text-lg text-muted-foreground leading-relaxed">
-            When I&apos;m not coding, you can find me exploring new AI research, contributing to open-source projects, or hiking in the great outdoors. I believe in a balanced approach to work and life, fostering creativity and innovation.
+            {t('about.hobbies')}
           </p>
         </div>
 
         <div className="space-y-8 lg:mt-0">
           <div>
-            <h3 className="text-2xl font-semibold mb-4 text-foreground">Key Skills</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-foreground">{t('about.skillsTitle')}</h3>
             <div className="flex flex-wrap gap-3">
               {skills.map((skill) => (
                 <Badge key={skill.id} variant="secondary" className="text-sm px-3 py-1.5 shadow-sm hover:shadow-md transition-shadow cursor-default">
@@ -86,7 +92,7 @@ export function AboutSection() {
       </div>
 
       <div className="mt-16">
-        <h3 className="text-2xl font-semibold mb-6 text-center md:text-left text-foreground">Professional Experience</h3>
+        <h3 className="text-2xl font-semibold mb-6 text-center md:text-left text-foreground">{t('about.experienceTitle')}</h3>
         <Accordion type="single" collapsible className="w-full">
           {experiences.map((exp) => (
             <AccordionItem key={exp.id} value={exp.id} className="border-b-0 mb-4 bg-card rounded-lg shadow-md hover:shadow-lg transition-shadow">
