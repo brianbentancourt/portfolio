@@ -85,9 +85,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </Card>
 
       <DialogContent className="sm:max-w-2xl max-h-[90vh] flex flex-col p-0">
-        <DialogHeader className="p-6 pb-0">
+        <DialogHeader className="p-6 pb-0 shrink-0"> {/* Added shrink-0 */}
           <DialogTitle className="text-2xl text-primary">{project.title}</DialogTitle>
-          <div className="relative aspect-video my-4 rounded-lg overflow-hidden">
+          <div className="relative aspect-video my-2 md:my-3 rounded-lg overflow-hidden max-h-[180px] sm:max-h-[220px] md:max-h-[280px]"> {/* Adjusted margins and max-heights */}
             <Image
                 src={project.imageUrl}
                 alt={project.title}
@@ -96,7 +96,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 data-ai-hint={project.imageAiHint || "project image"}
               />
           </div>
-          <div className="flex flex-wrap gap-2 mt-2">
+          <div className="flex flex-wrap gap-2 mt-2 pb-2"> {/* Added pb-2 for spacing */}
             {project.tags.map((tag) => (
               <Badge key={tag} variant="secondary" className="text-xs">
                 {tag}
@@ -104,12 +104,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
             ))}
           </div>
         </DialogHeader>
-        <ScrollArea className="flex-grow min-h-0 px-6"> {/* Added min-h-0 and adjusted padding */}
+        <ScrollArea className="flex-grow min-h-0 px-6"> 
           <DialogDescription className="text-base text-muted-foreground whitespace-pre-line py-4">
             {project.longDescription || project.description}
           </DialogDescription>
         </ScrollArea>
-        <div className="flex gap-2 p-6 pt-4 border-t"> {/* Adjusted padding */}
+        <div className="flex gap-2 p-6 pt-4 border-t shrink-0"> {/* Added shrink-0 */}
             {project.liveLink && (
               <Button asChild>
                 <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
