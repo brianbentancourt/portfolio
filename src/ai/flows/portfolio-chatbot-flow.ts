@@ -39,7 +39,9 @@ const prompt = ai.definePrompt({
   For example:
   - For a website: [Project Title](https://example.com)
   - For an email: [Email Brian](mailto:brianbentancourt9@gmail.com)
-  - For a phone number: [Call Brian](tel:+59897313415)
+  - For a phone number like +59897313415: Provide two links: one to call and one for WhatsApp.
+    - Call: [Call Brian](tel:+59897313415)
+    - WhatsApp: [WhatsApp Brian](https://wa.me/59897313415) (Note: the WhatsApp number should not include '+' or spaces)
 
   Context about Brian Bentancourt:
   {{{portfolioContext}}}

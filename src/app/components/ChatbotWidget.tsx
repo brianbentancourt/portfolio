@@ -180,7 +180,8 @@ export function ChatbotWidget() {
       setMessages(prev => [...prev, errorMessage]);
     } finally {
       setIsLoading(false);
-      inputRef.current?.focus();
+      // Slight delay to ensure the new message is rendered before focusing
+      setTimeout(() => inputRef.current?.focus(), 0);
     }
   };
 
