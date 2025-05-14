@@ -28,7 +28,7 @@ export function Header() {
       href={href}
       onClick={onClick}
       className={cn(
-        "text-sm font-medium text-foreground/80 hover:text-primary transition-colors",
+        "text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-300 hover:shadow-[0_0_10px_1px_hsl(var(--accent)/0.5)] p-1 rounded-md",
         className
       )}
     >
@@ -82,7 +82,7 @@ export function Header() {
                         key={item.href} 
                         href={item.href} 
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className="flex items-center gap-2 text-lg py-3"
+                        className="flex items-center gap-2 text-lg py-3" // Removed p-1 from here as it's in base NavLink
                       >
                         <item.icon className="h-5 w-5 text-primary" />
                         {item.label}
@@ -101,3 +101,4 @@ export function Header() {
     </header>
   );
 }
+
