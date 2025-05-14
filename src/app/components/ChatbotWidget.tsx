@@ -196,6 +196,7 @@ export function ChatbotWidget() {
   return (
     <>
       <Button
+        id="chatbot-trigger-button" // Added ID here
         onClick={() => setIsOpen(true)}
         className="fixed bottom-6 right-6 rounded-full w-14 h-14 p-0 shadow-xl z-50 flex items-center justify-center"
         aria-label={openChatSrText}
@@ -273,3 +274,4 @@ export function ChatbotWidget() {
     </>
   );
 }
+

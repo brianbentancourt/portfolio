@@ -33,7 +33,7 @@ export function ChatbotIntroductionSection() {
         <div className="mt-4 flex justify-center">
             <Button 
                 onClick={() => {
-                    const chatButton = document.querySelector('button[aria-label="Open chat"], button[aria-label="Abrir chat"]') as HTMLElement | null;
+                    const chatButton = document.getElementById('chatbot-trigger-button') as HTMLElement | null;
                     chatButton?.click();
                 }}
                 aria-label={t('chatbotWidget.openChatSrText', { fallback: "Open Chat"})}
