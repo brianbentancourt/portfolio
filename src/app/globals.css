@@ -8,33 +8,33 @@ body {
 
 @layer base {
   :root {
-    --background: 230 20% 7%; /* Very dark desaturated blue */
-    --foreground: 210 30% 90%; /* Light, slightly cool white */
+    --background: 0 0% 98%; /* Almost white */
+    --foreground: 240 10% 3.9%; /* Very dark blue/black */
 
-    --card: 230 20% 10%; /* Slightly lighter than background */
-    --card-foreground: 210 30% 90%; /* Same as main foreground */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 240 10% 3.9%;
 
-    --popover: 230 20% 10%; /* Same as card */
-    --popover-foreground: 210 30% 90%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
 
     --primary: 200 100% 50%; /* Bright Cyan/Electric Blue */
-    --primary-foreground: 230 100% 5%; /* Very dark, for contrast on bright blue */
+    --primary-foreground: 0 0% 100%; /* White (for contrast on bright blue in light mode) */
 
-    --secondary: 260 30% 25%; /* Dark Purple */
-    --secondary-foreground: 260 10% 85%; /* Light Lavender */
+    --secondary: 240 4.8% 95.9%; /* Light gray */
+    --secondary-foreground: 240 5.9% 10%; /* Dark blue/black for on light gray */
 
-    --muted: 230 15% 15%; /* Darker, more desaturated blue */
-    --muted-foreground: 220 15% 60%; /* Desaturated cool gray */
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%; /* Medium gray */
 
     --accent: 300 100% 55%; /* Bright Magenta/Pink */
-    --accent-foreground: 0 0% 100%; /* White, for contrast on bright magenta */
+    --accent-foreground: 0 0% 100%; /* White */
 
-    --destructive: 0 100% 50%; /* Bright Red */
-    --destructive-foreground: 0 0% 100%; /* White */
+    --destructive: 0 84.2% 60.2%; /* Adjusted Bright Red */
+    --destructive-foreground: 0 0% 98%; /* Light for on red */
 
-    --border: 220 20% 25%; /* Dark blue-gray, subtle */
-    --input: 220 20% 25%; /* Same as border */
-    --ring: 200 100% 60%; /* Slightly lighter Primary for focus rings */
+    --border: 240 5.9% 90%; /* Light gray border */
+    --input: 240 5.9% 90%; /* Light gray input */
+    --ring: 200 100% 50%; /* Primary for focus rings */
 
     --radius: 0.5rem;
 
@@ -44,15 +44,15 @@ body {
     --chart-4: 43 74% 66%; /* Cyber Yellow/Orange */
     --chart-5: 130 70% 50%; /* Neon Green */
     
-    /* Cyberpunk sidebar variables (based on the new dark theme) */
-    --sidebar-background: 230 20% 5%; /* Even darker for sidebar */
-    --sidebar-foreground: 210 30% 85%; /* Slightly dimmer foreground for sidebar */
-    --sidebar-primary: 200 100% 50%; /* Primary for sidebar highlights */
-    --sidebar-primary-foreground: 230 100% 5%;
-    --sidebar-accent: 230 20% 15%; /* Darker accent for sidebar items */
-    --sidebar-accent-foreground: 210 30% 90%; /* Main foreground for sidebar accent text */
-    --sidebar-border: 220 20% 20%; /* Subtle border for sidebar */
-    --sidebar-ring: 200 100% 60%; /* Ring color */
+    /* Light Sidebar variables */
+    --sidebar-background: 0 0% 96%;
+    --sidebar-foreground: 240 8% 20%;
+    --sidebar-primary: 200 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 4.8% 93%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 240 5.9% 88%;
+    --sidebar-ring: 200 100% 50%;
   }
 
   .dark {
@@ -84,7 +84,7 @@ body {
     --input: 220 20% 25%; /* Same as border */
     --ring: 200 100% 60%; /* Slightly lighter Primary for focus rings */
     
-    /* Cyberpunk sidebar variables */
+    /* Dark Sidebar variables */
     --sidebar-background: 230 20% 5%; /* Even darker for sidebar */
     --sidebar-foreground: 210 30% 85%; /* Slightly dimmer foreground for sidebar */
     --sidebar-primary: 200 100% 50%; /* Primary for sidebar highlights */
