@@ -33,21 +33,19 @@ export function ChatbotIntroductionSection() {
         <div className="mt-4 flex justify-center">
             <Button 
                 onClick={() => {
-                    // Attempt to trigger the chatbot widget opening logic
-                    // This is a common pattern, but might need adjustment based on ChatbotWidget's specific implementation
                     const chatButton = document.querySelector('button[aria-label="Open chat"], button[aria-label="Abrir chat"]') as HTMLElement | null;
                     chatButton?.click();
                 }}
-                aria-label={t('chatbotWidget.openChatSrText') || "Open Chat"} // Use existing translation or a fallback
+                aria-label={t('chatbotWidget.openChatSrText', { fallback: "Open Chat"})}
             >
                 <MessageSquare className="mr-2 h-5 w-5" />
-                {t('chatbotWidget.openChatSrText') || "Start Chatting"} 
+                {t('chatbotWidget.openChatSrText', { fallback: "Start Chatting"})} 
             </Button>
         </div>
          <div className="mt-10 p-4 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-700 rounded-lg flex items-start space-x-3 text-blue-700 dark:text-blue-300">
           <AlertCircle className="h-5 w-5 shrink-0 mt-0.5" />
           <p className="text-sm text-left">
-            <strong>Note:</strong> The AI assistant provides information based on pre-programmed context about my profile. For direct contact or detailed discussions, please use the contact form or the WhatsApp button.
+            <strong>{t('chatbotIntroductionSection.aiNoteTitle')}</strong> {t('chatbotIntroductionSection.aiNoteText')}
           </p>
         </div>
       </div>

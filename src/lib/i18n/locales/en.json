@@ -3,7 +3,7 @@
   "header": {
     "about": "About",
     "projects": "Projects",
-    "optimizer": "Optimizer",
+    "chatbot": "Chatbot",
     "contact": "Contact",
     "title": "Brian Bentancourt",
     "education": "Education",
@@ -34,27 +34,23 @@
   "projectsSection": {
     "title": "My Projects"
   },
-  "aiOptimizerSection": {
-    "title": "AI Text Optimizer",
-    "description": "Elevate your project descriptions or resume summaries with AI. Enter your text below and let our AI craft a more compelling and professional version.",
-    "form": {
-      "yourText": "Your Text",
-      "placeholder": "Paste your project description or resume summary here...",
-      "description": "Enter the text you want to improve (20-1500 characters).",
-      "submitButton": "Optimize with AI",
-      "optimizingButton": "Optimizing..."
-    },
-    "resultCard": {
-      "title": "Optimized Result",
-      "loading": "AI is working its magic...",
-      "placeholder": "Your AI-enhanced text will appear here."
-    },
-    "toast": {
-      "successTitle": "Text Optimized!",
-      "successDescription": "Your text has been successfully enhanced by AI.",
-      "errorTitle": "Optimization Failed",
-      "errorDescription": "An error occurred while optimizing your text. Please try again."
-    }
+  "chatbotIntroductionSection": {
+    "title": "Chat With My AI Assistant",
+    "description": "Have questions about my skills, projects, or experience? My AI assistant is here to help! Click the chat icon in the bottom-right corner to start a conversation. You can ask things like:",
+    "example1": "\"What are Brian's key skills?\"",
+    "example2": "\"Tell me more about the Food Store project.\"",
+    "actionPrompt": "Go ahead, give it a try!",
+    "aiNoteTitle": "Note:",
+    "aiNoteText": "The AI assistant provides information based on pre-programmed context about my profile. For direct contact or detailed discussions, please use the contact form or the WhatsApp button."
+  },
+  "chatbotWidget": {
+    "chatbotName": "Brian's Assistant",
+    "welcomeMessage": "Hi there! I'm Brian's virtual assistant. How can I help you today regarding his profile or projects?",
+    "typingMessage": "Typing...",
+    "inputPlaceholder": "Type your message...",
+    "sendButtonSrText": "Send",
+    "openChatSrText": "Open Chat",
+    "errorMessageText": "Sorry, an error occurred. Please try again later."
   },
   "contactSection": {
     "title": "Get In Touch",

@@ -3,9 +3,9 @@
   "header": {
     "about": "Sobre Mí",
     "projects": "Proyectos",
-    "optimizer": "Optimizador",
+    "chatbot": "Chatbot",
     "contact": "Contacto",
-    "title": "Portafolio Pro",
+    "title": "Brian Bentancourt",
     "education": "Educación",
     "diplomas": "Diplomas"
   },
@@ -34,27 +34,23 @@
   "projectsSection": {
     "title": "Mis Proyectos"
   },
-  "aiOptimizerSection": {
-    "title": "Optimizador de Texto con IA",
-    "description": "Mejora las descripciones de tus proyectos o resúmenes de currículum con IA. Ingresa tu texto a continuación y deja que nuestra IA elabore una versión más atractiva y profesional.",
-    "form": {
-      "yourText": "Tu Texto",
-      "placeholder": "Pega aquí la descripción de tu proyecto o resumen de currículum...",
-      "description": "Ingresa el texto que quieres mejorar (20-1500 caracteres).",
-      "submitButton": "Optimizar con IA",
-      "optimizingButton": "Optimizando..."
-    },
-    "resultCard": {
-      "title": "Resultado Optimizado",
-      "loading": "La IA está haciendo su magia...",
-      "placeholder": "Tu texto mejorado por IA aparecerá aquí."
-    },
-    "toast": {
-      "successTitle": "¡Texto Optimizado!",
-      "successDescription": "Tu texto ha sido mejorado exitosamente por la IA.",
-      "errorTitle": "Falló la Optimización",
-      "errorDescription": "Ocurrió un error al optimizar tu texto. Por favor, inténtalo de nuevo."
-    }
+  "chatbotIntroductionSection": {
+    "title": "Chatea Con Mi Asistente IA",
+    "description": "¿Tienes preguntas sobre mis habilidades, proyectos o experiencia? ¡Mi asistente de IA está aquí para ayudarte! Haz clic en el ícono de chat en la esquina inferior derecha para iniciar una conversación. Puedes preguntar cosas como:",
+    "example1": "\"¿Cuáles son las habilidades clave de Brian?\"",
+    "example2": "\"Cuéntame más sobre el proyecto Food Store.\"",
+    "actionPrompt": "¡Anímate, pruébalo!",
+    "aiNoteTitle": "Nota:",
+    "aiNoteText": "El asistente de IA proporciona información basada en un contexto preprogramado sobre mi perfil. Para contacto directo o discusiones detalladas, por favor utiliza el formulario de contacto o el botón de WhatsApp."
+  },
+  "chatbotWidget": {
+    "chatbotName": "Asistente de Brian",
+    "welcomeMessage": "¡Hola! Soy el asistente virtual de Brian. ¿Cómo puedo ayudarte hoy con respecto a su perfil o proyectos?",
+    "typingMessage": "Escribiendo...",
+    "inputPlaceholder": "Escribe tu mensaje...",
+    "sendButtonSrText": "Enviar",
+    "openChatSrText": "Abrir chat",
+    "errorMessageText": "Lo siento, ocurrió un error. Por favor, inténtalo de nuevo más tarde."
   },
   "contactSection": {
     "title": "Ponte en Contacto",
