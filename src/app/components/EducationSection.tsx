@@ -5,9 +5,10 @@ import Link from "next/link";
 import { Section } from "@/components/layout/Section";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { GraduationCap, ExternalLink, FileText } from "lucide-react";
+import { GraduationCap, ExternalLink, FileText, Loader2 } from "lucide-react";
 import type { EducationEntryType } from "@/lib/types";
 import { useLanguage } from "@/contexts/LanguageContext";
+import * as React from "react";
 import {
   Dialog,
   DialogContent,
@@ -74,6 +75,57 @@ const educationData: EducationEntryType[] = [
   },
 ];
 
+// Component to render DialogContent with image loading state
+function CertificateDialogContent({ entry, t }: { entry: EducationEntryType, t: (key: string, replacements?: Record<string, string | number>) => string }) {
+  const [isImageLoading, setIsImageLoading] = React.useState(true);
+
+  // Reset loading state when dialog opens (entry.certificateUrl changes or dialog visibility changes)
+  // This specific implementation relies on DialogContent re-rendering which usually happens.
+  // A more robust way for complex scenarios might involve onOpenChange from Dialog.
+  React.useEffect(() => {
+    setIsImageLoading(true);
+  }, [entry.certificateUrl]);
+
+
+  return (
+    <DialogContent className="sm:max-w-2xl md:max-w-3xl lg:max-w-4xl max-h-[90vh] flex flex-col p-0">
+      <DialogHeader className="p-6 pb-2 shrink-0">
+        <DialogTitle>{t('educationSection.certificateModalTitle', { title: entry.title })}</DialogTitle>
+        <DialogDescription>
+          {entry.institution} - {entry.period}
+        </DialogDescription>
+      </DialogHeader>
+      <ScrollArea className="flex-grow min-h-0 px-6 py-2">
+        <div className="relative aspect-[calc(8.5/11)] w-full mx-auto max-w-full max-h-[calc(80vh-120px)] bg-muted rounded-md overflow-hidden">
+          {isImageLoading && (
+            <div className="absolute inset-0 flex items-center justify-center bg-muted/70">
+              <Loader2 className="h-12 w-12 animate-spin text-primary" />
+            </div>
+          )}
+          {entry.certificateUrl && (
+             <Image
+              src={entry.certificateUrl}
+              alt={t('educationSection.certificateModalTitle', { title: entry.title })}
+              fill
+              className={`object-contain p-1 transition-opacity duration-300 ${isImageLoading ? 'opacity-0' : 'opacity-100'}`}
+              onLoad={() => setIsImageLoading(false)}
+              onError={() => setIsImageLoading(false)} // Stop loading on error too
+              data-ai-hint={entry.certificateImageAiHint || "certificate document"}
+              unoptimized // If certificates are external and not optimized by Next/Image
+            />
+          )}
+        </div>
+      </ScrollArea>
+      <div className="p-6 pt-4 border-t shrink-0 text-right">
+        <DialogTrigger asChild>
+          <Button variant="outline">{t('common.closeButton')}</Button>
+        </DialogTrigger>
+      </div>
+    </DialogContent>
+  );
+}
+
+
 export function EducationSection() {
   const { t } = useLanguage();
 
@@ -121,30 +173,7 @@ export function EducationSection() {
                       {t('educationSection.viewCertificateButton')}
                     </Button>
                   </DialogTrigger>
-                  <DialogContent className="sm:max-w-2xl md:max-w-3xl lg:max-w-4xl max-h-[90vh] flex flex-col p-0">
-                    <DialogHeader className="p-6 pb-2 shrink-0">
-                      <DialogTitle>{t('educationSection.certificateModalTitle', { title: entry.title })}</DialogTitle>
-                      <DialogDescription>
-                        {entry.institution} - {entry.period}
-                      </DialogDescription>
-                    </DialogHeader>
-                    <ScrollArea className="flex-grow min-h-0 px-6 py-2">
-                      <div className="relative aspect-[calc(8.5/11)] w-full mx-auto max-w-full max-h-[calc(80vh-120px)] bg-muted rounded-md overflow-hidden">
-                        <Image
-                          src={entry.certificateUrl}
-                          alt={t('educationSection.certificateModalTitle', { title: entry.title })}
-                          fill
-                          className="object-contain p-1"
-                          data-ai-hint={entry.certificateImageAiHint || "certificate document"}
-                        />
-                      </div>
-                    </ScrollArea>
-                    <div className="p-6 pt-4 border-t shrink-0 text-right">
-                      <DialogTrigger asChild>
-                        <Button variant="outline">{t('common.closeButton')}</Button>
-                      </DialogTrigger>
-                    </div>
-                  </DialogContent>
+                  <CertificateDialogContent entry={entry} t={t} />
                 </Dialog>
               </CardFooter>
             )}
@@ -162,3 +191,4 @@ export function EducationSection() {
     </Section>
   );
 }
+
