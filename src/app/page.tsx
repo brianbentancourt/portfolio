@@ -4,6 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "./components/HeroSection";
 import { AboutSection } from "./components/AboutSection";
+import { EducationSection } from "./components/EducationSection";
 import { ProjectsSection } from "./components/ProjectsSection";
 import { AiOptimizerSection } from "./components/AiOptimizerSection";
 import { ContactSection } from "./components/ContactSection";
@@ -31,6 +32,7 @@ export default function HomePage() {
       <main className="flex-grow">
         <HeroSection />
         <AboutSection />
+        <EducationSection />
         <ProjectsSection />
         <AiOptimizerSection />
         <ContactSection />

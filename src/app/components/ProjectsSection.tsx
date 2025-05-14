@@ -22,7 +22,7 @@ Built with Next.js for a responsive and dynamic frontend, Python (FastAPI) for t
     imageUrl: "https://picsum.photos/seed/taskmanager/600/400",
     tags: ["Next.js", "Python", "AI/ML", "PostgreSQL", "Tailwind CSS"],
     liveLink: "#",
-    sourceLink: "https://github.com",
+    sourceLink: "github.com/brianbentancourt",
     imageAiHint: "task manager",
   },
   {
@@ -39,7 +39,7 @@ The platform is developed using React for a rich frontend experience, Node.js (E
     imageUrl: "https://picsum.photos/seed/ecommerce/600/400",
     tags: ["React", "Node.js", "MongoDB", "Stripe", "Material UI"],
     liveLink: "#",
-    sourceLink: "https://github.com",
+    sourceLink: "github.com/brianbentancourt",
     imageAiHint: "e-commerce marketplace",
   },
   {
@@ -72,7 +72,7 @@ Built with D3.js for unparalleled data rendering capabilities, Vue.js for a reac
 The design prioritizes a clean, modern aesthetic, intuitive navigation, and a seamless user experience across all devices. It aims to provide a comprehensive overview of my capabilities and how I approach software development.`,
     imageUrl: "https://picsum.photos/seed/portfolio/600/400",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "ShadCN UI", "GenAI", "i18n"],
-    sourceLink: "https://github.com",
+    sourceLink: "github.com/brianbentancourt",
     imageAiHint: "website design",
   },
   {

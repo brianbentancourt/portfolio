@@ -4,7 +4,9 @@
     "projects": "Projects",
     "optimizer": "Optimizer",
     "contact": "Contact",
-    "title": "Portfolio Pro"
+    "title": "Brian Bentancourt",
+    "education": "Education",
+    "diplomas": "Diplomas"
   },
   "hero": {
     "name": "Brian Bentancourt",
@@ -20,6 +22,11 @@
     "hobbies": "When I'm not coding, you can find me exploring new AI research, contributing to open-source projects, or enjoying time with family and friends. I believe in a balanced approach to work and life, fostering creativity and innovation.",
     "skillsTitle": "Key Skills",
     "experienceTitle": "Professional Experience"
+  },
+  "educationSection": {
+    "title": "Education & Certifications",
+    "description": "My academic background and key certifications that have shaped my expertise.",
+    "viewDiplomas": "View All Diplomas"
   },
   "projectsSection": {
     "title": "My Projects"
@@ -65,6 +72,10 @@
     "sendingButton": "Sending...",
     "toastSuccessTitle": "Message Sent!",
     "toastSuccessDescription": "Thanks for reaching out. I'll get back to you soon."
+  },
+  "diplomasPage": {
+    "title": "My Diplomas & Certificates",
+    "description": "A collection of my certifications and diplomas acquired throughout my professional journey."
   },
   "footer": {
     "copyright": "© {year} Brian Bentancourt. All rights reserved."

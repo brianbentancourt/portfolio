@@ -21,10 +21,10 @@ export function Footer() {
           {t('footer.copyright', { year: currentYear })}
         </p>
         <div className="flex items-center space-x-4 mt-4 sm:mt-0">
-          <Link href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-muted-foreground hover:text-primary transition-colors">
+          <Link href="github.com/brianbentancourt" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-muted-foreground hover:text-primary transition-colors">
             <Github className="h-5 w-5" />
           </Link>
-          <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-muted-foreground hover:text-primary transition-colors">
+          <Link href="linkedin.com/in/brianbentancourt" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-muted-foreground hover:text-primary transition-colors">
             <Linkedin className="h-5 w-5" />
           </Link>
           <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-muted-foreground hover:text-primary transition-colors">

@@ -1,8 +1,9 @@
+
 "use client";
 
 import * as React from "react";
 import Link from "next/link";
-import { Menu, X, Briefcase, User, Wand2, Mail, MountainIcon } from "lucide-react";
+import { Menu, X, Briefcase, User, Wand2, Mail, MountainIcon, GraduationCap, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
@@ -14,10 +15,12 @@ export function Header() {
   const { t } = useLanguage();
 
   const navItems = [
-    { label: t('header.about'), href: "#about", icon: User },
-    { label: t('header.projects'), href: "#projects", icon: Briefcase },
-    { label: t('header.optimizer'), href: "#optimizer", icon: Wand2 },
-    { label: t('header.contact'), href: "#contact", icon: Mail },
+    { label: t('header.about'), href: "/#about", icon: User },
+    { label: t('header.education'), href: "/#education", icon: GraduationCap },
+    { label: t('header.projects'), href: "/#projects", icon: Briefcase },
+    { label: t('header.optimizer'), href: "/#optimizer", icon: Wand2 },
+    { label: t('header.diplomas'), href: "/diplomas", icon: Award },
+    { label: t('header.contact'), href: "/#contact", icon: Mail },
   ];
   
   const NavLink = ({ href, children, onClick, className }: { href: string, children: React.ReactNode, onClick?: () => void, className?: string }) => (
