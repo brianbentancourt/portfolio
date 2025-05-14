@@ -71,7 +71,7 @@ export function EducationSection() {
       </p>
       <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
         {educationData.map((entry) => (
-          <Card key={entry.id} className="flex flex-col h-full shadow-lg hover:shadow-xl transition-shadow">
+          <Card key={entry.id} className="flex flex-col h-full hover:shadow-lg transition-shadow">
             <CardHeader className="flex flex-row items-start gap-4">
               {entry.logoUrl && (
                 <Image
@@ -123,3 +123,4 @@ export function EducationSection() {
     </Section>
   );
 }
+

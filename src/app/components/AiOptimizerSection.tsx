@@ -1,3 +1,4 @@
+
 "use client";
 
 import * as React from "react";
@@ -78,7 +79,7 @@ export function AiOptimizerSection() {
         {t('aiOptimizerSection.description')}
       </p>
       <div className="grid md:grid-cols-2 gap-8 items-start">
-        <Card className="shadow-lg">
+        <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Sparkles className="h-5 w-5 text-primary" />
@@ -123,7 +124,7 @@ export function AiOptimizerSection() {
           </CardContent>
         </Card>
 
-        <Card className={`transition-opacity duration-500 ${optimizedText || isLoading ? 'opacity-100' : 'opacity-50'} shadow-lg min-h-[300px]`}>
+        <Card className={`transition-opacity duration-500 ${optimizedText || isLoading ? 'opacity-100' : 'opacity-50'} min-h-[300px]`}>
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Sparkles className="h-5 w-5 text-primary" />
@@ -153,3 +154,4 @@ export function AiOptimizerSection() {
     </Section>
   );
 }
+

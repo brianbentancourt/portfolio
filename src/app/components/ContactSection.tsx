@@ -1,3 +1,4 @@
+
 "use client";
 import { Section } from "@/components/layout/Section";
 import { ContactForm } from "./ContactForm";
@@ -30,10 +31,11 @@ export function ContactSection() {
             </div>
           </div>
         </div>
-        <div className="bg-card p-6 sm:p-8 rounded-xl shadow-xl">
+        <div className="bg-card p-6 sm:p-8 rounded-xl shadow-md">
           <ContactForm />
         </div>
       </div>
     </Section>
   );
 }
+

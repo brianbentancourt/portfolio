@@ -22,7 +22,7 @@ interface DiplomaCardProps {
 export function DiplomaCard({ diploma }: DiplomaCardProps) {
   return (
     <Dialog>
-      <Card className="overflow-hidden h-full flex flex-col group transition-all duration-300 ease-in-out hover:shadow-2xl transform hover:-translate-y-1">
+      <Card className="overflow-hidden h-full flex flex-col group transition-all duration-300 ease-in-out hover:shadow-lg transform hover:-translate-y-1">
         <DialogTrigger asChild>
           <div className="relative aspect-[4/3] w-full overflow-hidden cursor-pointer bg-muted">
             <Image
@@ -82,3 +82,4 @@ export function DiplomaCard({ diploma }: DiplomaCardProps) {
     </Dialog>
   );
 }
+

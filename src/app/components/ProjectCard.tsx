@@ -24,7 +24,7 @@ interface ProjectCardProps {
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Dialog>
-      <Card className="overflow-hidden h-full flex flex-col group transition-all duration-300 ease-in-out hover:shadow-2xl transform hover:-translate-y-1">
+      <Card className="overflow-hidden h-full flex flex-col group transition-all duration-300 ease-in-out hover:shadow-lg transform hover:-translate-y-1">
         <CardHeader className="p-0">
           <DialogTrigger asChild>
             <div className="relative aspect-video overflow-hidden cursor-pointer">
@@ -107,6 +107,21 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <ScrollArea className="flex-grow min-h-0 px-6"> 
           <DialogDescription className="text-base text-muted-foreground whitespace-pre-line py-4">
             {project.longDescription || project.description}
+            {project.clientImplementations && project.clientImplementations.length > 0 && (
+              <div className="mt-4">
+                <h4 className="font-semibold text-foreground mb-2">Client Implementations:</h4>
+                <ul className="list-disc list-inside space-y-1">
+                  {project.clientImplementations.map((client, index) => (
+                    <li key={index}>
+                      <Link href={client.link} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                        {client.name}
+                      </Link>
+                      {client.status && <span className="text-xs text-muted-foreground ml-1">({client.status})</span>}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </DialogDescription>
         </ScrollArea>
         <div className="flex gap-2 p-6 pt-4 border-t shrink-0"> {/* Added shrink-0 */}
