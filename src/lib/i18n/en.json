@@ -1,0 +1,74 @@
+
+{
+  "header": {
+    "about": "About",
+    "projects": "Projects",
+    "chatbot": "Chatbot",
+    "contact": "Contact",
+    "title": "Brian Bentancourt",
+    "education": "Education",
+    "diplomas": "Diplomas"
+  },
+  "hero": {
+    "name": "Brian Bentancourt",
+    "title": "Software Developer",
+    "subtitle": "Passionate about crafting robust, scalable, and efficient software solutions. Specializing in modern web technologies and backend systems.",
+    "myWork": "My Work",
+    "contactMe": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "greeting": "Hello! I'm Brian Bentancourt, a passionate and results-driven software developer with a knack for creating engaging and user-friendly digital experiences. With several years in the industry, I've honed my skills in front-end and back-end development, user interface design, and integrating cutting-edge technologies like AI.",
+    "journey": "My journey in tech began with a fascination for how software can solve real-world problems and enhance human interaction. This curiosity has led me to continuously learn and adapt, always seeking new challenges and opportunities to grow. I thrive in collaborative environments and enjoy bringing ideas to life, from initial concept to final deployment.",
+    "hobbies": "When I'm not coding, you can find me exploring new AI research, contributing to open-source projects, or enjoying time with family and friends. I believe in a balanced approach to work and life, fostering creativity and innovation.",
+    "skillsTitle": "Key Skills",
+    "experienceTitle": "Professional Experience"
+  },
+  "educationSection": {
+    "title": "Education & Certifications",
+    "description": "My academic background and key certifications that have shaped my expertise.",
+    "viewAllDiplomasButton": "View All Diplomas",
+    "viewCertificateButton": "View Certificate",
+    "certificateModalTitle": "{title} - Certificate"
+  },
+  "projectsSection": {
+    "title": "My Projects"
+  },
+  "chatbotIntroductionSection": {
+    "title": "Chat With My AI Assistant",
+    "description": "Have questions about my skills, projects, or experience? My AI assistant is here to help! Click the chat icon in the bottom-right corner to start a conversation. You can ask things like:",
+    "example1": "\"What are Brian's key skills?\"",
+    "example2": "\"Tell me more about the Food Store project.\"",
+    "actionPrompt": "Go ahead, give it a try!"
+  },
+  "contactSection": {
+    "title": "Get In Touch",
+    "description": "I'm always excited to discuss new projects, creative ideas, or opportunities to collaborate. Feel free to reach out using the form, or connect with me through the details provided.",
+    "email": "brianbentancourt9@gmail.com",
+    "phone": "(598) 97313415",
+    "location": "Uruguay"
+  },
+  "contactForm": {
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your Name",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "your.email@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Your message here...",
+    "messageDescription": "Briefly describe your inquiry (max 500 characters).",
+    "submitButton": "Send Message",
+    "sendingButton": "Sending...",
+    "toastSuccessTitle": "Message Sent!",
+    "toastSuccessDescription": "Thanks for reaching out. I'll get back to you soon."
+  },
+  "diplomasPage": {
+    "title": "My Diplomas & Certificates",
+    "description": "A collection of my certifications and diplomas acquired throughout my professional journey."
+  },
+  "footer": {
+    "copyright": "© {year} Brian Bentancourt. All rights reserved."
+  },
+  "common": {
+    "closeButton": "Close"
+  }
+}

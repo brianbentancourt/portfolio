@@ -3,7 +3,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Menu, X, Briefcase, User, Wand2, Mail, MountainIcon, GraduationCap, Award } from "lucide-react";
+import { Menu, X, Briefcase, User, Mail, MountainIcon, GraduationCap, Award, MessageSquare } from "lucide-react"; // Added MessageSquare
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
@@ -20,7 +20,7 @@ export function Header() {
     { label: t('header.about'), href: "/#about", icon: User },
     { label: t('header.education'), href: "/#education", icon: GraduationCap },
     { label: t('header.projects'), href: "/#projects", icon: Briefcase },
-    { label: t('header.optimizer'), href: "/#optimizer", icon: Wand2 },
+    { label: t('header.chatbot'), href: "/#chatbot-intro", icon: MessageSquare }, 
     { label: t('header.diplomas'), href: "/diplomas", icon: Award },
     { label: t('header.contact'), href: "/#contact", icon: Mail },
   ];
@@ -104,3 +104,4 @@ export function Header() {
     </header>
   );
 }
+

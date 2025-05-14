@@ -127,16 +127,18 @@ export function ChatbotWidget() {
   const [isLoading, setIsLoading] = useState(false);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-  const { locale } = useLanguage();
+  const { locale, t } = useLanguage(); // Destructure t here
 
   const portfolioContext = locale === 'es' ? staticPortfolioContextES : staticPortfolioContextEN;
-  const chatbotName = locale === 'es' ? "Asistente de Brian" : "Brian's Assistant";
-  const welcomeMessage = locale === 'es' ? '¡Hola! Soy el asistente virtual de Brian. ¿En qué puedo ayudarte sobre su perfil o proyectos?' : "Hi there! I'm Brian's virtual assistant. How can I help you today regarding his profile or projects?";
-  const typingMessage = locale === 'es' ? 'Escribiendo...' : 'Typing...';
-  const inputPlaceholder = locale === 'es' ? 'Escribe tu mensaje...' : 'Type your message...';
-  const sendButtonSrText = locale === 'es' ? 'Enviar' : 'Send';
-  const openChatSrText = locale === 'es' ? 'Abrir chat' : 'Open chat';
-  const errorMessageText = locale === 'es' ? "Lo siento, ocurrió un error. Por favor, intenta de nuevo más tarde." : "Sorry, an error occurred. Please try again later.";
+  
+  // Use t() for all text, ensuring fallback if keys are missing temporarily
+  const chatbotName = t('chatbotWidget.chatbotName', { fallback: "Brian's Assistant" });
+  const welcomeMessage = t('chatbotWidget.welcomeMessage', { fallback: "Hi there! I'm Brian's virtual assistant. How can I help you today regarding his profile or projects?" });
+  const typingMessage = t('chatbotWidget.typingMessage', { fallback: 'Typing...' });
+  const inputPlaceholder = t('chatbotWidget.inputPlaceholder', { fallback: 'Type your message...' });
+  const sendButtonSrText = t('chatbotWidget.sendButtonSrText', { fallback: 'Send' });
+  const openChatSrText = t('chatbotWidget.openChatSrText', { fallback: 'Open chat' });
+  const errorMessageText = t('chatbotWidget.errorMessageText', { fallback: "Sorry, an error occurred. Please try again later." });
 
 
   useEffect(() => {
@@ -271,4 +273,3 @@ export function ChatbotWidget() {
     </>
   );
 }
-

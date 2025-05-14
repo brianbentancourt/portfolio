@@ -1,3 +1,4 @@
+
 "use client";
 import type { ReactNode } from 'react';
 import React, { createContext, useState, useContext, useEffect } from 'react';
@@ -12,7 +13,7 @@ type TranslationKeys = typeof en;
 interface LanguageContextType {
   locale: Locale;
   setLocale: (locale: Locale) => void;
-  t: (key: string, replacements?: Record<string, string | number>) => string;
+  t: (key: string, options?: { replacements?: Record<string, string | number>, fallback?: string }) => string;
 }
 
 const translations: Record<Locale, TranslationKeys> = { en, es };
@@ -43,17 +44,19 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     }
   }, [locale]);
 
-  const t = (key: string, replacements?: Record<string, string | number>): string => {
+  const t = (key: string, options?: { replacements?: Record<string, string | number>, fallback?: string }): string => {
+    const { replacements, fallback } = options || {};
     const keys = key.split('.');
     let text: any = translations[locale];
+    
     try {
       for (const k of keys) {
-        text = text[k];
+        text = text?.[k];
         if (text === undefined) throw new Error(`Translation key "${key}" not found for locale "${locale}"`);
       }
       if (typeof text !== 'string') {
          console.warn(`Translation for key "${key}" is not a string for locale "${locale}". Expected string, got ${typeof text}.`);
-         return key; 
+         return fallback ?? key; 
       }
       if (replacements) {
         Object.keys(replacements).forEach(placeholder => {
@@ -62,16 +65,16 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       }
       return text as string;
     } catch (error) {
-      console.warn((error as Error).message);
+      // console.warn((error as Error).message); // Less noisy console for missing keys if fallback is used
       // Fallback to English if key not found in current locale
       if (locale !== 'en') {
         text = translations['en'];
         try {
             for (const k of keys) {
-                text = text[k];
+                text = text?.[k];
                 if (text === undefined) throw new Error(); // Inner throw to break loop
             }
-            if (typeof text !== 'string') return key;
+            if (typeof text !== 'string') return fallback ?? key;
             if (replacements) {
                 Object.keys(replacements).forEach(placeholder => {
                     text = (text as string).replace(new RegExp(`{${placeholder}}`, 'g'), String(replacements[placeholder]));
@@ -79,11 +82,12 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
             }
             return text as string;
         } catch {
-            // If fallback also fails, return the key
-            return key;
+            // If fallback also fails, return the fallback or key
+            return fallback ?? key;
         }
       }
-      return key; // Return the key itself as a fallback
+      // If current locale is 'en' and key not found, return fallback or key
+      return fallback ?? key;
     }
   };
 

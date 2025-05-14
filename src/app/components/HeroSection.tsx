@@ -40,7 +40,7 @@ export function HeroSection() {
         <div className="relative group flex justify-center">
           <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
           <Image
-            src="/img/brian_cyberpunk.png" // Changed from picsum.photos to local image
+            src="/img/brian.png"
             alt={t('hero.name') + " - Profile"}
             width={400}
             height={400}
