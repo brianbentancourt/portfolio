@@ -16,8 +16,7 @@ import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { portfolioChatbot, PortfolioChatbotInput } from '@/ai/flows/portfolio-chatbot-flow';
 import { useLanguage } from '@/contexts/LanguageContext';
 
-const staticPortfolioContextEN = \`
-Brian Bentancourt is a passionate and results-driven software developer based in Uruguay.
+const staticPortfolioContextEN = `Brian Bentancourt is a passionate and results-driven software developer based in Uruguay.
 Contact: Yapeyú 1644, Paysandú, Uruguay | +59897313415 | brianbentancourt.com | brianbentancourt9@gmail.com
 Profiles: LinkedIn (linkedin.com/in/brianbentancourt) | GitHub (github.com/brianbentancourt) | Platzi (platzi.com/@brianbentancourt)
 
@@ -66,10 +65,9 @@ Freelance Projects:
 - Chenlo Seguros (chenloseguros.com): Website for Mapfre insurance broker, displaying their products and facilitating communication between the client and the seller.
 - Eléctrica Caporale (electricacaporale.com): Store for lighting and electrical products that features user registration authenticated with social networks, as well as a points accumulation system for purchases.
 - Personal Portfolio Website (this site): Showcases skills and projects. Built with Next.js, TypeScript, Tailwind CSS, ShadCN UI, GenAI chatbot.
-\`;
+`;
 
-const staticPortfolioContextES = \`
-Brian Bentancourt es un desarrollador de software apasionado y orientado a resultados, radicado en Uruguay.
+const staticPortfolioContextES = `Brian Bentancourt es un desarrollador de software apasionado y orientado a resultados, radicado en Uruguay.
 Contacto: Yapeyú 1644, Paysandú, Uruguay | +59897313415 | brianbentancourt.com | brianbentancourt9@gmail.com
 Perfiles: LinkedIn (linkedin.com/in/brianbentancourt) | GitHub (github.com/brianbentancourt) | Platzi (platzi.com/@brianbentancourt)
 
@@ -118,7 +116,7 @@ Proyectos Freelance:
 - Chenlo Seguros (chenloseguros.com): Sitio web para corredor de seguros Mapfre, mostrando sus productos y facilitando la comunicación entre el cliente y el vendedor.
 - Eléctrica Caporale (electricacaporale.com): Tienda de productos de iluminación y eléctricos que cuenta con registro de usuarios autenticado con redes sociales, así como un sistema de acumulación de puntos por compras.
 - Sitio Web de Portafolio Personal (este sitio): Muestra habilidades y proyectos. Construido con Next.js, TypeScript, Tailwind CSS, ShadCN UI, chatbot con GenAI.
-\`;
+`;
 
 interface Message {
   id: string;
@@ -284,3 +282,8 @@ export function ChatbotWidget() {
     </>
   );
 }
+    
+
+    
+
+    
