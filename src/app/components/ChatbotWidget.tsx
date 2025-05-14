@@ -146,8 +146,13 @@ export function ChatbotWidget() {
   }, [isOpen, messages.length, welcomeMessage]);
 
   useEffect(() => {
-    if (scrollAreaRef.current) {
-      scrollAreaRef.current.scrollTo({ top: scrollAreaRef.current.scrollHeight, behavior: 'smooth' });
+    const scrollAreaElement = scrollAreaRef.current;
+    if (scrollAreaElement) {
+      // The Viewport is the first child of the ScrollArea Root
+      const viewportElement = scrollAreaElement.children[0] as HTMLDivElement | undefined;
+      if (viewportElement) {
+        viewportElement.scrollTo({ top: viewportElement.scrollHeight, behavior: 'smooth' });
+      }
     }
   }, [messages]);
   
