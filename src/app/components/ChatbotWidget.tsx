@@ -16,93 +16,109 @@ import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { portfolioChatbot, PortfolioChatbotInput } from '@/ai/flows/portfolio-chatbot-flow';
 import { useLanguage } from '@/contexts/LanguageContext';
 
-// This context is a simplified representation. In a real app, derive this from a single source of truth.
-const staticPortfolioContextEN = `
+const staticPortfolioContextEN = \`
 Brian Bentancourt is a passionate and results-driven software developer based in Uruguay.
-He specializes in creating engaging and user-friendly digital experiences using modern web technologies and AI integration.
+Contact: Yapeyú 1644, Paysandú, Uruguay | +59897313415 | brianbentancourt.com | brianbentancourt9@gmail.com
+Profiles: LinkedIn (linkedin.com/in/brianbentancourt) | GitHub (github.com/brianbentancourt) | Platzi (platzi.com/@brianbentancourt)
+
+About:
+As a software developer, I'm excited to see the world moving towards AI, and it's a direction I would like to follow. I work to create innovative and efficient solutions that meet client needs and follow new industry trends. I focus on good coding practices and improving user experience to deliver high-quality products that meet and go beyond the expectations of end users. My desire to learn and improve has helped me stay updated, especially in the field of AI, and I am eager to bring this passion and experience to support your organization's success.
 
 Skills:
-- Frontend: React, Next.js, TypeScript, Tailwind CSS
-- Backend: Node.js, Python
-- Design: Figma
-- Other: AI Integration, RESTful APIs, MERN stack, MongoDB, PostgreSQL, WordPress, Git, Agile methodologies.
+- JavaScript: 8 years
+- Google Cloud: 7 years
+- .Net: 8 years
+- SQL Server: 8 years
+- Node.js: 7 years
+- React.js: 7 years
+- Firebase: 7 years
+- Git: 7 years
+- PowerBI: 3 years
+- React Native: 1 year
+- Next.js: 1 year
+- Python: 1 year
+- Github Copilot: 1 year
+- Watsonx: 1 year
+- Scikit-learn: 1 year
 
 Experience:
-1. Lead Full-Stack Engineer & AI Specialist - Innovatech Solutions / Freelance Consultant (March 2022 - Present)
-   - Spearheaded the design and development of enterprise-level web applications, incorporating advanced AI/ML models for enhanced functionality.
-   - Led cross-functional teams in agile environments, ensuring timely delivery of high-quality software products.
-   - Consulted with clients to define technical requirements and deliver custom software solutions that meet business objectives.
-   - Continuously researched and integrated emerging technologies to drive innovation and efficiency.
-2. Senior Frontend Developer - Tech Solutions Inc. (Jan 2021 - Feb 2022)
-   - Led development of high-performance, client-facing web applications using React, Next.js, and TypeScript.
-   - Collaborated closely with UX/UI designers and product managers to implement responsive, accessible, and user-centric interfaces.
-   - Mentored junior developers, conducted code reviews, and promoted best practices in frontend development, improving team velocity by 15%.
-   - Pioneered the integration of AI-powered features for content personalization and recommendation engines, significantly improving user engagement metrics.
-3. Full-Stack Developer - Web Innovators Co. (Jun 2018 - Dec 2020)
-   - Developed and maintained full-stack applications using MERN stack (MongoDB, Express.js, React, Node.js).
-   - Designed and implemented RESTful APIs for various microservices, ensuring scalability and reliability.
-   - Contributed to database design and optimization (MongoDB), improving query performance by 25%.
-   - Actively participated in an Agile development process, including sprint planning, daily stand-ups, and retrospectives.
-4. Junior Web Developer - Digital Creations Agency (Aug 2016 - May 2018)
-   - Assisted in the development of WordPress websites and custom PHP themes for diverse clients.
-   - Implemented responsive frontend designs from mockups using HTML5, CSS3, and JavaScript (jQuery).
-   - Performed website maintenance, bug-fixing, and content updates, ensuring 99% uptime for client sites.
-   - Gained foundational experience with version control systems (Git) and collaborative development workflows.
+1. Senior Software Developer - SONDA (Since 06/2022)
+   - Full stack development and team mentoring.
+2. Software Developer - De Larrobla & Asociados (01/2021 - 06/2022)
+   - Working on financial systems for banks in Peru and Uruguay.
+3. Software Developer - Actualred (09/2016 - 12/2020)
+   - Developing for a primary project and collaborating on other company projects.
+   - Self-training to improve programming skills.
+   - Successfully launched the company's first mobile application for a major client. Developed with Xamarin.
+   - Expert in customer service with excellent problem-solving abilities and effective production system organization.
+4. Service Desk - Urudata S.A. (10/2014 - 09/2016)
+   - Working in a large team, providing support in networks, printers, user access to platforms, automated backups, incident resolution through ticketing platform.
 
-Projects:
-- AI-Powered Task Manager: A smart task management application that uses AI to prioritize and suggest tasks. Built with Next.js, Python (FastAPI), AI/ML, and PostgreSQL.
-- Artisan E-commerce Platform: An online marketplace connecting local artisans with customers worldwide. Developed using React, Node.js (Express), MongoDB, and Stripe integration.
-- Interactive Data Visualization Tool: A web-based tool for creating and sharing interactive charts and dashboards. Built with Vue.js, D3.js, and Firebase.
-- Personal Portfolio Website (this site): Showcases skills and projects. Built with Next.js 14, TypeScript, Tailwind CSS, ShadCN UI, and features a GenAI-powered text optimizer.
-- Agustyle Barbershop Booking System: Streamlined appointment booking for Agustyle barbershop with an online system featuring social login (Facebook/Google) and calendar integration. Administrators can manage appointments, and clients can add reminders. Link: https://agustyle.com/
-- Food Store System: A web system for fast food preparation and delivery with roles for kitchen, delivery, and admin. Features Google login, online purchasing, real-time order tracking, stock control, customer raffles, map visualization, real-time delivery wallet, and sales/delivery time reporting. Main system link: https://foodstoreuy.web.app/. Client Implementations: Burger House (https://burgerhouseuy.com/), Befe Burgers (https://befeburgers.com/), Pio Pio (In business process) (https://piopio-paysandu.web.app/).
+Education:
+- Programmer Analyst - CTC ORT (Completed 12/2017)
+- Courses and careers: See brianbentancourt.com/courses
+- Bachillerato Tecnológico Informático - Informática ITSP (Completed 12/2012)
 
-Contact: brianbentancourt9@gmail.com,+59897313415
-`;
+Freelance Projects:
+- Agustyle (agustyle.com): System for managing reservations in a barbershop. Agustyle barbershop streamlined its appointment booking process by implementing an online system. Clients can now easily view available time slots and book appointments by registering through Facebook or Google. Administrators have the ability to manage and cancel appointments as needed, and clients can add reminders to their personal calendars upon booking. This solution has resulted in a more consistent schedule throughout the month and a significant increase in reservations, optimizing scheduling efficiency for both the barbershop and its clientele.
+- Transportes Villasboas (transportesvillasboas.web.app): System for managing clients, trips, and truck maintenance.
+- Food Store (foodstoreuy.web.app): Order management system, products, delivery drivers, and cash register, significantly improving each internal process of the company. A web system has been developed with the aim of improving the process of fast food preparation and delivery. The system encompasses various roles for kitchen, delivery, and administration. Its implementation arose from the overwhelming influx of orders experienced by a local company. The system significantly aided in streamlining and expediting the delivery process, ensuring prompt service to customers in record time. Some of the main features of the system include: Customer registration through Google accounts. Online purchases for convenient ordering. Real-time order tracking. Automatic stock control to maintain inventory levels. Raffles for registered customers as an additional incentive. Visualization of orders on a map by administrators and delivery personnel. Real-time wallet for deliveries. Charts and reports generation to analyze sales and average delivery times. Following its remarkable success, in 2023, a new client from a different location began utilizing the system. Client Implementations: Burger House (burgerhouseuy.com), Befe Burgers (befeburgers.com), Pio Pio (piopio-paysandu.web.app - In business process).
+- Chenlo Seguros (chenloseguros.com): Website for Mapfre insurance broker, displaying their products and facilitating communication between the client and the seller.
+- Eléctrica Caporale (electricacaporale.com): Store for lighting and electrical products that features user registration authenticated with social networks, as well as a points accumulation system for purchases.
+- Personal Portfolio Website (this site): Showcases skills and projects. Built with Next.js, TypeScript, Tailwind CSS, ShadCN UI, GenAI chatbot.
+\`;
 
-const staticPortfolioContextES = `
+const staticPortfolioContextES = \`
 Brian Bentancourt es un desarrollador de software apasionado y orientado a resultados, radicado en Uruguay.
-Se especializa en crear experiencias digitales atractivas y fáciles de usar utilizando tecnologías web modernas e integración de IA.
+Contacto: Yapeyú 1644, Paysandú, Uruguay | +59897313415 | brianbentancourt.com | brianbentancourt9@gmail.com
+Perfiles: LinkedIn (linkedin.com/in/brianbentancourt) | GitHub (github.com/brianbentancourt) | Platzi (platzi.com/@brianbentancourt)
+
+Sobre Mí:
+Como desarrollador de software, me entusiasma ver cómo el mundo avanza hacia la IA, y es una dirección que me gustaría seguir. Trabajo para crear soluciones innovadoras y eficientes que satisfagan las necesidades del cliente y sigan las nuevas tendencias de la industria. Me enfoco en buenas prácticas de codificación y en mejorar la experiencia del usuario para entregar productos de alta calidad que cumplan y superen las expectativas de los usuarios finales. Mi deseo de aprender y mejorar me ha ayudado a mantenerme actualizado, especialmente en el campo de la IA, y estoy ansioso por aportar esta pasión y experiencia para apoyar el éxito de su organización.
 
 Habilidades:
-- Frontend: React, Next.js, TypeScript, Tailwind CSS
-- Backend: Node.js, Python
-- Diseño: Figma
-- Otras: Integración de IA, APIs RESTful, stack MERN, MongoDB, PostgreSQL, WordPress, Git, metodologías Agile.
+- JavaScript: 8 años
+- Google Cloud: 7 años
+- .Net: 8 años
+- SQL Server: 8 años
+- Node.js: 7 años
+- React.js: 7 años
+- Firebase: 7 años
+- Git: 7 años
+- PowerBI: 3 años
+- React Native: 1 año
+- Next.js: 1 año
+- Python: 1 año
+- Github Copilot: 1 año
+- Watsonx: 1 año
+- Scikit-learn: 1 año
 
 Experiencia:
-1. Ingeniero Full-Stack Principal y Especialista en IA - Innovatech Solutions / Consultor Freelance (Marzo 2022 - Presente)
-   - Lideró el diseño y desarrollo de aplicaciones web a nivel empresarial, incorporando modelos avanzados de IA/ML para mejorar la funcionalidad.
-   - Dirigió equipos multifuncionales en entornos ágiles, asegurando la entrega oportuna de productos de software de alta calidad.
-   - Consultó con clientes para definir requisitos técnicos y entregar soluciones de software personalizadas que cumplan con los objetivos comerciales.
-   - Investigó e integró continuamente tecnologías emergentes para impulsar la innovación y la eficiencia.
-2. Desarrollador Frontend Senior - Tech Solutions Inc. (Ene 2021 - Feb 2022)
-   - Lideró el desarrollo de aplicaciones web de alto rendimiento para clientes utilizando React, Next.js y TypeScript.
-   - Colaboró estrechamente con diseñadores UX/UI y gerentes de producto para implementar interfaces responsivas, accesibles y centradas en el usuario.
-   - Mentorizó a desarrolladores junior, realizó revisiones de código y promovió las mejores prácticas en el desarrollo frontend, mejorando la velocidad del equipo en un 15%.
-   - Fue pionero en la integración de funciones impulsadas por IA para la personalización de contenido y motores de recomendación, mejorando significativamente las métricas de participación del usuario.
-3. Desarrollador Full-Stack - Web Innovators Co. (Jun 2018 - Dic 2020)
-   - Desarrolló y mantuvo aplicaciones full-stack utilizando el stack MERN (MongoDB, Express.js, React, Node.js).
-   - Diseñó e implementó APIs RESTful para varios microservicios, asegurando escalabilidad y confiabilidad.
-   - Contribuyó al diseño y optimización de bases de datos (MongoDB), mejorando el rendimiento de las consultas en un 25%.
-   - Participó activamente en un proceso de desarrollo Agile, incluyendo la planificación de sprints, reuniones diarias y retrospectivas.
-4. Desarrollador Web Junior - Digital Creations Agency (Ago 2016 - May 2018)
-   - Asistió en el desarrollo de sitios web de WordPress y temas PHP personalizados para diversos clientes.
-   - Implementó diseños frontend responsivos a partir de maquetas utilizando HTML5, CSS3 y JavaScript (jQuery).
-   - Realizó mantenimiento de sitios web, corrección de errores y actualizaciones de contenido, asegurando un tiempo de actividad del 99% para los sitios de los clientes.
-   - Adquirió experiencia fundamental con sistemas de control de versiones (Git) y flujos de trabajo de desarrollo colaborativo.
+1. Desarrollador de Software Senior - SONDA (Desde 06/2022)
+   - Desarrollo full stack y mentoría de equipos.
+2. Desarrollador de Software - De Larrobla & Asociados (01/2021 - 06/2022)
+   - Trabajó en sistemas financieros para bancos en Perú y Uruguay.
+3. Desarrollador de Software - Actualred (09/2016 - 12/2020)
+   - Desarrollo para un proyecto principal y colaboración en otros proyectos de la empresa.
+   - Autoformación para mejorar habilidades de programación.
+   - Lanzó con éxito la primera aplicación móvil de la empresa para un cliente importante, desarrollada con Xamarin.
+   - Experto en servicio al cliente con excelentes habilidades para resolver problemas y organización efectiva de sistemas de producción.
+4. Mesa de Ayuda - Urudata S.A. (10/2014 - 09/2016)
+   - Trabajó en un equipo grande, brindando soporte en redes, impresoras, acceso de usuarios a plataformas, copias de seguridad automatizadas y resolución de incidentes a través de plataforma de tickets.
 
-Proyectos:
-- Gestor de Tareas con IA: Una aplicación inteligente de gestión de tareas que utiliza IA para priorizar y sugerir tareas. Construida con Next.js, Python (FastAPI), IA/ML y PostgreSQL.
-- Plataforma de E-commerce Artesanal: Un mercado en línea que conecta a artesanos locales con clientes de todo el mundo. Desarrollado con React, Node.js (Express), MongoDB e integración con Stripe.
-- Herramienta Interactiva de Visualización de Datos: Una herramienta basada en web para crear y compartir gráficos y dashboards interactivos. Construida con Vue.js, D3.js y Firebase.
-- Sitio Web de Portafolio Personal (este sitio): Muestra habilidades y proyectos. Construido con Next.js 14, TypeScript, Tailwind CSS, ShadCN UI y cuenta con un optimizador de texto impulsado por GenAI.
-- Sistema de Reservas para Barbería Agustyle: Agilizó la reserva de citas para la barbería Agustyle con un sistema en línea que incluye inicio de sesión social (Facebook/Google) e integración de calendario. Los administradores pueden gestionar citas y los clientes añadir recordatorios. Enlace: https://agustyle.com/
-- Sistema Food Store: Un sistema web para la preparación y entrega de comida rápida con roles para cocina, reparto y administración. Incluye inicio de sesión con Google, compras en línea, seguimiento de pedidos en tiempo real, control de stock, sorteos para clientes, visualización de pedidos en mapa, billetera en tiempo real para repartidores y reportes de ventas/tiempos de entrega. Enlace principal del sistema: https://foodstoreuy.web.app/. Implementaciones en Clientes: Burger House (https://burgerhouseuy.com/), Befe Burgers (https://befeburgers.com/), Pio Pio (En proceso de negocio) (https://piopio-paysandu.web.app/).
+Educación:
+- Analista Programador - CTC ORT (Completado 12/2017)
+- Cursos y carreras: Ver brianbentancourt.com/courses
+- Bachillerato Tecnológico Informático - Informática ITSP (Completado 12/2012)
 
-Contacto: brianbentancourt9@gmail.com,+59897313415
-`;
-
+Proyectos Freelance:
+- Agustyle (agustyle.com): Sistema para gestión de reservas en una barbería. La barbería Agustyle optimizó su proceso de reserva de citas implementando un sistema en línea. Los clientes ahora pueden ver fácilmente los horarios disponibles y reservar citas registrándose a través de Facebook o Google. Los administradores tienen la capacidad de gestionar y cancelar citas según sea necesario, y los clientes pueden agregar recordatorios a sus calendarios personales al reservar. Esta solución ha resultado en un horario más consistente durante todo el mes y un aumento significativo en las reservas, optimizando la eficiencia de la programación tanto para la barbería como para su clientela.
+- Transportes Villasboas (transportesvillasboas.web.app): Sistema para gestión de clientes, viajes y mantenimiento de camiones.
+- Food Store (foodstoreuy.web.app): Sistema de gestión de pedidos, productos, repartidores y caja registradora, mejorando significativamente cada proceso interno de la empresa. Se ha desarrollado un sistema web con el objetivo de mejorar el proceso de preparación y entrega de comida rápida. El sistema abarca varios roles para cocina, reparto y administración. Su implementación surgió de la abrumadora afluencia de pedidos experimentada por una empresa local. El sistema ayudó significativamente a agilizar y acelerar el proceso de entrega, asegurando un servicio rápido a los clientes en tiempo récord. Algunas de las principales características del sistema incluyen: Registro de clientes a través de cuentas de Google. Compras en línea para pedidos convenientes. Seguimiento de pedidos en tiempo real. Control automático de stock para mantener los niveles de inventario. Sorteos para clientes registrados como incentivo adicional. Visualización de pedidos en un mapa por administradores y personal de reparto. Billetera en tiempo real para entregas. Generación de gráficos e informes para analizar ventas y tiempos promedio de entrega. Tras su notable éxito, en 2023, un nuevo cliente de otra localidad comenzó a utilizar el sistema. Implementaciones en Clientes: Burger House (burgerhouseuy.com), Befe Burgers (befeburgers.com), Pio Pio (piopio-paysandu.web.app - En proceso de negocio).
+- Chenlo Seguros (chenloseguros.com): Sitio web para corredor de seguros Mapfre, mostrando sus productos y facilitando la comunicación entre el cliente y el vendedor.
+- Eléctrica Caporale (electricacaporale.com): Tienda de productos de iluminación y eléctricos que cuenta con registro de usuarios autenticado con redes sociales, así como un sistema de acumulación de puntos por compras.
+- Sitio Web de Portafolio Personal (este sitio): Muestra habilidades y proyectos. Construido con Next.js, TypeScript, Tailwind CSS, ShadCN UI, chatbot con GenAI.
+\`;
 
 interface Message {
   id: string;
@@ -110,12 +126,8 @@ interface Message {
   sender: 'user' | 'bot';
 }
 
-// Function to convert Markdown links to HTML anchor tags
 const renderMarkdownLinks = (text: string): string => {
   const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
-  // Sanitize text before inserting to prevent XSS if it's not just links.
-  // For this specific case, we assume the AI only produces markdown links or plain text.
-  // A more robust solution would use a proper Markdown parser and sanitizer.
   return text.replace(linkRegex, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">$1</a>');
 };
 
@@ -127,11 +139,10 @@ export function ChatbotWidget() {
   const [isLoading, setIsLoading] = useState(false);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-  const { locale, t } = useLanguage(); // Destructure t here
+  const { locale, t } = useLanguage(); 
 
   const portfolioContext = locale === 'es' ? staticPortfolioContextES : staticPortfolioContextEN;
   
-  // Use t() for all text, ensuring fallback if keys are missing temporarily
   const chatbotName = t('chatbotWidget.chatbotName', { fallback: "Brian's Assistant" });
   const welcomeMessage = t('chatbotWidget.welcomeMessage', { fallback: "Hi there! I'm Brian's virtual assistant. How can I help you today regarding his profile or projects?" });
   const typingMessage = t('chatbotWidget.typingMessage', { fallback: 'Typing...' });
@@ -161,7 +172,7 @@ export function ChatbotWidget() {
   
   useEffect(() => {
     if (isOpen && inputRef.current) {
-      setTimeout(() => inputRef.current?.focus(), 100); // Delay focus slightly for transition
+      setTimeout(() => inputRef.current?.focus(), 100); 
     }
   }, [isOpen]);
 
@@ -188,7 +199,6 @@ export function ChatbotWidget() {
       setMessages(prev => [...prev, errorMessage]);
     } finally {
       setIsLoading(false);
-      // Slight delay to ensure the new message is rendered before focusing
       setTimeout(() => inputRef.current?.focus(), 0);
     }
   };
@@ -196,7 +206,7 @@ export function ChatbotWidget() {
   return (
     <>
       <Button
-        id="chatbot-trigger-button" // Added ID here
+        id="chatbot-trigger-button"
         onClick={() => setIsOpen(true)}
         className="fixed bottom-6 right-6 rounded-full w-14 h-14 p-0 shadow-xl z-50 flex items-center justify-center"
         aria-label={openChatSrText}
@@ -274,4 +284,3 @@ export function ChatbotWidget() {
     </>
   );
 }
-

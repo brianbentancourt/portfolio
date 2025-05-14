@@ -19,69 +19,54 @@ import {
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
-// User: Please replace the content of this array with your actual education and certifications.
-// Ensure certificateUrl points to the direct image URL of the certificate.
 const educationData: EducationEntryType[] = [
   {
     id: "edu_ort_analyst",
-    title: "Analista Programador",
-    institution: "Universidad ORT Uruguay",
-    period: "2017 - 2020",
-    description: "Graduated as a Programmer Analyst, acquiring a solid foundation in software development, algorithms, data structures, and database management. Completed various projects applying learned methodologies.",
+    title: "Programmer Analyst",
+    institution: "Universidad ORT Uruguay (CTC ORT)",
+    period: "Completed 12/2017",
+    description: "Graduated as a Programmer Analyst, acquiring a solid foundation in software development, algorithms, data structures, and database management.",
     details: [
-      "Object-Oriented Programming (Java, C#).",
-      "Web Development (HTML, CSS, JavaScript, PHP).",
-      "Database Design and SQL (MySQL, SQL Server).",
-      "Software Engineering Principles and Agile Methodologies.",
+      "Object-Oriented Programming.",
+      "Web Development fundamentals.",
+      "Database Design and SQL.",
+      "Software Engineering Principles.",
     ],
-    logoUrl: "https://picsum.photos/seed/ortlogo/60/60",
+    logoUrl: "https://placehold.co/60x60.png",
     logoAiHint: "university campus",
-    certificateUrl: "https://picsum.photos/seed/cert_ort_analyst/850/1100", 
+    certificateUrl: "https://placehold.co/850x1100.png",
     certificateImageAiHint: "university degree certificate",
   },
   {
-    id: "edu_coderhouse_fullstack",
-    title: "Full Stack Web Development",
-    institution: "Coderhouse",
-    period: "Mar 2021 - Jul 2021",
-    description: "Intensive bootcamp focused on the MERN stack (MongoDB, Express.js, React, Node.js) and complementary technologies for building modern web applications.",
-    details: [
-      "React.js for frontend development, including hooks and state management.",
-      "Node.js and Express.js for backend API development.",
-      "MongoDB for NoSQL database interactions.",
-      "Version control with Git and GitHub.",
-    ],
-    logoUrl: "https://picsum.photos/seed/coderhouselogo/60/60",
-    logoAiHint: "coding bootcamp",
-    certificateUrl: "https://picsum.photos/seed/cert_coder_fullstack/850/1100",
-    certificateImageAiHint: "web development certificate",
+    id: "edu_itsp_bachillerato",
+    title: "Bachillerato Tecnológico Informático",
+    institution: "Informática ITSP",
+    period: "Completed 12/2012",
+    description: "Completed technical high school degree with a specialization in informatics, providing early exposure to computer science concepts and programming.",
+    logoUrl: "https://placehold.co/60x60.png",
+    logoAiHint: "technical school",
+    certificateUrl: "https://placehold.co/850x1100.png",
+    certificateImageAiHint: "high school diploma technology",
   },
-   {
-    id: "edu_coderhouse_react",
-    title: "React Development",
-    institution: "Coderhouse",
-    period: "Nov 2020 - Jan 2021",
-    description: "Specialized course in React.js, diving deep into component-based architecture, state management, routing, and integration with APIs.",
+  {
+    id: "edu_platzi_courses",
+    title: "Various Online Courses",
+    institution: "Platzi & other platforms (brianbentancourt.com/courses)",
+    period: "Ongoing",
+    description: "Continuously updating skills through online courses on platforms like Platzi, focusing on emerging technologies and advanced development topics.",
     details: [
-        "Advanced React concepts: Context API, Redux (basics).",
-        "Building responsive user interfaces.",
-        "Testing React components.",
-        "Deployment strategies for React applications."
+        "Specializations in web development, AI, cloud technologies, and more.",
+        "Refer to brianbentancourt.com/courses for a detailed list."
     ],
-    logoUrl: "https://picsum.photos/seed/coderreactlogo/60/60",
-    logoAiHint: "react logo",
-    certificateUrl: "https://picsum.photos/seed/cert_coder_react/850/1100",
-    certificateImageAiHint: "react course certificate",
+    logoUrl: "https://placehold.co/60x60.png", // Generic logo
+    logoAiHint: "online learning",
+    // No single certificate URL for ongoing learning, can link to the courses page if desired.
   },
 ];
 
-// Component to render DialogContent with image loading state
 function CertificateDialogContent({ entry, t }: { entry: EducationEntryType, t: (key: string, replacements?: Record<string, string | number>) => string }) {
   const [isImageLoading, setIsImageLoading] = React.useState(true);
 
-  // Reset loading state when dialog opens (entry.certificateUrl changes or dialog visibility changes)
-  // This specific implementation relies on DialogContent re-rendering which usually happens.
-  // A more robust way for complex scenarios might involve onOpenChange from Dialog.
   React.useEffect(() => {
     setIsImageLoading(true);
   }, [entry.certificateUrl]);
@@ -97,22 +82,26 @@ function CertificateDialogContent({ entry, t }: { entry: EducationEntryType, t: 
       </DialogHeader>
       <ScrollArea className="flex-grow min-h-0 px-6 py-2">
         <div className="relative aspect-[calc(8.5/11)] w-full mx-auto max-w-full max-h-[calc(80vh-120px)] bg-muted rounded-md overflow-hidden">
-          {isImageLoading && (
+          {isImageLoading && entry.certificateUrl && (
             <div className="absolute inset-0 flex items-center justify-center bg-muted/70">
               <Loader2 className="h-12 w-12 animate-spin text-primary" />
             </div>
           )}
-          {entry.certificateUrl && (
+          {entry.certificateUrl ? (
              <Image
               src={entry.certificateUrl}
               alt={t('educationSection.certificateModalTitle', { title: entry.title })}
               fill
               className={`object-contain p-1 transition-opacity duration-300 ${isImageLoading ? 'opacity-0' : 'opacity-100'}`}
               onLoad={() => setIsImageLoading(false)}
-              onError={() => setIsImageLoading(false)} // Stop loading on error too
+              onError={() => setIsImageLoading(false)}
               data-ai-hint={entry.certificateImageAiHint || "certificate document"}
-              unoptimized // If certificates are external and not optimized by Next/Image
+              unoptimized 
             />
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
+              No certificate image available.
+            </div>
           )}
         </div>
       </ScrollArea>
@@ -177,6 +166,16 @@ export function EducationSection() {
                 </Dialog>
               </CardFooter>
             )}
+             {entry.id === "edu_platzi_courses" && !entry.certificateUrl && ( // Specific handling for courses link
+              <CardFooter>
+                <Button variant="outline" size="sm" asChild>
+                  <Link href="http://brianbentancourt.com/courses" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    View Courses
+                  </Link>
+                </Button>
+              </CardFooter>
+            )}
           </Card>
         ))}
       </div>
@@ -191,4 +190,3 @@ export function EducationSection() {
     </Section>
   );
 }
-

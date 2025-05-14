@@ -8,50 +8,33 @@ import type { DiplomaType } from "@/lib/types";
 import { Award } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-// User: Please replace this with your actual diploma data.
-// The imageUrls should point to your diplomas stored in Firebase Storage or any other accessible URL.
 const sampleDiplomas: DiplomaType[] = [
   {
     id: "analista-programador-ort",
-    title: "Analista Programador",
-    issuer: "Universidad ORT Uruguay",
-    date: "2020",
-    imageUrl: "https://picsum.photos/seed/ortdiploma/600/420",
+    title: "Programmer Analyst",
+    issuer: "Universidad ORT Uruguay (CTC ORT)",
+    date: "December 2017",
+    imageUrl: "https://placehold.co/600x420.png", // Placeholder, to be replaced with actual diploma image
     imageAiHint: "university diploma"
   },
   {
-    id: "fullstack-coderhouse",
-    title: "Full Stack Web Development",
-    issuer: "Coderhouse",
-    date: "Jul 2021",
-    imageUrl: "https://picsum.photos/seed/coderhousedip1/600/420",
-    imageAiHint: "coding certificate"
+    id: "bachillerato-itsp",
+    title: "Bachillerato Tecnológico Informático",
+    issuer: "Informática ITSP",
+    date: "December 2012",
+    imageUrl: "https://placehold.co/600x420.png", // Placeholder
+    imageAiHint: "technical diploma"
   },
-  {
-    id: "react-coderhouse",
-    title: "React Development Course",
-    issuer: "Coderhouse",
-    date: "Jan 2021",
-    imageUrl: "https://picsum.photos/seed/coderhousedip2/600/420",
-    imageAiHint: "react certificate"
-  },
-  {
-    id: "js-coderhouse",
-    title: "JavaScript Programming",
-    issuer: "Coderhouse",
-    date: "Sep 2020",
-    imageUrl: "https://picsum.photos/seed/coderhousedip3/600/420",
-    imageAiHint: "javascript certificate"
-  },
-   {
-    id: "webdev-coderhouse",
-    title: "Web Development Course",
-    issuer: "Coderhouse",
-    date: "Jul 2020",
-    imageUrl: "https://picsum.photos/seed/coderhousedip4/600/420",
-    imageAiHint: "web certificate"
-  },
-  // Add more diplomas here
+  // Add more diplomas here if available, e.g., from brianbentancourt.com/courses
+  // Example:
+  // {
+  //   id: "specific-course-platzi",
+  //   title: "Advanced React Course",
+  //   issuer: "Platzi",
+  //   date: "2023",
+  //   imageUrl: "https://placehold.co/600x420.png",
+  //   imageAiHint: "online course certificate"
+  // },
 ];
 
 export default function DiplomasPage() {
@@ -73,7 +56,7 @@ export default function DiplomasPage() {
             </div>
           ) : (
             <p className="text-center text-muted-foreground text-lg">
-              No diplomas to display at the moment. Please check back later.
+              No diplomas to display at the moment. Please check back later or visit brianbentancourt.com/courses.
             </p>
           )}
         </Section>

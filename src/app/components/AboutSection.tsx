@@ -4,75 +4,64 @@ import { Section } from "@/components/layout/Section";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import type { SkillType, ExperienceType } from "@/lib/types";
-import { User, Code, Briefcase, Brain, Palette } from "lucide-react"; 
+import { User, Code, Briefcase, Brain, Palette, Database, Cloud, GitBranch, BarChartBig, Smartphone, Sigma } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-// Skills data remains in English for now as per plan.
-// Translation for these would require more complex data management.
 const skills: SkillType[] = [
-  { id: "react", name: "React", icon: Code },
+  { id: "javascript", name: "JavaScript", icon: Code },
+  { id: "react", name: "React / React Native", icon: Code },
   { id: "nextjs", name: "Next.js", icon: Code },
-  { id: "typescript", name: "TypeScript", icon: Code },
-  { id: "tailwindcss", name: "Tailwind CSS", icon: Palette },
   { id: "nodejs", name: "Node.js", icon: Code },
   { id: "python", name: "Python", icon: Code },
-  { id: "figma", name: "Figma", icon: Palette },
-  { id: "ai", name: "AI Integration", icon: Brain },
-  { id: "sql", name: "SQL (PostgreSQL, MySQL)", icon: Code },
-  { id: "nosql", name: "NoSQL (MongoDB, Firebase)", icon: Code },
-  { id: "cloud", name: "Cloud (Firebase, GCP)", icon: Code },
-  { id: "docker", name: "Docker", icon: Code },
+  { id: "dotnet", name: ".NET", icon: Code },
+  { id: "sql", name: "SQL (SQL Server)", icon: Database },
+  { id: "firebase", name: "Firebase", icon: Database },
+  { id: "gcp", name: "Google Cloud", icon: Cloud },
+  { id: "git", name: "Git", icon: GitBranch },
+  { id: "typescript", name: "TypeScript", icon: Code },
+  { id: "tailwindcss", name: "Tailwind CSS", icon: Palette },
+  { id: "ai", name: "AI (Watsonx, Scikit-learn, Copilot)", icon: Brain },
+  { id: "powerbi", name: "Power BI", icon: BarChartBig },
 ];
 
-// User: Please replace the content of this array with your actual professional experience from LinkedIn.
-// The following are examples to guide you.
 const experiences: ExperienceType[] = [
   {
-    id: "exp_current", 
-    title: "Lead Full-Stack Engineer & AI Specialist", 
-    company: "Innovatech Solutions / Freelance Consultant", 
-    duration: "March 2022 - Present", 
+    id: "exp_sonda",
+    title: "Senior Software Developer",
+    company: "SONDA",
+    duration: "June 2022 - Present",
     descriptionItems: [
-      "Spearheaded the design and development of enterprise-level web applications, incorporating advanced AI/ML models for enhanced functionality.",
-      "Led cross-functional teams in agile environments, ensuring timely delivery of high-quality software products.",
-      "Consulted with clients to define technical requirements and deliver custom software solutions that meet business objectives.",
-      "Continuously researched and integrated emerging technologies to drive innovation and efficiency."
+      "Full stack development and team mentoring.",
     ],
   },
   {
-    id: "exp1",
-    title: "Senior Frontend Developer",
-    company: "Tech Solutions Inc.",
-    duration: "Jan 2021 - Feb 2022", 
+    id: "exp_delarrobla",
+    title: "Software Developer",
+    company: "De Larrobla & Asociados",
+    duration: "January 2021 - June 2022",
     descriptionItems: [
-      "Led development of high-performance, client-facing web applications using React, Next.js, and TypeScript.",
-      "Collaborated closely with UX/UI designers and product managers to implement responsive, accessible, and user-centric interfaces.",
-      "Mentored junior developers, conducted code reviews, and promoted best practices in frontend development, improving team velocity by 15%.",
-      "Pioneered the integration of AI-powered features for content personalization and recommendation engines, significantly improving user engagement metrics."
+      "Worked on financial systems for banks in Peru and Uruguay.",
     ],
   },
   {
-    id: "exp2",
-    title: "Full-Stack Developer",
-    company: "Web Innovators Co.",
-    duration: "Jun 2018 - Dec 2020",
+    id: "exp_actualred",
+    title: "Software Developer",
+    company: "Actualred",
+    duration: "September 2016 - December 2020",
     descriptionItems: [
-      "Developed and maintained full-stack applications using MERN stack (MongoDB, Express.js, React, Node.js).",
-      "Designed and implemented RESTful APIs for various microservices, ensuring scalability and reliability.",
-      "Contributed to database design and optimization (MongoDB), improving query performance by 25%.",
-      "Actively participated in an Agile development process, including sprint planning, daily stand-ups, and retrospectives."
+      "Developed for a primary project and collaborated on other company projects.",
+      "Engaged in self-training to improve programming skills.",
+      "Successfully launched the company's first mobile application for a major client, developed with Xamarin.",
+      "Provided expert customer service with excellent problem-solving abilities and effective production system organization.",
     ],
   },
   {
-    id: "exp3",
-    title: "Junior Web Developer",
-    company: "Digital Creations Agency",
-    duration: "Aug 2016 - May 2018",
+    id: "exp_urudata",
+    title: "Service Desk",
+    company: "Urudata S.A.",
+    duration: "October 2014 - September 2016",
     descriptionItems: [
-      "Assisted in the development of WordPress websites and custom PHP themes for diverse clients.",
-      "Implemented responsive frontend designs from mockups using HTML5, CSS3, and JavaScript (jQuery).",
-      "Performed website maintenance, bug-fixing, and content updates, ensuring 99% uptime for client sites.",
-      "Gained foundational experience with version control systems (Git) and collaborative development workflows."
+      "Worked in a large team, providing support in networks, printers, user access to platforms, automated backups, and incident resolution through a ticketing platform.",
     ],
   },
 ];
@@ -135,4 +124,3 @@ export function AboutSection() {
     </Section>
   );
 }
-
