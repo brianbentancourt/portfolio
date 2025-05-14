@@ -148,10 +148,11 @@ export function ChatbotWidget() {
   useEffect(() => {
     const scrollAreaElement = scrollAreaRef.current;
     if (scrollAreaElement) {
-      // The Viewport is the first child of the ScrollArea Root
       const viewportElement = scrollAreaElement.children[0] as HTMLDivElement | undefined;
       if (viewportElement) {
-        viewportElement.scrollTo({ top: viewportElement.scrollHeight, behavior: 'smooth' });
+        setTimeout(() => {
+          viewportElement.scrollTo({ top: viewportElement.scrollHeight, behavior: 'smooth' });
+        }, 0);
       }
     }
   }, [messages]);
