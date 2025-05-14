@@ -8,6 +8,7 @@ export interface ProjectType {
   liveLink?: string;
   sourceLink?: string;
   imageAiHint?: string;
+  clientImplementations?: Array<{ name: string; link: string; status?: string }>;
 }
 
 export interface SkillType {
@@ -33,7 +34,8 @@ export interface EducationEntryType {
   details?: string[]; // Bullet points for more specifics
   logoUrl?: string;
   logoAiHint?: string;
-  certificateUrl?: string; // Optional: link to a specific certificate (could be a diploma page link or external)
+  certificateUrl?: string; // Direct URL to the certificate image
+  certificateImageAiHint?: string; // AI hint for the certificate image
 }
 
 export interface DiplomaType {

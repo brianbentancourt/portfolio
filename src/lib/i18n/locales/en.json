@@ -1,3 +1,4 @@
+
 {
   "header": {
     "about": "About",
@@ -26,7 +27,9 @@
   "educationSection": {
     "title": "Education & Certifications",
     "description": "My academic background and key certifications that have shaped my expertise.",
-    "viewDiplomas": "View All Diplomas"
+    "viewAllDiplomasButton": "View All Diplomas",
+    "viewCertificateButton": "View Certificate",
+    "certificateModalTitle": "{title} - Certificate"
   },
   "projectsSection": {
     "title": "My Projects"
@@ -79,5 +82,8 @@
   },
   "footer": {
     "copyright": "© {year} Brian Bentancourt. All rights reserved."
+  },
+  "common": {
+    "closeButton": "Close"
   }
 }
