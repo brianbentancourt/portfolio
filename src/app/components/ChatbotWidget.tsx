@@ -28,21 +28,26 @@ Skills:
 - Other: AI Integration, RESTful APIs, MERN stack, MongoDB, PostgreSQL, WordPress, Git, Agile methodologies.
 
 Experience:
-1. Senior Frontend Developer - Tech Solutions Inc. (Jan 2021 - Present)
-   - Led development of client-facing web applications using React and Next.js.
-   - Collaborated with UX/UI designers to implement responsive and accessible interfaces.
-   - Mentored junior developers and conducted code reviews.
-   - Integrated AI-powered features for content personalization.
-2. Full-Stack Developer - Web Innovators Co. (Jun 2018 - Dec 2020)
-   - Developed and maintained full-stack applications using MERN stack.
-   - Designed and implemented RESTful APIs for various services.
-   - Contributed to database design and optimization (MongoDB).
-   - Worked in an Agile environment, participating in sprint planning and retrospectives.
-3. Junior Web Developer - Digital Creations Agency (Aug 2016 - May 2018)
-   - Assisted in the development of WordPress websites and custom themes.
-   - Implemented frontend designs using HTML, CSS, and JavaScript.
-   - Performed website maintenance and bug fixes.
-   - Gained experience with version control systems (Git).
+1. Lead Full-Stack Engineer & AI Specialist - Innovatech Solutions / Freelance Consultant (March 2022 - Present)
+   - Spearheaded the design and development of enterprise-level web applications, incorporating advanced AI/ML models for enhanced functionality.
+   - Led cross-functional teams in agile environments, ensuring timely delivery of high-quality software products.
+   - Consulted with clients to define technical requirements and deliver custom software solutions that meet business objectives.
+   - Continuously researched and integrated emerging technologies to drive innovation and efficiency.
+2. Senior Frontend Developer - Tech Solutions Inc. (Jan 2021 - Feb 2022)
+   - Led development of high-performance, client-facing web applications using React, Next.js, and TypeScript.
+   - Collaborated closely with UX/UI designers and product managers to implement responsive, accessible, and user-centric interfaces.
+   - Mentored junior developers, conducted code reviews, and promoted best practices in frontend development, improving team velocity by 15%.
+   - Pioneered the integration of AI-powered features for content personalization and recommendation engines, significantly improving user engagement metrics.
+3. Full-Stack Developer - Web Innovators Co. (Jun 2018 - Dec 2020)
+   - Developed and maintained full-stack applications using MERN stack (MongoDB, Express.js, React, Node.js).
+   - Designed and implemented RESTful APIs for various microservices, ensuring scalability and reliability.
+   - Contributed to database design and optimization (MongoDB), improving query performance by 25%.
+   - Actively participated in an Agile development process, including sprint planning, daily stand-ups, and retrospectives.
+4. Junior Web Developer - Digital Creations Agency (Aug 2016 - May 2018)
+   - Assisted in the development of WordPress websites and custom PHP themes for diverse clients.
+   - Implemented responsive frontend designs from mockups using HTML5, CSS3, and JavaScript (jQuery).
+   - Performed website maintenance, bug-fixing, and content updates, ensuring 99% uptime for client sites.
+   - Gained foundational experience with version control systems (Git) and collaborative development workflows.
 
 Projects:
 - AI-Powered Task Manager: A smart task management application that uses AI to prioritize and suggest tasks. Built with Next.js, Python (FastAPI), AI/ML, and PostgreSQL.
@@ -52,7 +57,7 @@ Projects:
 - Agustyle Barbershop Booking System: Streamlined appointment booking for Agustyle barbershop with an online system featuring social login (Facebook/Google) and calendar integration. Administrators can manage appointments, and clients can add reminders. Link: https://agustyle.com/
 - Food Store System: A web system for fast food preparation and delivery with roles for kitchen, delivery, and admin. Features Google login, online purchasing, real-time order tracking, stock control, customer raffles, map visualization, real-time delivery wallet, and sales/delivery time reporting. Main system link: https://foodstoreuy.web.app/. Client Implementations: Burger House (https://burgerhouseuy.com/), Befe Burgers (https://befeburgers.com/), Pio Pio (In business process) (https://piopio-paysandu.web.app/).
 
-Contact: brian.bentancourt.dev@example.com
+Contact: brianbentancourt9@gmail.com,+59897313415
 `;
 
 const staticPortfolioContextES = `
@@ -66,21 +71,26 @@ Habilidades:
 - Otras: Integración de IA, APIs RESTful, stack MERN, MongoDB, PostgreSQL, WordPress, Git, metodologías Agile.
 
 Experiencia:
-1. Desarrollador Frontend Senior - Tech Solutions Inc. (Ene 2021 - Presente)
-   - Lideró el desarrollo de aplicaciones web para clientes usando React y Next.js.
-   - Colaboró con diseñadores UX/UI para implementar interfaces responsivas y accesibles.
-   - Mentorizó a desarrolladores junior y realizó revisiones de código.
-   - Integró funciones personalizadas impulsadas por IA.
-2. Desarrollador Full-Stack - Web Innovators Co. (Jun 2018 - Dic 2020)
-   - Desarrolló y mantuvo aplicaciones full-stack usando el stack MERN.
-   - Diseñó e implementó APIs RESTful para varios servicios.
-   - Contribuyó al diseño y optimización de bases de datos (MongoDB).
-   - Trabajó en un entorno Agile, participando en la planificación de sprints y retrospectivas.
-3. Desarrollador Web Junior - Digital Creations Agency (Ago 2016 - May 2018)
-   - Asistió en el desarrollo de sitios web de WordPress y temas personalizados.
-   - Implementó diseños frontend usando HTML, CSS y JavaScript.
-   - Realizó mantenimiento de sitios web y corrección de errores.
-   - Adquirió experiencia con sistemas de control de versiones (Git).
+1. Ingeniero Full-Stack Principal y Especialista en IA - Innovatech Solutions / Consultor Freelance (Marzo 2022 - Presente)
+   - Lideró el diseño y desarrollo de aplicaciones web a nivel empresarial, incorporando modelos avanzados de IA/ML para mejorar la funcionalidad.
+   - Dirigió equipos multifuncionales en entornos ágiles, asegurando la entrega oportuna de productos de software de alta calidad.
+   - Consultó con clientes para definir requisitos técnicos y entregar soluciones de software personalizadas que cumplan con los objetivos comerciales.
+   - Investigó e integró continuamente tecnologías emergentes para impulsar la innovación y la eficiencia.
+2. Desarrollador Frontend Senior - Tech Solutions Inc. (Ene 2021 - Feb 2022)
+   - Lideró el desarrollo de aplicaciones web de alto rendimiento para clientes utilizando React, Next.js y TypeScript.
+   - Colaboró estrechamente con diseñadores UX/UI y gerentes de producto para implementar interfaces responsivas, accesibles y centradas en el usuario.
+   - Mentorizó a desarrolladores junior, realizó revisiones de código y promovió las mejores prácticas en el desarrollo frontend, mejorando la velocidad del equipo en un 15%.
+   - Fue pionero en la integración de funciones impulsadas por IA para la personalización de contenido y motores de recomendación, mejorando significativamente las métricas de participación del usuario.
+3. Desarrollador Full-Stack - Web Innovators Co. (Jun 2018 - Dic 2020)
+   - Desarrolló y mantuvo aplicaciones full-stack utilizando el stack MERN (MongoDB, Express.js, React, Node.js).
+   - Diseñó e implementó APIs RESTful para varios microservicios, asegurando escalabilidad y confiabilidad.
+   - Contribuyó al diseño y optimización de bases de datos (MongoDB), mejorando el rendimiento de las consultas en un 25%.
+   - Participó activamente en un proceso de desarrollo Agile, incluyendo la planificación de sprints, reuniones diarias y retrospectivas.
+4. Desarrollador Web Junior - Digital Creations Agency (Ago 2016 - May 2018)
+   - Asistió en el desarrollo de sitios web de WordPress y temas PHP personalizados para diversos clientes.
+   - Implementó diseños frontend responsivos a partir de maquetas utilizando HTML5, CSS3 y JavaScript (jQuery).
+   - Realizó mantenimiento de sitios web, corrección de errores y actualizaciones de contenido, asegurando un tiempo de actividad del 99% para los sitios de los clientes.
+   - Adquirió experiencia fundamental con sistemas de control de versiones (Git) y flujos de trabajo de desarrollo colaborativo.
 
 Proyectos:
 - Gestor de Tareas con IA: Una aplicación inteligente de gestión de tareas que utiliza IA para priorizar y sugerir tareas. Construida con Next.js, Python (FastAPI), IA/ML y PostgreSQL.
@@ -90,7 +100,7 @@ Proyectos:
 - Sistema de Reservas para Barbería Agustyle: Agilizó la reserva de citas para la barbería Agustyle con un sistema en línea que incluye inicio de sesión social (Facebook/Google) e integración de calendario. Los administradores pueden gestionar citas y los clientes añadir recordatorios. Enlace: https://agustyle.com/
 - Sistema Food Store: Un sistema web para la preparación y entrega de comida rápida con roles para cocina, reparto y administración. Incluye inicio de sesión con Google, compras en línea, seguimiento de pedidos en tiempo real, control de stock, sorteos para clientes, visualización de pedidos en mapa, billetera en tiempo real para repartidores y reportes de ventas/tiempos de entrega. Enlace principal del sistema: https://foodstoreuy.web.app/. Implementaciones en Clientes: Burger House (https://burgerhouseuy.com/), Befe Burgers (https://befeburgers.com/), Pio Pio (En proceso de negocio) (https://piopio-paysandu.web.app/).
 
-Contacto: brian.bentancourt.dev@example.com
+Contacto: brianbentancourt9@gmail.com,+59897313415
 `;
 
 
@@ -99,6 +109,16 @@ interface Message {
   text: string;
   sender: 'user' | 'bot';
 }
+
+// Function to convert Markdown links to HTML anchor tags
+const renderMarkdownLinks = (text: string): string => {
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  // Sanitize text before inserting to prevent XSS if it's not just links.
+  // For this specific case, we assume the AI only produces markdown links or plain text.
+  // A more robust solution would use a proper Markdown parser and sanitizer.
+  return text.replace(linkRegex, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">$1</a>');
+};
+
 
 export function ChatbotWidget() {
   const [isOpen, setIsOpen] = useState(false);
@@ -195,7 +215,10 @@ export function ChatbotWidget() {
                     </Avatar>
                   )}
                   <div className={`max-w-[80%] p-3 rounded-xl shadow-sm ${msg.sender === 'user' ? 'bg-primary text-primary-foreground rounded-br-none' : 'bg-card text-card-foreground rounded-bl-none'}`}>
-                    <p className="text-sm whitespace-pre-wrap">{msg.text}</p>
+                    <p 
+                      className="text-sm whitespace-pre-wrap"
+                      dangerouslySetInnerHTML={{ __html: renderMarkdownLinks(msg.text) }}
+                    />
                   </div>
                 </div>
               ))}

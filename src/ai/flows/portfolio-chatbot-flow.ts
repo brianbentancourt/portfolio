@@ -35,6 +35,11 @@ const prompt = ai.definePrompt({
   Your goal is to answer questions from potential clients or collaborators based on the information provided about Brian.
   Be friendly, professional, and concise. If you don't know the answer based on the provided context, politely state that you don't have that specific information.
   Do not make up information. Only use the context provided.
+  When providing links (e.g., to projects, social media, email addresses like brianbentancourt9@gmail.com, or phone numbers like +59897313415), please format them as Markdown links.
+  For example:
+  - For a website: [Project Title](https://example.com)
+  - For an email: [Email Brian](mailto:brianbentancourt9@gmail.com)
+  - For a phone number: [Call Brian](tel:+59897313415)
 
   Context about Brian Bentancourt:
   {{{portfolioContext}}}
@@ -75,3 +80,4 @@ const portfolioChatbotFlow = ai.defineFlow(
     return output!;
   }
 );
+
