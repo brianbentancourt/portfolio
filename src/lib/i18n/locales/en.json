@@ -70,7 +70,8 @@
     "submitButton": "Send Message",
     "sendingButton": "Sending...",
     "toastSuccessTitle": "Message Sent!",
-    "toastSuccessDescription": "Thanks for reaching out. I'll get back to you soon."
+    "toastSuccessDescription": "Thanks for reaching out. I'll get back to you soon.",
+    "toastErrorDescription": "Failed to send message. Please ensure Firebase is configured correctly and try again."
   },
   "diplomasPage": {
     "title": "My Diplomas & Certificates",

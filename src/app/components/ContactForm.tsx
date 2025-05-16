@@ -1,3 +1,4 @@
+
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -19,6 +20,8 @@ import { useToast } from "@/hooks/use-toast";
 import { Loader2 } from "lucide-react";
 import * as React from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { db } from "@/lib/firebase";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
 // Validation messages could also be translated if needed, by passing t() to min/email/max
 const contactFormSchema = z.object({
@@ -50,20 +53,39 @@ export function ContactForm() {
     },
   });
 
-  // Placeholder for actual submission logic
   async function onSubmit(values: ContactFormValues) {
     setIsLoading(true);
-    console.log("Contact form submitted:", values);
+    try {
+      // The "Trigger Email" extension typically looks for a "to" field in the document,
+      // or you configure a default "to" address in the extension settings.
+      // We'll assume you configure brianbentancourt9@gmail.com in the extension.
+      // You can add more fields like 'subject' if needed for the extension's template.
+      await addDoc(collection(db, "contact_submissions"), {
+        name: values.name,
+        email: values.email, // This can be used as the replyTo field in the email extension
+        message: values.message,
+        submittedAt: serverTimestamp(),
+        to: "brianbentancourt9@gmail.com", // Explicitly setting the recipient
+        // For the email template in the extension, you might use:
+        // subject: `New contact from ${values.name}`,
+        // html: `<p>Name: ${values.name}</p><p>Email: ${values.email}</p><p>Message: ${values.message}</p>`,
+      });
 
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
-
-    toast({
-      title: t('contactForm.toastSuccessTitle'),
-      description: t('contactForm.toastSuccessDescription'),
-    });
-    form.reset();
-    setIsLoading(false);
+      toast({
+        title: t('contactForm.toastSuccessTitle'),
+        description: t('contactForm.toastSuccessDescription'),
+      });
+      form.reset();
+    } catch (error) {
+      console.error("Error submitting contact form to Firestore:", error);
+      toast({
+        variant: "destructive",
+        title: "Submission Error",
+        description: t('contactForm.toastErrorDescription', { fallback: "Failed to send message. Please ensure Firebase is configured correctly and try again."}),
+      });
+    } finally {
+      setIsLoading(false);
+    }
   }
 
   return (
