@@ -17,7 +17,7 @@ import { portfolioChatbot, PortfolioChatbotInput } from '@/ai/flows/portfolio-ch
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const staticPortfolioContextEN = `Brian Bentancourt is a passionate and results-driven software developer based in Uruguay.
-Contact: Yapeyú 1644, Paysandú, Uruguay | +59897313415 | brianbentancourt.com | brianbentancourt9@gmail.com
+Contact: Uruguay | +59897313415 | brianbentancourt.com | brianbentancourt9@gmail.com
 Profiles: LinkedIn (linkedin.com/in/brianbentancourt) | GitHub (github.com/brianbentancourt) | Platzi (platzi.com/@brianbentancourt)
 
 About:
@@ -68,7 +68,7 @@ Freelance Projects:
 `;
 
 const staticPortfolioContextES = `Brian Bentancourt es un desarrollador de software apasionado y orientado a resultados, radicado en Uruguay.
-Contacto: Yapeyú 1644, Paysandú, Uruguay | +59897313415 | brianbentancourt.com | brianbentancourt9@gmail.com
+Contacto: Uruguay | +59897313415 | brianbentancourt.com | brianbentancourt9@gmail.com
 Perfiles: LinkedIn (linkedin.com/in/brianbentancourt) | GitHub (github.com/brianbentancourt) | Platzi (platzi.com/@brianbentancourt)
 
 Sobre Mí:
