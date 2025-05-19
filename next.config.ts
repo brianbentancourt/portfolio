@@ -34,6 +34,12 @@ const nextConfig: NextConfig = {
         hostname: 'aproase.com.uy',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'encrypted-tbn0.gstatic.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

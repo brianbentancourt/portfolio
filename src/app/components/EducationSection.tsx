@@ -32,8 +32,8 @@ const educationData: EducationEntryType[] = [
       "Database Design and SQL.",
       "Software Engineering Principles.",
     ],
-    logoUrl: "https://placehold.co/60x60.png",
-    logoAiHint: "university campus",
+    logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMh6i2GJOjC6DpnfI0rju0zGL9dVVsNH2BGA&s",
+    logoAiHint: "university logo",
     certificateUrl: "https://placehold.co/850x1100.png",
     certificateImageAiHint: "university degree certificate",
   },
@@ -58,13 +58,13 @@ const educationData: EducationEntryType[] = [
         "Specializations in web development, AI, cloud technologies, and more.",
         "Refer to brianbentancourt.com/courses for a detailed list."
     ],
-    logoUrl: "https://placehold.co/60x60.png", // Generic logo
-    logoAiHint: "online learning",
+    logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvHjIpFwK8LDdteq1cxYCg2x4Cfq7eXB7fVQ&s", 
+    logoAiHint: "platzi logo",
     // No single certificate URL for ongoing learning, can link to the courses page if desired.
   },
 ];
 
-function CertificateDialogContent({ entry, t }: { entry: EducationEntryType, t: (key: string, replacements?: Record<string, string | number>) => string }) {
+function CertificateDialogContent({ entry, t }: { entry: EducationEntryType, t: (key: string, options?: { replacements?: Record<string, string | number>, fallback?: string }) => string }) {
   const [isImageLoading, setIsImageLoading] = React.useState(true);
 
   React.useEffect(() => {
