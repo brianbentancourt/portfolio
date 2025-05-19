@@ -61,7 +61,7 @@ export function ContactForm() {
       // Basic HTML styling for the email body
       const htmlBody = `
         <div style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 1.6; color: #333333; max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #dddddd; border-radius: 8px; background-color: #f9f9f9;">
-          <h2 style="color: #007B8A; /* Teal-like color */ border-bottom: 2px solid #007B8A; padding-bottom: 10px; margin-top: 0;">New Contact Form Submission</h2>
+          <h2 style="color: #007B8A; /* Teal-like color */ border-bottom: 2px solid #007B8A; padding-bottom: 10px; margin-top: 0;">Somebody wants to know about you</h2>
           <p style="margin-bottom: 15px;">You've received a new message from your portfolio website:</p>
           
           <div style="background-color: #ffffff; padding: 15px; border: 1px solid #eeeeee; border-radius: 4px; margin-bottom: 20px;">
@@ -170,3 +170,4 @@ export function ContactForm() {
     </Form>
   );
 }
+
