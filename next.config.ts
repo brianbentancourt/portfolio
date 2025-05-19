@@ -46,6 +46,12 @@ const nextConfig: NextConfig = {
         hostname: 'i.ibb.co', // Added for ibb.co images
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.sau.org.uy', // Added for sau.org.uy images
+        port: '',
+        pathname: '/**',
       }
     ],
   },

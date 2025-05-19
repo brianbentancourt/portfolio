@@ -43,7 +43,7 @@ const educationData: EducationEntryType[] = [
     institution: "Informática ITSP",
     period: "Completed 12/2012",
     description: "Completed technical high school degree with a specialization in informatics, providing early exposure to computer science concepts and programming.",
-    logoUrl: "https://i.ibb.co/3d30x3Y/itsp-logo.png", // Updated logo URL
+    logoUrl: "https://i.ibb.co/cRgC9hR/itsp.jpg", // Updated logo URL
     logoAiHint: "technical school logo", // Updated AI hint
     certificateUrl: "https://placehold.co/850x1100.png",
     certificateImageAiHint: "high school diploma technology",
