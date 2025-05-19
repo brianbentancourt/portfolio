@@ -23,35 +23,38 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { db } from "@/lib/firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
-// Validation messages could also be translated if needed, by passing t() to min/email/max
-const contactFormSchema = z.object({
+// Define a function to get the schema, so it can access 't'
+const getContactFormSchema = (t: (key: string, options?: { replacements?: Record<string, string | number>, fallback?: string }) => string) => z.object({
   name: z.string().min(2, {
-    message: "Name must be at least 2 characters.",
+    message: t('contactForm.validation.nameMinLength', { replacements: { count: 2 }, fallback: "Name must be at least 2 characters." }),
   }),
   email: z.string().email({
-    message: "Please enter a valid email address.",
+    message: t('contactForm.validation.emailInvalid', { fallback: "Please enter a valid email address." }),
   }),
-  message: z.string().min(16, { // Changed from 10 to 16
-    message: "Message must be at least 16 characters.", // Updated message
+  message: z.string().min(16, {
+    message: t('contactForm.validation.messageMinLength', { replacements: { count: 16 }, fallback: "Message must be at least 16 characters." }),
   }).max(500, {
-    message: "Message must not exceed 500 characters."
+    message: t('contactForm.validation.messageMaxLength', { replacements: { count: 500 }, fallback: "Message must not exceed 500 characters."})
   }),
 });
 
-type ContactFormValues = z.infer<typeof contactFormSchema>;
+type ContactFormValues = z.infer<ReturnType<typeof getContactFormSchema>>;
 
 export function ContactForm() {
   const [isLoading, setIsLoading] = React.useState(false);
   const { toast } = useToast();
   const { t } = useLanguage();
+
+  const formSchema = getContactFormSchema(t);
+
   const form = useForm<ContactFormValues>({
-    resolver: zodResolver(contactFormSchema),
+    resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
       email: "",
       message: "",
     },
-    mode: 'onChange', // Added for real-time validation
+    mode: 'onChange',
   });
 
   async function onSubmit(values: ContactFormValues) {
@@ -59,10 +62,9 @@ export function ContactForm() {
     try {
       const subject = `New contact from ${values.name} - Portfolio`;
       const textBody = `Name: ${values.name}\nEmail: ${values.email}\nMessage: ${values.message}`;
-      // Basic HTML styling for the email body
       const htmlBody = `
         <div style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 1.6; color: #333333; max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #dddddd; border-radius: 8px; background-color: #f9f9f9;">
-          <h2 style="color: #007B8A; /* Teal-like color */ border-bottom: 2px solid #007B8A; padding-bottom: 10px; margin-top: 0;">Somebody wants to know about you</h2>
+          <h2 style="color: #007B8A; border-bottom: 2px solid #007B8A; padding-bottom: 10px; margin-top: 0;">Somebody wants to know about you</h2>
           <p style="margin-bottom: 15px;">You've received a new message from your portfolio website:</p>
           
           <div style="background-color: #ffffff; padding: 15px; border: 1px solid #eeeeee; border-radius: 4px; margin-bottom: 20px;">
@@ -78,17 +80,14 @@ export function ContactForm() {
       `;
 
       await addDoc(collection(db, "mail"), {
-        to: ["brianbentancourt9@gmail.com"], // Explicitly setting the recipient
-        replyTo: values.email, // Set the replyTo field for easy replies
+        to: ["brianbentancourt9@gmail.com"],
+        replyTo: values.email,
         message: {
           subject: subject,
           text: textBody,
           html: htmlBody,
         },
         submittedAt: serverTimestamp(),
-        // You can add original sender's name and email here if you want to see them in Firestore directly
-        // senderName: values.name, 
-        // senderEmail: values.email,
       });
   
       toast({
@@ -100,7 +99,7 @@ export function ContactForm() {
       console.error("Error submitting contact form to Firestore:", error);
       toast({
         variant: "destructive",
-        title: "Submission Error",
+        title: t('contactForm.toastErrorTitle', { fallback: "Submission Error" }),
         description: t('contactForm.toastErrorDescription', { fallback: "Failed to send message. Please ensure Firebase is configured correctly and try again."}),
       });
     } finally {
@@ -171,4 +170,3 @@ export function ContactForm() {
     </Form>
   );
 }
-

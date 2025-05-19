@@ -71,7 +71,14 @@
     "sendingButton": "Enviando...",
     "toastSuccessTitle": "¡Mensaje Enviado!",
     "toastSuccessDescription": "Gracias por contactarme. Te responderé pronto.",
-    "toastErrorDescription": "No se pudo enviar el mensaje. Asegúrate de que Firebase esté configurado correctamente e inténtalo de nuevo."
+    "toastErrorTitle": "Error de Envío",
+    "toastErrorDescription": "No se pudo enviar el mensaje. Asegúrate de que Firebase esté configurado correctamente e inténtalo de nuevo.",
+    "validation": {
+      "nameMinLength": "El nombre debe tener al menos {count} caracteres.",
+      "emailInvalid": "Por favor, introduce una dirección de correo electrónico válida.",
+      "messageMinLength": "El mensaje debe tener al menos {count} caracteres.",
+      "messageMaxLength": "El mensaje no debe exceder los {count} caracteres."
+    }
   },
   "diplomasPage": {
     "title": "Mis Diplomas y Certificados",
