@@ -43,8 +43,8 @@ const educationData: EducationEntryType[] = [
     institution: "Informática ITSP",
     period: "Completed 12/2012",
     description: "Completed technical high school degree with a specialization in informatics, providing early exposure to computer science concepts and programming.",
-    logoUrl: "https://placehold.co/60x60.png",
-    logoAiHint: "technical school",
+    logoUrl: "https://i.ibb.co/3d30x3Y/itsp-logo.png", // Updated logo URL
+    logoAiHint: "technical school logo", // Updated AI hint
     certificateUrl: "https://placehold.co/850x1100.png",
     certificateImageAiHint: "high school diploma technology",
   },
@@ -75,7 +75,7 @@ function CertificateDialogContent({ entry, t }: { entry: EducationEntryType, t: 
   return (
     <DialogContent className="sm:max-w-2xl md:max-w-3xl lg:max-w-4xl max-h-[90vh] flex flex-col p-0">
       <DialogHeader className="p-6 pb-2 shrink-0">
-        <DialogTitle>{t('educationSection.certificateModalTitle', { title: entry.title })}</DialogTitle>
+        <DialogTitle>{t('educationSection.certificateModalTitle', { replacements: { title: entry.title }})}</DialogTitle>
         <DialogDescription>
           {entry.institution} - {entry.period}
         </DialogDescription>
@@ -90,7 +90,7 @@ function CertificateDialogContent({ entry, t }: { entry: EducationEntryType, t: 
           {entry.certificateUrl ? (
              <Image
               src={entry.certificateUrl}
-              alt={t('educationSection.certificateModalTitle', { title: entry.title })}
+              alt={t('educationSection.certificateModalTitle', { replacements: { title: entry.title } })}
               fill
               className={`object-contain p-1 transition-opacity duration-300 ${isImageLoading ? 'opacity-0' : 'opacity-100'}`}
               onLoad={() => setIsImageLoading(false)}
