@@ -56,21 +56,40 @@ export function ContactForm() {
   async function onSubmit(values: ContactFormValues) {
     setIsLoading(true);
     try {
-      // The "Trigger Email" extension typically looks for a "to" field in the document,
-      // or you configure a default "to" address in the extension settings.
-      // We'll assume you configure brianbentancourt9@gmail.com in the extension.
-      // You can add more fields like 'subject' if needed for the extension's template.
-      await addDoc(collection(db, "contact_submissions"), {
-        name: values.name,
-        email: values.email, // This can be used as the replyTo field in the email extension
-        message: values.message,
-        submittedAt: serverTimestamp(),
-        to: "brianbentancourt9@gmail.com", // Explicitly setting the recipient
-        // For the email template in the extension, you might use:
-        // subject: `New contact from ${values.name}`,
-        // html: `<p>Name: ${values.name}</p><p>Email: ${values.email}</p><p>Message: ${values.message}</p>`,
-      });
+      const subject = `New contact from ${values.name} - Portfolio`;
+      const textBody = `Name: ${values.name}\nEmail: ${values.email}\nMessage: ${values.message}`;
+      // Basic HTML styling for the email body
+      const htmlBody = `
+        <div style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 1.6; color: #333333; max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #dddddd; border-radius: 8px; background-color: #f9f9f9;">
+          <h2 style="color: #007B8A; /* Teal-like color */ border-bottom: 2px solid #007B8A; padding-bottom: 10px; margin-top: 0;">New Contact Form Submission</h2>
+          <p style="margin-bottom: 15px;">You've received a new message from your portfolio website:</p>
+          
+          <div style="background-color: #ffffff; padding: 15px; border: 1px solid #eeeeee; border-radius: 4px; margin-bottom: 20px;">
+            <p style="margin-bottom: 10px; margin-top: 0;"><strong>Name:</strong> ${values.name}</p>
+            <p style="margin-bottom: 10px;"><strong>Email:</strong> <a href="mailto:${values.email}" style="color: #007B8A; text-decoration: none;">${values.email}</a></p>
+            <p style="margin-bottom: 5px;"><strong>Message:</strong></p>
+            <div style="padding: 10px; border: 1px solid #f0f0f0; border-radius: 3px; background-color: #fdfdfd; white-space: pre-wrap; word-wrap: break-word;">${values.message.replace(/\n/g, '<br>')}</div>
+          </div>
+          
+          <hr style="border: 0; border-top: 1px solid #eeeeee; margin: 20px 0;">
+          <p style="font-size: 0.9em; color: #777777; text-align: center;">This email was sent automatically from your portfolio contact form.</p>
+        </div>
+      `;
 
+      await addDoc(collection(db, "mail"), {
+        to: ["brianbentancourt9@gmail.com"], // Explicitly setting the recipient
+        replyTo: values.email, // Set the replyTo field for easy replies
+        message: {
+          subject: subject,
+          text: textBody,
+          html: htmlBody,
+        },
+        submittedAt: serverTimestamp(),
+        // You can add original sender's name and email here if you want to see them in Firestore directly
+        // senderName: values.name, 
+        // senderEmail: values.email,
+      });
+  
       toast({
         title: t('contactForm.toastSuccessTitle'),
         description: t('contactForm.toastSuccessDescription'),
