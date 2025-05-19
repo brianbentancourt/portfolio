@@ -53,11 +53,11 @@ Following its success, a new client began using the system in 2023.`,
     title: "Transportes Villasboas",
     description: "System for managing clients, trips, and truck maintenance.",
     longDescription: "A dedicated web application for Transportes Villasboas, designed to streamline their operations. This system provides comprehensive tools for managing client information, tracking trips, and scheduling truck maintenance. It aims to improve efficiency and organization within the transport company.",
-    imageUrl: "https://images.unsplash.com/photo-1559750716-6981630914c5", // Updated image URL
+    imageUrl: "https://images.unsplash.com/photo-1492168732976-2676c584c675?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Updated image URL
     tags: ["Web Application", "Logistics", "Fleet Management", "Client Management"],
     liveLink: "https://transportesvillasboas.web.app",
     sourceLink: "https://github.com/brianbentancourt",
-    imageAiHint: "aerial trucks", // Updated AI hint
+    imageAiHint: "truck highway", // Updated AI hint
   },
   {
     id: "proj_chenlo_seguros",
@@ -113,3 +113,4 @@ export function ProjectsSection() {
     </Section>
   );
 }
+
