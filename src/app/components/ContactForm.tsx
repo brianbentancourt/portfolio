@@ -31,8 +31,8 @@ const contactFormSchema = z.object({
   email: z.string().email({
     message: "Please enter a valid email address.",
   }),
-  message: z.string().min(10, {
-    message: "Message must be at least 10 characters.",
+  message: z.string().min(16, { // Changed from 10 to 16
+    message: "Message must be at least 16 characters.", // Updated message
   }).max(500, {
     message: "Message must not exceed 500 characters."
   }),
@@ -51,6 +51,7 @@ export function ContactForm() {
       email: "",
       message: "",
     },
+    mode: 'onChange', // Added for real-time validation
   });
 
   async function onSubmit(values: ContactFormValues) {
