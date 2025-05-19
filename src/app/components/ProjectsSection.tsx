@@ -18,10 +18,10 @@ Key features include:
 - Admin Management Panel: Administrators have full control to manage, modify, or cancel appointments as needed.
 - Calendar Integration: Clients can add confirmed bookings as reminders to their personal calendars with a single click.
 This digital solution has significantly improved scheduling consistency throughout the month, leading to a notable increase in reservations. It has optimized operational efficiency for the barbershop while enhancing the booking experience for its clientele.`,
-    imageUrl: "https://placehold.co/600x400.png", // From CV, original: agustyle.com
+    imageUrl: "https://placehold.co/600x400.png", 
     tags: ["Web Application", "Booking System", "PHP", "MySQL", "Social Login"],
     liveLink: "https://agustyle.com/",
-    sourceLink: "github.com/brianbentancourt", // Assuming same repo for all
+    sourceLink: "https://github.com/brianbentancourt", 
     imageAiHint: "barbershop booking",
   },
   {
@@ -37,10 +37,10 @@ Key features:
 - Geospatial order visualization for admins and delivery.
 - Real-time delivery wallet and advanced reporting.
 Following its success, a new client began using the system in 2023.`,
-    imageUrl: "https://placehold.co/600x400.png", // From CV, original: foodstoreuy.web.app
+    imageUrl: "https://placehold.co/600x400.png", 
     tags: ["Web System", "Food Delivery", "Order Management", "React", "Firebase", "Real-time"],
     liveLink: "https://foodstoreuy.web.app/",
-    sourceLink: "github.com/brianbentancourt",
+    sourceLink: "https://github.com/brianbentancourt",
     imageAiHint: "food delivery app",
     clientImplementations: [
       { name: "Burger House", link: "https://burgerhouseuy.com/" },
@@ -53,21 +53,21 @@ Following its success, a new client began using the system in 2023.`,
     title: "Transportes Villasboas",
     description: "System for managing clients, trips, and truck maintenance.",
     longDescription: "A dedicated web application for Transportes Villasboas, designed to streamline their operations. This system provides comprehensive tools for managing client information, tracking trips, and scheduling truck maintenance. It aims to improve efficiency and organization within the transport company.",
-    imageUrl: "https://placehold.co/600x400.png", // From CV, original: transportesvillasboas.web.app
+    imageUrl: "https://images.unsplash.com/photo-1559750716-6981630914c5", // Updated image URL
     tags: ["Web Application", "Logistics", "Fleet Management", "Client Management"],
     liveLink: "https://transportesvillasboas.web.app",
-    sourceLink: "github.com/brianbentancourt",
-    imageAiHint: "truck logistics",
+    sourceLink: "https://github.com/brianbentancourt",
+    imageAiHint: "aerial trucks", // Updated AI hint
   },
   {
     id: "proj_chenlo_seguros",
     title: "Chenlo Seguros",
     description: "Website for Mapfre insurance broker, displaying their products and facilitating communication between the client and the seller.",
     longDescription: "A professional website developed for Chenlo Seguros, a Mapfre insurance broker. The site showcases various insurance products offered and serves as a communication hub to connect clients with the seller, facilitating inquiries and information sharing.",
-    imageUrl: "https://placehold.co/600x400.png", // From CV, original: chenloseguros.com
+    imageUrl: "https://placehold.co/600x400.png", 
     tags: ["Website", "Insurance", "Lead Generation", "Communication"],
     liveLink: "https://chenloseguros.com",
-    sourceLink: "github.com/brianbentancourt",
+    sourceLink: "https://github.com/brianbentancourt",
     imageAiHint: "insurance website",
   },
   {
@@ -75,10 +75,10 @@ Following its success, a new client began using the system in 2023.`,
     title: "Eléctrica Caporale",
     description: "Store for lighting and electrical products that features user registration authenticated with social networks, as well as a points accumulation system for purchases.",
     longDescription: "An e-commerce platform for Eléctrica Caporale, specializing in lighting and electrical products. Key features include user registration with social media accounts (social login) and a loyalty points system to reward customers for their purchases, enhancing customer engagement and retention.",
-    imageUrl: "https://placehold.co/600x400.png", // From CV, original: electricacaporale.com
+    imageUrl: "https://placehold.co/600x400.png", 
     tags: ["E-commerce", "Retail", "Social Login", "Loyalty Program"],
     liveLink: "https://electricacaporale.com",
-    sourceLink: "github.com/brianbentancourt",
+    sourceLink: "https://github.com/brianbentancourt",
     imageAiHint: "electrical store online",
   },
   {
@@ -93,9 +93,10 @@ Following its success, a new client began using the system in 2023.`,
 - GenAI Integration: Features an AI-powered chatbot for interactive Q&A.
 - i18n Support: Fully internationalized for English and Spanish users.
 The design prioritizes a clean, modern aesthetic, intuitive navigation, and a seamless user experience across all devices. It aims to provide a comprehensive overview of my capabilities and how I approach software development.`,
-    imageUrl: "https://placehold.co/600x400.png", // Placeholder, as it's this site
+    imageUrl: "https://placehold.co/600x400.png", 
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "ShadCN UI", "GenAI", "i18n"],
-    sourceLink: "github.com/brianbentancourt", // Link to this portfolio's repo
+    liveLink: "https://brianbentancourt.com",
+    sourceLink: "https://github.com/brianbentancourt/portfolio-nextjs-shadcn-genai", 
     imageAiHint: "website design portfolio",
   },
 ];
