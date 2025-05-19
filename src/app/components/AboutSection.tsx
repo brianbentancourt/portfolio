@@ -1,5 +1,6 @@
 
 "use client";
+import Image from "next/image"; // Added Image import
 import { Section } from "@/components/layout/Section";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -71,7 +72,8 @@ export function AboutSection() {
 
   return (
     <Section id="about" title={t('about.title')} icon={User}>
-      <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+      {/* Text and Image Grid */}
+      <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-12 items-center mb-16">
         <div className="lg:col-span-2 space-y-6">
           <p className="text-lg text-muted-foreground leading-relaxed">
             {t('about.greeting')}
@@ -84,22 +86,33 @@ export function AboutSection() {
           </p>
         </div>
 
-        <div className="space-y-8 lg:mt-0">
-          <div>
-            <h3 className="text-2xl font-semibold mb-4 text-foreground">{t('about.skillsTitle')}</h3>
-            <div className="flex flex-wrap gap-3">
-              {skills.map((skill) => (
-                <Badge key={skill.id} variant="secondary" className="text-sm px-3 py-1.5 shadow-sm hover:shadow-md transition-shadow cursor-default">
-                  {skill.icon && <skill.icon className="h-4 w-4 mr-2 text-primary" />}
-                  {skill.name}
-                </Badge>
-              ))}
-            </div>
-          </div>
+        <div className="relative w-full aspect-[4/3] md:aspect-square lg:aspect-[3/4] rounded-lg overflow-hidden shadow-xl group">
+          <Image
+            src="https://images.unsplash.com/photo-1656711103646-b1a400b48b3f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt={t('about.title') + " - workspace"}
+            fill
+            className="object-cover transform group-hover:scale-105 transition-transform duration-300"
+            sizes="(min-width: 1024px) 33vw, 100vw"
+            data-ai-hint="modern workspace desk"
+          />
         </div>
       </div>
 
-      <div className="mt-16">
+      {/* Skills Section */}
+      <div className="mb-16">
+        <h3 className="text-2xl font-semibold mb-6 text-center md:text-left text-foreground">{t('about.skillsTitle')}</h3>
+        <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+          {skills.map((skill) => (
+            <Badge key={skill.id} variant="secondary" className="text-sm px-3 py-1.5 shadow-sm hover:shadow-md transition-shadow cursor-default">
+              {skill.icon && <skill.icon className="h-4 w-4 mr-2 text-primary" />}
+              {skill.name}
+            </Badge>
+          ))}
+        </div>
+      </div>
+
+      {/* Experience Section */}
+      <div className="mt-12"> {/* Adjusted margin from mt-16 if skills also have mb-16 */}
         <h3 className="text-2xl font-semibold mb-6 text-center md:text-left text-foreground">{t('about.experienceTitle')}</h3>
         <Accordion type="single" collapsible className="w-full">
           {experiences.map((exp) => (
