@@ -3,7 +3,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Menu, X, Briefcase, User, Mail, GraduationCap, Award, MessageSquare } from "lucide-react"; // Removed MountainIcon
+import { Menu, X, Briefcase, User, Mail, GraduationCap, Award, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
@@ -15,19 +15,23 @@ import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 const BrianLogoIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
+    viewBox="0 0 24 24" // Defines the coordinate system
+    fill="currentColor" // The text color will be set by this
+    stroke="none"       // No stroke for the text
+    {...props} // Applies className (like h-6 w-6 text-primary), style, etc.
   >
-    {/* B letter paths for outline */}
-    <path d="M6 18V6h4a4 4 0 0 1 0 8H6" /> {/* Path for the top part of B */}
-    <path d="M6 12h5a4 4 0 0 1 0 8H6" /> {/* Path for the bottom part of B */}
-    {/* Slash symbol */}
-    <line x1="15" y1="7" x2="19" y2="17" />
+    <text
+      x="50%" // Center horizontally
+      y="50%" // Center vertically (baseline)
+      dy="0.35em" // Fine-tune vertical alignment of text
+      textAnchor="middle" // Anchor the text at its horizontal center
+      fontFamily="Consolas, 'Courier New', Courier, monospace" // Monospaced font
+      fontSize="9.5" // Adjusted size to fit "<B/>" within icon dimensions
+      fontWeight="600" // Bold
+      // fill="currentColor" // Not strictly needed if SVG has it and text doesn't override, but good for clarity
+    >
+      &lt;B/&gt;
+    </text>
   </svg>
 );
 
@@ -61,7 +65,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
-          <BrianLogoIcon className="h-6 w-6 text-primary" /> {/* Replaced MountainIcon */}
+          <BrianLogoIcon className="h-6 w-6 text-primary" />
           <span className="font-bold text-lg">{t('header.title')}</span>
         </Link>
 
@@ -90,7 +94,7 @@ export function Header() {
                 <div className="flex flex-col h-full">
                   <div className="flex items-center justify-between p-4 border-b">
                     <Link href="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
-                       <BrianLogoIcon className="h-6 w-6 text-primary" /> {/* Replaced MountainIcon */}
+                       <BrianLogoIcon className="h-6 w-6 text-primary" />
                       <span className="font-bold text-lg">{t('header.title')}</span>
                     </Link>
                     <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
