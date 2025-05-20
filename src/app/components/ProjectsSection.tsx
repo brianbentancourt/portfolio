@@ -49,11 +49,22 @@ export function ProjectsSection() {
       imageAiHint: "truck highway",
     },
     {
+      id: "proj_servitec",
+      title: t('projects.proj_servitec.title'),
+      description: t('projects.proj_servitec.description'),
+      longDescription: t('projects.proj_servitec.longDescription'),
+      imageUrl: "https://placehold.co/600x400.png", // Placeholder image
+      tags: ["Field Service", "Job Tracking", "Scheduling", "Notifications", "Landing Page", "PHP", "MySQL"],
+      liveLink: "https://servitecuruguay.com/",
+      // sourceLink: "https://github.com/brianbentancourt/servitec", // Optional: Add if available
+      imageAiHint: "mechanic tools field service",
+    },
+    {
       id: "proj_chenlo_seguros",
       title: t('projects.proj_chenlo_seguros.title'),
       description: t('projects.proj_chenlo_seguros.description'),
       longDescription: t('projects.proj_chenlo_seguros.longDescription'),
-      imageUrl: "https://www.sau.org.uy/wp-content/uploads/portada_mapfre.jpg",
+      imageUrl: "https://aproase.com.uy/wp-content/uploads/2017/09/1587x643-logo.mapfre.jpg?image=422",
       tags: ["Website", "Insurance", "Lead Generation", "Communication"],
       liveLink: "https://chenloseguros.com",
       sourceLink: "https://github.com/brianbentancourt/chenlo-seguros",
@@ -81,72 +92,6 @@ export function ProjectsSection() {
       sourceLink: "https://github.com/brianbentancourt/portfolio-nextjs-shadcn-genai",
       imageAiHint: "website design portfolio",
     },
-    {
-      id: "proj_gestion_interna_estudio_juridico",
-      title: t('projects.proj_gestion_interna_estudio_juridico.title'),
-      description: t('projects.proj_gestion_interna_estudio_juridico.description'),
-      longDescription: t('projects.proj_gestion_interna_estudio_juridico.longDescription'),
-      imageUrl: "https://placehold.co/600x400.png",
-      tags: [".NET", "SQL Server", "WinForms", "DevExpress"],
-      liveLink: "", 
-      sourceLink: "https://github.com/brianbentancourt/gestion-interna-estudio-juridico",
-      imageAiHint: "law firm office",
-    },
-    {
-      id: "proj_sistema_turnos_mutualista",
-      title: t('projects.proj_sistema_turnos_mutualista.title'),
-      description: t('projects.proj_sistema_turnos_mutualista.description'),
-      longDescription: t('projects.proj_sistema_turnos_mutualista.longDescription'),
-      imageUrl: "https://placehold.co/600x400.png",
-      tags: [".NET", "SQL Server", "Web API", "React"],
-      liveLink: "", 
-      sourceLink: "https://github.com/brianbentancourt/sistema-turnos-mutualista",
-      imageAiHint: "medical clinic reception",
-    },
-    {
-      id: "proj_mantenimiento_evolutivo_prosegur",
-      title: t('projects.proj_mantenimiento_evolutivo_prosegur.title'),
-      description: t('projects.proj_mantenimiento_evolutivo_prosegur.description'),
-      longDescription: t('projects.proj_mantenimiento_evolutivo_prosegur.longDescription'),
-      imageUrl: "https://placehold.co/600x400.png",
-      tags: [".NET", "SQL Server", "JavaScript", "Internal Systems"],
-      liveLink: "", 
-      sourceLink: "", 
-      imageAiHint: "security systems tech",
-    },
-    {
-      id: "proj_tarjeta_credito_oca",
-      title: t('projects.proj_tarjeta_credito_oca.title'),
-      description: t('projects.proj_tarjeta_credito_oca.description'),
-      longDescription: t('projects.proj_tarjeta_credito_oca.longDescription'),
-      imageUrl: "https://placehold.co/600x400.png",
-      tags: [".NET", "SQL Server", "Financial Systems"],
-      liveLink: "", 
-      sourceLink: "", 
-      imageAiHint: "credit card payment",
-    },
-    {
-      id: "proj_sistema_financiero_peru_uruguay",
-      title: t('projects.proj_sistema_financiero_peru_uruguay.title'),
-      description: t('projects.proj_sistema_financiero_peru_uruguay.description'),
-      longDescription: t('projects.proj_sistema_financiero_peru_uruguay.longDescription'),
-      imageUrl: "https://placehold.co/600x400.png",
-      tags: [".NET", "SQL Server", "Banking", "Financial Software"],
-      liveLink: "", 
-      sourceLink: "", 
-      imageAiHint: "bank building modern",
-    },
-    {
-      id: "proj_app_mobile_xamarin_actualred",
-      title: t('projects.proj_app_mobile_xamarin_actualred.title'),
-      description: t('projects.proj_app_mobile_xamarin_actualred.description'),
-      longDescription: t('projects.proj_app_mobile_xamarin_actualred.longDescription'),
-      imageUrl: "https://placehold.co/600x400.png",
-      tags: ["Xamarin", "Mobile Development", "C#", ".NET"],
-      liveLink: "", 
-      sourceLink: "", 
-      imageAiHint: "mobile app interface",
-    },
   ];
 
   return (
@@ -159,5 +104,3 @@ export function ProjectsSection() {
     </Section>
   );
 }
-
-    

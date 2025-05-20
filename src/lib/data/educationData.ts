@@ -16,7 +16,7 @@ export const educationData: EducationEntryType[] = [
     ],
     logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMh6i2GJOjC6DpnfI0rju0zGL9dVVsNH2BGA&s",
     logoAiHint: "university logo",
-    certificateUrl: "https://placehold.co/850x1100.png", // Placeholder for actual certificate
+    certificateUrl: "https://firebasestorage.googleapis.com/v0/b/portfolio-pro-6p6np.firebasestorage.app/o/diplomas%2FAnalista%20programador.jpg?alt=media&token=0571cf67-3cd7-403e-ad61-f1cab7db8016", // Placeholder for actual certificate
     certificateImageAiHint: "university degree certificate",
   },
   {
@@ -27,7 +27,7 @@ export const educationData: EducationEntryType[] = [
     description: "Completed technical high school degree with a specialization in informatics, providing early exposure to computer science concepts and programming.",
     logoUrl: "https://i.ibb.co/cRgC9hR/itsp.jpg",
     logoAiHint: "technical school logo",
-    certificateUrl: "https://placehold.co/850x1100.png", // Placeholder for actual certificate
+    certificateUrl: "", // Placeholder for actual certificate
     certificateImageAiHint: "high school diploma technology",
   },
   {

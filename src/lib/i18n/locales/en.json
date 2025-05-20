@@ -76,35 +76,10 @@
       "description": "The very portfolio you are looking at, built with Next.js and ShadCN UI.",
       "longDescription": "This portfolio website, the very platform you are currently exploring, serves as a dynamic showcase of my skills, projects, and professional journey. It's meticulously built using cutting-edge technologies:\n- Next.js 14 with App Router: For optimal performance, server-side rendering, and efficient routing.\n- TypeScript: Ensuring type safety and maintainable code.\n- Tailwind CSS: For a utility-first approach to styling, resulting in a clean and responsive design.\n- ShadCN UI: Leveraging pre-built, accessible, and customizable React components.\n- GenAI Integration: Features an AI-powered chatbot for interactive Q&A.\n- i18n Support: Fully internationalized for English and Spanish users.\nThe design prioritizes a clean, modern aesthetic, intuitive navigation, and a seamless user experience across all devices. It aims to provide a comprehensive overview of my capabilities and how I approach software development."
     },
-    "proj_gestion_interna_estudio_juridico": {
-      "title": "Internal Management System for Law Firm",
-      "description": "Comprehensive system for managing cases, clients, deadlines, and billing for a law firm.",
-      "longDescription": "This project involved developing a tailored internal management system for a law firm to optimize their daily operations. Key features include case tracking, client database management, automated deadline reminders, document management, and integrated billing functionalities. The system was built to ensure data security and provide an intuitive user interface for lawyers and administrative staff."
-    },
-    "proj_sistema_turnos_mutualista": {
-      "title": "Appointment System for Healthcare Provider",
-      "description": "System for managing medical appointments, patient records, and doctor schedules.",
-      "longDescription": "Developed an appointment scheduling and management system for a healthcare provider (mutualista). This system allows patients to book appointments online, view doctor availability, and receive reminders. For the healthcare provider, it offers tools for managing patient records, doctor schedules,and a reporting module for administrative insights."
-    },
-    "proj_mantenimiento_evolutivo_prosegur": {
-      "title": "Prosegur - Maintenance and System Evolution",
-      "description": "Maintenance and evolutionary development for Prosegur's internal systems.",
-      "longDescription": "As part of my work at SONDA, I contributed to the maintenance and evolutionary development of internal systems for Prosegur. This involved troubleshooting, implementing new features, and ensuring the stability and performance of critical applications used by the company."
-    },
-    "proj_tarjeta_credito_oca": {
-      "title": "OCA Credit Card - Systems Development",
-      "description": "Development of functionalities related to OCA credit card systems.",
-      "longDescription": "While at De Larrobla & Asociados, I was involved in developing functionalities for systems related to OCA, a major credit card issuer in Uruguay. This included working on various modules of their financial and transactional platforms."
-    },
-    "proj_sistema_financiero_peru_uruguay": {
-      "title": "Financial Systems for Banks (Peru/Uruguay)",
-      "description": "Worked on financial systems for banks in Peru and Uruguay.",
-      "longDescription": "At De Larrobla & Asociados, I contributed to the development and maintenance of financial systems used by banking institutions in Peru and Uruguay. This involved understanding complex financial requirements and implementing robust and secure software solutions."
-    },
-    "proj_app_mobile_xamarin_actualred": {
-      "title": "Xamarin Mobile App for Major Client (Actualred)",
-      "description": "Successfully launched the company's first mobile application for a major client, developed with Xamarin.",
-      "longDescription": "During my time at Actualred, I led the development and successful launch of the company's first mobile application for one of its key clients. The application was built using Xamarin, providing a cross-platform solution. This project involved the full development lifecycle, from requirement gathering to deployment and post-launch support."
+    "proj_servitec": {
+      "title": "Servitec - Field Service Management",
+      "description": "System to record mechanic jobs, manage payments, schedule visits with notifications, and a landing page for company information.",
+      "longDescription": "Servitec began as a system to record mechanic jobs in the field, aiming to maintain a history of completed work and manage payment for the services rendered.\nThe system includes an agenda feature that allows the administrator to schedule future visits, and it sends advance notifications to the administrator via push notifications, email, and WhatsApp messages.\nTo enhance web visibility, it has been decided to add a landing page that showcases information about the company and displays relevant photos of completed jobs. This addition will contribute to presenting a more professional and appealing image to potential clients visiting the website."
     }
   },
   "chatbotIntroductionSection": {
@@ -175,5 +150,3 @@
     "closeButton": "Close"
   }
 }
-
-    

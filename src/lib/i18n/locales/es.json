@@ -76,35 +76,10 @@
       "description": "El mismo portafolio que estás viendo, construido con Next.js y ShadCN UI.",
       "longDescription": "Este sitio web de portafolio, la misma plataforma que estás explorando actualmente, sirve como una muestra dinámica de mis habilidades, proyectos y trayectoria profesional. Está meticulosamente construido utilizando tecnologías de vanguardia:\n- Next.js 14 con App Router: Para un rendimiento óptimo, renderizado del lado del servidor y enrutamiento eficiente.\n- TypeScript: Asegurando la seguridad de tipos y un código mantenible.\n- Tailwind CSS: Para un enfoque de utilidad primero en el estilizado, resultando en un diseño limpio y responsivo.\n- ShadCN UI: Aprovechando componentes React preconstruidos, accesibles y personalizables.\n- Integración con GenAI: Presenta un chatbot impulsado por IA para preguntas y respuestas interactivas.\n- Soporte i18n: Totalmente internacionalizado para usuarios de habla inglesa y española.\nEl diseño prioriza una estética limpia y moderna, navegación intuitiva y una experiencia de usuario fluida en todos los dispositivos. Su objetivo es proporcionar una visión general completa de mis capacidades y cómo abordo el desarrollo de software."
     },
-    "proj_gestion_interna_estudio_juridico": {
-      "title": "Sistema de Gestión Interna para Estudio Jurídico",
-      "description": "Sistema integral para la gestión de casos, clientes, plazos y facturación para un estudio jurídico.",
-      "longDescription": "Este proyecto implicó el desarrollo de un sistema de gestión interna a medida para un estudio jurídico con el fin de optimizar sus operaciones diarias. Las características clave incluyen seguimiento de casos, gestión de base de datos de clientes, recordatorios automáticos de plazos, gestión de documentos y funcionalidades de facturación integradas. El sistema fue construido para garantizar la seguridad de los datos y proporcionar una interfaz de usuario intuitiva para abogados y personal administrativo."
-    },
-    "proj_sistema_turnos_mutualista": {
-      "title": "Sistema de Turnos para Mutualista",
-      "description": "Sistema para la gestión de citas médicas, historias clínicas y horarios de médicos.",
-      "longDescription": "Desarrollé un sistema de programación y gestión de citas para un proveedor de atención médica (mutualista). Este sistema permite a los pacientes reservar citas en línea, ver la disponibilidad de los médicos y recibir recordatorios. Para el proveedor de atención médica, ofrece herramientas para gestionar historias clínicas de pacientes, horarios de médicos y un módulo de informes para análisis administrativos."
-    },
-    "proj_mantenimiento_evolutivo_prosegur": {
-      "title": "Prosegur - Mantenimiento y Evolución de Sistemas",
-      "description": "Mantenimiento y desarrollo evolutivo para los sistemas internos de Prosegur.",
-      "longDescription": "Como parte de mi trabajo en SONDA, contribuí al mantenimiento y desarrollo evolutivo de los sistemas internos de Prosegur. Esto implicó la resolución de problemas, la implementación de nuevas características y asegurar la estabilidad y el rendimiento de aplicaciones críticas utilizadas por la empresa."
-    },
-    "proj_tarjeta_credito_oca": {
-      "title": "Tarjeta de Crédito OCA - Desarrollo de Sistemas",
-      "description": "Desarrollo de funcionalidades relacionadas con los sistemas de tarjetas de crédito OCA.",
-      "longDescription": "Mientras estuve en De Larrobla & Asociados, participé en el desarrollo de funcionalidades para sistemas relacionados con OCA, un importante emisor de tarjetas de crédito en Uruguay. Esto incluyó trabajar en varios módulos de sus plataformas financieras y transaccionales."
-    },
-    "proj_sistema_financiero_peru_uruguay": {
-      "title": "Sistemas Financieros para Bancos (Perú/Uruguay)",
-      "description": "Trabajé en sistemas financieros para bancos en Perú y Uruguay.",
-      "longDescription": "En De Larrobla & Asociados, contribuí al desarrollo y mantenimiento de sistemas financieros utilizados por instituciones bancarias en Perú y Uruguay. Esto implicó comprender complejos requisitos financieros e implementar soluciones de software robustas y seguras."
-    },
-    "proj_app_mobile_xamarin_actualred": {
-      "title": "Aplicación Móvil Xamarin para Cliente Importante (Actualred)",
-      "description": "Lanzamiento exitoso de la primera aplicación móvil de la empresa para un cliente importante, desarrollada con Xamarin.",
-      "longDescription": "Durante mi tiempo en Actualred, lideré el desarrollo y el lanzamiento exitoso de la primera aplicación móvil de la empresa para uno de sus clientes clave. La aplicación fue construida utilizando Xamarin, proporcionando una solución multiplataforma. Este proyecto involucró el ciclo de vida completo del desarrollo, desde la recopilación de requisitos hasta la implementación y el soporte posterior al lanzamiento."
+    "proj_servitec": {
+      "title": "Servitec - Gestión de Servicios en Campo",
+      "description": "Sistema para registrar trabajos de mecánicos, gestionar pagos, agendar visitas con notificaciones y una landing page para información de la empresa.",
+      "longDescription": "Servitec comenzó como un sistema para registrar trabajos de mecánicos en el campo, con el objetivo de mantener un historial del trabajo completado y gestionar el pago de los servicios prestados.\nEl sistema incluye una función de agenda que permite al administrador programar visitas futuras y envía notificaciones anticipadas al administrador mediante notificaciones push, correo electrónico y mensajes de WhatsApp.\nPara mejorar la visibilidad en la web, se ha decidido agregar una página de destino que muestre información sobre la empresa y fotos relevantes de los trabajos completados. Esta adición contribuirá a presentar una imagen más profesional y atractiva a los clientes potenciales que visiten el sitio web."
     }
   },
   "chatbotIntroductionSection": {
@@ -175,5 +150,3 @@
     "closeButton": "Cerrar"
   }
 }
-
-    
