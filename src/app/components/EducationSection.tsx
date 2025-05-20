@@ -152,7 +152,7 @@ export function EducationSection() {
               )}
               {entry.id === "edu_platzi_courses" && (
                 <Button variant="link" size="sm" asChild className="p-0 h-auto">
-                  <Link href="http://brianbentancourt.com/courses" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://platzi.com/p/brianbentancourt/" target="_blank" rel="noopener noreferrer">
                     {t('educationSection.viewCoursesLink', {fallback: "View All Courses"})}
                     <ExternalLink className="ml-2 h-4 w-4" />
                   </Link>

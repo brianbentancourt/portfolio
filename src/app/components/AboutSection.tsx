@@ -9,20 +9,24 @@ import { User, Code, Briefcase, Brain, Palette, Database, Cloud, GitBranch, BarC
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const skills: SkillType[] = [
-  { id: "javascript", name: "JavaScript", icon: Code },
+  { id: "javascript", name: "JavaScript (ES6+, TypeScript)", icon: Code },
   { id: "react", name: "React / React Native", icon: Code },
   { id: "nextjs", name: "Next.js", icon: Code },
-  { id: "nodejs", name: "Node.js", icon: Code },
+  { id: "nodejs", name: "Node.js (Express.js)", icon: Code },
   { id: "python", name: "Python", icon: Code },
-  { id: "dotnet", name: ".NET", icon: Code },
-  { id: "sql", name: "SQL (SQL Server)", icon: Database },
-  { id: "firebase", name: "Firebase", icon: Database },
-  { id: "gcp", name: "Google Cloud", icon: Cloud },
+  { id: "dotnet", name: "C# (.NET Framework & Core)", icon: Code },
+  { id: "sql", name: "SQL (SQL Server, MySQL)", icon: Database },
+  { id: "firebase", name: "Firebase (Firestore, Realtime DB)", icon: Database },
+  { id: "gcp", name: "Google Cloud (GCP)", icon: Cloud },
   { id: "git", name: "Git", icon: GitBranch },
-  { id: "typescript", name: "TypeScript", icon: Code },
   { id: "tailwindcss", name: "Tailwind CSS", icon: Palette },
-  { id: "ai", name: "AI (Watsonx, Scikit-learn, Copilot)", icon: Brain },
-  { id: "powerbi", name: "Power BI", icon: BarChartBig },
+  { id: "ai", name: "AI (Genkit, Gemini, Watsonx, Scikit-learn)", icon: Brain },
+  { id: "powerbi", name: "Power BI (DAX)", icon: BarChartBig },
+  { id: "php", name: "PHP", icon: Code },
+  { id: "jquery", name: "jQuery", icon: Code },
+  { id: "sass", name: "SASS/SCSS", icon: Palette},
+  { id: "docker", name: "Docker", icon: Code },
+  { id: "htmlcss", name: "HTML5 & CSS3", icon: Palette},
 ];
 
 const experiences: ExperienceType[] = [
@@ -32,7 +36,9 @@ const experiences: ExperienceType[] = [
     company: "SONDA",
     duration: "June 2022 - Present",
     descriptionItems: [
-      "Full stack development and team mentoring.",
+      "Full stack development focusing on .NET and JavaScript technologies.",
+      "Team mentoring and leading development efforts on key projects.",
+      "Maintenance and evolutionary development of systems for Prosegur.",
     ],
   },
   {
@@ -41,7 +47,8 @@ const experiences: ExperienceType[] = [
     company: "De Larrobla & Asociados",
     duration: "January 2021 - June 2022",
     descriptionItems: [
-      "Worked on financial systems for banks in Peru and Uruguay.",
+      "Worked on critical financial systems for banking institutions in Peru and Uruguay.",
+      "Development of functionalities related to OCA credit card systems.",
     ],
   },
   {
@@ -50,10 +57,10 @@ const experiences: ExperienceType[] = [
     company: "Actualred",
     duration: "September 2016 - December 2020",
     descriptionItems: [
-      "Developed for a primary project and collaborated on other company projects.",
-      "Engaged in self-training to improve programming skills.",
+      "Developed and maintained a primary ERP-like system for the company and its clients.",
+      "Collaborated on diverse company projects, enhancing skills in various technologies.",
       "Successfully launched the company's first mobile application for a major client, developed with Xamarin.",
-      "Provided expert customer service with excellent problem-solving abilities and effective production system organization.",
+      "Provided expert customer service with excellent problem-solving abilities.",
     ],
   },
   {
@@ -62,7 +69,7 @@ const experiences: ExperienceType[] = [
     company: "Urudata S.A.",
     duration: "October 2014 - September 2016",
     descriptionItems: [
-      "Worked in a large team, providing support in networks, printers, user access to platforms, automated backups, and incident resolution through a ticketing platform.",
+      "Provided IT support in networks, printers, user access, automated backups, and incident resolution.",
     ],
   },
 ];

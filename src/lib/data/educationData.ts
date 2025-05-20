@@ -35,10 +35,10 @@ export const educationData: EducationEntryType[] = [
     title: "Various Online Courses",
     institution: "Platzi & other platforms",
     period: "Ongoing",
-    description: "Continuously updating skills through online courses on platforms like Platzi, focusing on emerging technologies and advanced development topics. For a detailed list, see brianbentancourt.com/courses.",
+    description: "Continuously updating skills through online courses on platforms like Platzi, focusing on emerging technologies and advanced development topics. For a detailed list, see https://platzi.com/p/brianbentancourt/",
     details: [
         "Specializations in web development, AI, cloud technologies, and more.",
-        "Refer to brianbentancourt.com/courses for a detailed list."
+        "Refer to https://platzi.com/p/brianbentancourt/ for a detailed list."
     ],
     logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvHjIpFwK8LDdteq1cxYCg2x4Cfq7eXB7fVQ&s", 
     logoAiHint: "platzi logo",

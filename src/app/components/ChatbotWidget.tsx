@@ -53,7 +53,7 @@ Experience:
 Education:
 - Programmer Analyst - Universidad ORT Uruguay, Montevideo (Completed 12/2017)
 - Bachillerato Tecnológico Informático (Technical High School Diploma in Informatics) - ITSP, Paysandú (Completed 12/2012)
-- Continuous Learning: Active on platforms like Platzi (platzi.com/@brianbentancourt), with numerous courses in web development, AI, cloud technologies, and more. For a detailed list, see brianbentancourt.com/courses.
+- Continuous Learning: Active on platforms like Platzi (https://platzi.com/p/brianbentancourt/), with numerous courses in web development, AI, cloud technologies, and more. For a detailed list, see https://platzi.com/p/brianbentancourt/.
 
 Freelance Projects:
 - Agustyle (agustyle.com): Barbershop reservation management system. Features social login, real-time availability, admin panel, and calendar integration. (PHP, MySQL)
@@ -103,7 +103,7 @@ Experiencia:
 Educación:
 - Analista Programador - Universidad ORT Uruguay, Montevideo (Completado 12/2017)
 - Bachillerato Tecnológico Informático - ITSP, Paysandú (Completado 12/2012)
-- Aprendizaje Continuo: Activo en plataformas como Platzi (platzi.com/@brianbentancourt), con numerosos cursos en desarrollo web, IA, tecnologías en la nube y más. Para una lista detallada, ver brianbentancourt.com/courses.
+- Aprendizaje Continuo: Activo en plataformas como Platzi (https://platzi.com/p/brianbentancourt/), con numerosos cursos en desarrollo web, IA, tecnologías en la nube y más. Para una lista detallada, ver https://platzi.com/p/brianbentancourt/.
 
 Proyectos Freelance:
 - Agustyle (agustyle.com): Sistema de gestión de reservas para barbería. Incluye inicio de sesión social, disponibilidad en tiempo real, panel de administración e integración de calendario. (PHP, MySQL)
