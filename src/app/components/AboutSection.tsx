@@ -1,6 +1,6 @@
 
 "use client";
-import Image from "next/image"; // Added Image import
+// Removed Image import as it's no longer used in this component
 import { Section } from "@/components/layout/Section";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -72,20 +72,16 @@ export function AboutSection() {
 
   return (
     <Section id="about" title={t('about.title')} icon={User}>
-      {/* Text and Image Grid */}
-      <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-12 items-center mb-16">
-        <div className="lg:col-span-2 space-y-6">
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            {t('about.greeting')}
-          </p>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            {t('about.journey')}
-          </p>
-           <p className="text-lg text-muted-foreground leading-relaxed">
-            {t('about.hobbies')}
-          </p>
-        </div>
-
+      <div className="mb-12 text-center md:text-left"> {/* Container for text, ensuring full width and bottom margin */}
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          {t('about.greeting')}
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+          {t('about.journey')}
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+          {t('about.hobbies')}
+        </p>
       </div>
 
       {/* Skills Section */}
@@ -102,7 +98,7 @@ export function AboutSection() {
       </div>
 
       {/* Experience Section */}
-      <div className="mt-12"> {/* Adjusted margin from mt-16 if skills also have mb-16 */}
+      <div className="mt-12">
         <h3 className="text-2xl font-semibold mb-6 text-center md:text-left text-foreground">{t('about.experienceTitle')}</h3>
         <Accordion type="single" collapsible className="w-full">
           {experiences.map((exp) => (
