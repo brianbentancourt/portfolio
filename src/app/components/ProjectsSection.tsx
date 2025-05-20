@@ -96,7 +96,7 @@ export function ProjectsSection() {
       title: t('projects.proj_portfolio.title'),
       description: t('projects.proj_portfolio.description'),
       longDescription: t('projects.proj_portfolio.longDescription'),
-      imageUrl: "/img/brian_portfolio.png",
+      imageUrl: "https://images.unsplash.com/photo-1653387300291-bfa1eeb90e16?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "ShadCN UI", "GenAI", "i18n"],
       liveLink: "https://brianbentancourt.com",
       sourceLink: "https://github.com/brianbentancourt/portfolio-nextjs-shadcn-genai",
