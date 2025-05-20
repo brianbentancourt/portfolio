@@ -28,16 +28,30 @@ export interface ExperienceType {
 
 export interface EducationEntryType {
   id: string;
-  title: string; // e.g., "Analista Programador" or "Full Stack Web Development"
-  institution: string; // e.g., "Universidad de la República" or "Coderhouse"
-  period: string; // e.g., "2017 - 2020" or "Completed 2021"
-  description?: string; // A brief overview
-  details?: string[]; // Bullet points for more specifics
+  title: string; 
+  institution: string; 
+  period: string; 
+  description?: string; 
+  details?: string[]; 
   logoUrl?: string;
   logoAiHint?: string;
-  certificateUrl?: string; // Direct URL to the certificate image
-  certificateImageAiHint?: string; // AI hint for the certificate image
+  certificateUrl?: string; 
+  certificateImageAiHint?: string; 
 }
 
-// DiplomaType is removed as EducationEntryType will be used for diplomas/certificates.
-// Ensure that when an EducationEntryType is treated as a diploma, its certificateUrl is present.
+export interface FirebaseDiplomaType {
+  id: string; // Firestore document ID
+  title: string;
+  date: Date; // Converted from Firestore Timestamp
+  src: string; // URL to certificate image
+  // Optional: Add other fields if they exist in your Firestore documents
+  // institution?: string; 
+}
+
+export interface CertificateDisplayInfo {
+  title: string; 
+  certificateUrl: string;
+  certificateImageAiHint?: string;
+  displayInstitution?: string; 
+  displayPeriodOrDate?: string; 
+}

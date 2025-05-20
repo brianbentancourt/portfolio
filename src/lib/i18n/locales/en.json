@@ -88,8 +88,11 @@
   "diplomasPage": {
     "title": "My Diplomas & Certificates",
     "description": "A collection of my certifications and diplomas acquired throughout my professional journey. Click on any diploma to view it in full size.",
-    "noDiplomas": "No diplomas to display at the moment. Please check back later or visit brianbentancourt.com/courses.",
-    "viewFullSizeButton": "View Full Size"
+    "noDiplomas": "No diplomas to display at the moment. Please check back later.",
+    "viewFullSizeButton": "View Full Size",
+    "loading": "Loading diplomas...",
+    "fetchError": "Failed to load diplomas. Please try again later.",
+    "dateNotAvailable": "Date not available"
   },
   "footer": {
     "copyright": "© {year} Brian Bentancourt. All rights reserved."

@@ -9,12 +9,21 @@ import { GraduationCap, ExternalLink, FileText, Eye } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import * as React from "react";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
-import { educationData } from "@/lib/data/educationData"; // Import centralized data
-import { CertificateDialogContent } from "./CertificateDialogContent"; // Import extracted dialog
+import { educationData } from "@/lib/data/educationData"; 
+import { CertificateDialogContent } from "./CertificateDialogContent"; 
+import type { EducationEntryType, CertificateDisplayInfo } from "@/lib/types";
 
 export function EducationSection() {
   const { t } = useLanguage();
-  const certificates = educationData.filter(entry => !!entry.certificateUrl);
+  const certificatesFromStaticData = educationData.filter(entry => !!entry.certificateUrl);
+
+  const prepareCertificateInfo = (entry: EducationEntryType): CertificateDisplayInfo => ({
+    title: entry.title,
+    certificateUrl: entry.certificateUrl!,
+    certificateImageAiHint: entry.certificateImageAiHint,
+    displayInstitution: entry.institution,
+    displayPeriodOrDate: entry.period,
+  });
 
   return (
     <Section id="education" title={t('educationSection.title')} icon={GraduationCap}>
@@ -22,7 +31,6 @@ export function EducationSection() {
         {t('educationSection.description')}
       </p>
       
-      {/* Main Education Entries */}
       <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
         {educationData.map((entry) => (
           <Card key={entry.id} className="flex flex-col h-full hover:shadow-lg transition-shadow">
@@ -62,7 +70,7 @@ export function EducationSection() {
                       {t('educationSection.viewCertificateButton')}
                     </Button>
                   </DialogTrigger>
-                  <CertificateDialogContent entry={entry} t={t} />
+                  <CertificateDialogContent certificateInfo={prepareCertificateInfo(entry)} t={t} />
                 </Dialog>
               )}
               {entry.id === "edu_platzi_courses" && (
@@ -78,15 +86,14 @@ export function EducationSection() {
         ))}
       </div>
 
-      {/* Certificates Carousel/Scroll Section */}
-      {certificates.length > 0 && (
+      {certificatesFromStaticData.length > 0 && (
         <div className="mt-16">
           <h3 className="text-2xl font-semibold mb-6 text-center md:text-left text-foreground">
-            {t('educationSection.myCertificatesTitle', { fallback: "My Certificates"})}
+            {t('educationSection.myCertificatesTitle', { fallback: "My Certificates (from static data)"})}
           </h3>
           <div className="flex overflow-x-auto space-x-4 pb-4 -mx-4 px-4">
-            {certificates.map((certEntry) => (
-              <Dialog key={`cert-${certEntry.id}`}>
+            {certificatesFromStaticData.map((certEntry) => (
+              <Dialog key={`cert-static-${certEntry.id}`}>
                 <DialogTrigger asChild>
                   <Card className="min-w-[200px] max-w-[200px] h-[280px] flex flex-col overflow-hidden group cursor-pointer hover:shadow-xl transition-shadow">
                     <div className="relative w-full h-[180px] bg-muted flex-shrink-0">
@@ -111,7 +118,7 @@ export function EducationSection() {
                     </CardContent>
                   </Card>
                 </DialogTrigger>
-                <CertificateDialogContent entry={certEntry} t={t} />
+                <CertificateDialogContent certificateInfo={prepareCertificateInfo(certEntry)} t={t} />
               </Dialog>
             ))}
           </div>

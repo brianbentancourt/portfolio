@@ -88,8 +88,11 @@
   "diplomasPage": {
     "title": "Mis Diplomas y Certificados",
     "description": "Una colección de mis certificaciones y diplomas adquiridos a lo largo de mi trayectoria profesional. Haz clic en cualquier diploma para verlo en tamaño completo.",
-    "noDiplomas": "No hay diplomas para mostrar en este momento. Por favor, vuelve más tarde o visita brianbentancourt.com/courses.",
-    "viewFullSizeButton": "Ver en Grande"
+    "noDiplomas": "No hay diplomas para mostrar en este momento. Por favor, vuelve más tarde.",
+    "viewFullSizeButton": "Ver en Grande",
+    "loading": "Cargando diplomas...",
+    "fetchError": "Error al cargar los diplomas. Por favor, inténtalo de nuevo más tarde.",
+    "dateNotAvailable": "Fecha no disponible"
   },
   "footer": {
     "copyright": "© {year} Brian Bentancourt. Todos los derechos reservados."

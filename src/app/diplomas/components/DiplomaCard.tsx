@@ -2,24 +2,38 @@
 "use client";
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import type { EducationEntryType } from "@/lib/types";
+import type { FirebaseDiplomaType, CertificateDisplayInfo } from "@/lib/types";
 import * as React from "react";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button";
 import { Loader2, Eye } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { CertificateDialogContent } from "@/app/components/CertificateDialogContent"; // Import shared dialog
+import { CertificateDialogContent } from "@/app/components/CertificateDialogContent"; 
+import { format } from 'date-fns';
+import { enUS, es } from 'date-fns/locale';
+
 
 interface DiplomaCardProps {
-  entry: EducationEntryType; // Changed from DiplomaType to EducationEntryType
+  entry: FirebaseDiplomaType; 
 }
 
 export function DiplomaCard({ entry }: DiplomaCardProps) {
   const [isImageLoading, setIsImageLoading] = React.useState(true);
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
 
-  // Ensure certificateUrl exists, otherwise this component shouldn't be rendered for this entry
-  if (!entry.certificateUrl) return null;
+  if (!entry.src) return null;
+
+  const dateLocale = locale === 'es' ? es : enUS;
+  const formattedDate = entry.date ? format(entry.date, 'PPP', { locale: dateLocale }) : t('diplomasPage.dateNotAvailable', {fallback: 'Date not available'});
+
+  const certificateInfo: CertificateDisplayInfo = {
+    title: entry.title,
+    certificateUrl: entry.src,
+    certificateImageAiHint: "diploma certificate document", // Generic hint
+    displayPeriodOrDate: formattedDate,
+    // displayInstitution: "Certificate", // Or fetch if available in FirebaseDiplomaType in future
+  };
+
 
   return (
     <Dialog>
@@ -32,12 +46,12 @@ export function DiplomaCard({ entry }: DiplomaCardProps) {
               </div>
             )}
             <Image
-              src={entry.certificateUrl}
+              src={entry.src}
               alt={t('educationSection.certificateModalAlt', { replacements: { title: entry.title }, fallback: `Certificate for ${entry.title}` })}
               fill
               className={`object-contain transition-transform duration-300 group-hover:scale-105 p-2 ${isImageLoading ? 'opacity-0' : 'opacity-100'}`}
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-              data-ai-hint={entry.certificateImageAiHint || "certificate document"}
+              data-ai-hint={"diploma certificate document"}
               onLoad={() => setIsImageLoading(false)}
               onError={() => setIsImageLoading(false)}
               unoptimized
@@ -50,8 +64,7 @@ export function DiplomaCard({ entry }: DiplomaCardProps) {
           </CardTitle>
         </CardHeader>
         <CardContent className="pt-0 pb-3 text-sm text-muted-foreground">
-          <p className="truncate">{entry.institution}</p>
-          <p className="truncate">{entry.period}</p>
+          <p className="truncate">{formattedDate}</p>
         </CardContent>
          <div className="p-4 pt-0 mt-auto">
             <DialogTrigger asChild>
@@ -62,7 +75,7 @@ export function DiplomaCard({ entry }: DiplomaCardProps) {
             </DialogTrigger>
           </div>
       </Card>
-      <CertificateDialogContent entry={entry} t={t} />
+      <CertificateDialogContent certificateInfo={certificateInfo} t={t} />
     </Dialog>
   );
 }
