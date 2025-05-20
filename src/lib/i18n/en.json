@@ -66,7 +66,7 @@
     "description": "A collection of my certifications and diplomas acquired throughout my professional journey."
   },
   "footer": {
-    "copyright": "© {year} Brian Bentancourt. All rights reserved."
+    "copyright": "© {{year}} Brian Bentancourt. All rights reserved."
   },
   "common": {
     "closeButton": "Close"

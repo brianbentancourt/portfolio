@@ -150,7 +150,7 @@
     "noBadges": "No hay insignias para mostrar en este momento."
   },
   "footer": {
-    "copyright": "© {year} Brian Bentancourt. Todos los derechos reservados."
+    "copyright": "© {{year}} Brian Bentancourt. Todos los derechos reservados."
   },
   "common": {
     "closeButton": "Cerrar"

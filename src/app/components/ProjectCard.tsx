@@ -48,12 +48,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
             </div>
           </DialogTrigger>
         </CardHeader>
-        <CardContent className="p-6 flex-grow">
-          <CardDescription className="text-muted-foreground line-clamp-3 mb-4">
-            {project.description}
-          </CardDescription>
+        <CardContent className="p-6 flex-grow max-h-64 overflow-y-auto">
           <div className="flex flex-wrap gap-2">
-            {project.tags.map((tag) => (
+            <CardDescription className="text-muted-foreground mb-4">
+              {project.description}
+            </CardDescription>
+            {project.tags.map(tag => (
               <Badge key={tag} variant="secondary" className="text-xs">
                 {tag}
               </Badge>
@@ -75,19 +75,19 @@ export function ProjectCard({ project }: ProjectCardProps) {
                   </Link>
                 </Button>
               )}
-              {project.sourceLink && (
+              {/* {project.sourceLink && (
                 <Button asChild variant="ghost" size="icon" title="Source Code">
                   <Link href={project.sourceLink} target="_blank" rel="noopener noreferrer">
                     <Github className="h-4 w-4" />
                   </Link>
                 </Button>
-              )}
+              )} */}
             </div>
           </div>
         </CardFooter>
       </Card>
 
-      <DialogContent className="sm:max-w-2xl max-h-[90vh] flex flex-col p-0">
+      <DialogContent className="sm:max-w-2xl max-h-[90vh] flex flex-col min-h-0 p-0">
         <DialogHeader className="p-6 pb-0 shrink-0">
           <DialogTitle className="text-2xl text-primary">{project.title}</DialogTitle>
           <div className="relative aspect-video my-2 md:my-3 rounded-lg overflow-hidden max-h-[180px] sm:max-h-[220px] md:max-h-[280px]">
@@ -107,7 +107,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             ))}
           </div>
         </DialogHeader>
-        <ScrollArea className="flex-grow min-h-0 px-6 py-4"> {/* Added py-4 for vertical padding */}
+        <ScrollArea className="flex-grow basis-0 overflow-y-auto px-6 py-4"> {/* Added py-4 for vertical padding */}
           <DialogDescription className="text-base text-muted-foreground whitespace-pre-line"> {/* Removed pt-4 */}
             {project.longDescription || project.description}
           </DialogDescription>
@@ -130,19 +130,19 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </ScrollArea>
         <div className="flex gap-2 p-6 pt-4 border-t shrink-0">
             {project.liveLink && (
-              <Button asChild>
+              <Button asChild variant="outline">
                 <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
                 </Link>
               </Button>
             )}
-            {project.sourceLink && (
+            {/* {project.sourceLink && (
               <Button asChild variant="outline">
                 <Link href={project.sourceLink} target="_blank" rel="noopener noreferrer">
                   <Github className="mr-2 h-4 w-4" /> Source Code
                 </Link>
               </Button>
-            )}
+            )} */}
           </div>
       </DialogContent>
     </Dialog>

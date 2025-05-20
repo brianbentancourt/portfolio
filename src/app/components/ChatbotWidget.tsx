@@ -135,6 +135,7 @@ export function ChatbotWidget() {
   const [isLoading, setIsLoading] = useState(false);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
   const { locale, t } = useLanguage(); 
 
   const portfolioContext = locale === 'es' ? staticPortfolioContextES : staticPortfolioContextEN;
@@ -155,17 +156,7 @@ export function ChatbotWidget() {
   }, [isOpen, messages.length, welcomeMessage]);
 
   useEffect(() => {
-    const scrollAreaElement = scrollAreaRef.current;
-    if (scrollAreaElement) {
-      const viewportElement = scrollAreaElement.children[0] as HTMLDivElement | undefined;
-      if (viewportElement) {
-        // Using setTimeout to ensure this runs after the current browser task queue,
-        // potentially allowing more time for DOM updates and layout calculations.
-        setTimeout(() => {
-          viewportElement.scrollTo({ top: viewportElement.scrollHeight, behavior: 'smooth' });
-        }, 0);
-      }
-    }
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
   
   useEffect(() => {
@@ -253,6 +244,7 @@ export function ChatbotWidget() {
                   </div>
                 </div>
               )}
+              <div ref={messagesEndRef} />
             </div>
           </ScrollArea>
 

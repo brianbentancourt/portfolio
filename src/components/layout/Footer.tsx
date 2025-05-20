@@ -27,9 +27,9 @@ export function Footer() {
           <Link href="linkedin.com/in/brianbentancourt" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-muted-foreground hover:text-primary transition-colors">
             <Linkedin className="h-5 w-5" />
           </Link>
-          <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-muted-foreground hover:text-primary transition-colors">
+          {/* <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-muted-foreground hover:text-primary transition-colors">
             <Twitter className="h-5 w-5" />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </footer>
