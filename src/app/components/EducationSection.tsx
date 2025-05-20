@@ -9,8 +9,8 @@ import { GraduationCap, ExternalLink, FileText, Eye, Loader2 } from "lucide-reac
 import { useLanguage } from "@/contexts/LanguageContext";
 import * as React from "react";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
-import { educationData } from "@/lib/data/educationData"; 
-import { CertificateDialogContent } from "./CertificateDialogContent"; 
+import { educationData } from "@/lib/data/educationData";
+import { CertificateDialogContent } from "./CertificateDialogContent";
 import type { EducationEntryType, CertificateDisplayInfo, FirebaseDiplomaType } from "@/lib/types";
 import { db } from "@/lib/firebase";
 import { collection, getDocs, query, orderBy, Timestamp } from "firebase/firestore";
@@ -160,7 +160,7 @@ export function EducationSection() {
                         className="object-contain p-2 group-hover:scale-105 transition-transform"
                         sizes="200px"
                         data-ai-hint={"diploma certificate document"}
-                        unoptimized 
+                        unoptimized
                       />
                     </div>
                     <CardContent className="p-3 flex-grow flex flex-col justify-between">
