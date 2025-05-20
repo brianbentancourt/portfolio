@@ -159,9 +159,11 @@ export function ChatbotWidget() {
     if (scrollAreaElement) {
       const viewportElement = scrollAreaElement.children[0] as HTMLDivElement | undefined;
       if (viewportElement) {
-        requestAnimationFrame(() => { // Using requestAnimationFrame for potentially smoother/more reliable scroll
+        // Using setTimeout to ensure this runs after the current browser task queue,
+        // potentially allowing more time for DOM updates and layout calculations.
+        setTimeout(() => {
           viewportElement.scrollTo({ top: viewportElement.scrollHeight, behavior: 'smooth' });
-        });
+        }, 0);
       }
     }
   }, [messages]);
@@ -286,3 +288,6 @@ export function ChatbotWidget() {
 
     
 
+
+
+    
