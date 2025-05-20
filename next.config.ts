@@ -52,6 +52,12 @@ const nextConfig: NextConfig = {
         hostname: 'www.sau.org.uy', // Added for sau.org.uy images
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.credly.com', // Added for credly.com images (badges)
+        port: '',
+        pathname: '/**',
       }
     ],
   },

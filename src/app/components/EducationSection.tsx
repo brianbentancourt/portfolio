@@ -5,23 +5,28 @@ import Link from "next/link";
 import { Section } from "@/components/layout/Section";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { GraduationCap, ExternalLink, FileText, Eye, Loader2 } from "lucide-react";
+import { GraduationCap, ExternalLink, FileText, Eye, Loader2, Star } from "lucide-react"; // Added Star for Badges
 import { useLanguage } from "@/contexts/LanguageContext";
 import * as React from "react";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import { educationData } from "@/lib/data/educationData";
 import { CertificateDialogContent } from "./CertificateDialogContent";
-import type { EducationEntryType, CertificateDisplayInfo, FirebaseDiplomaType } from "@/lib/types";
+import type { EducationEntryType, CertificateDisplayInfo, FirebaseDiplomaType, FirebaseBadgeType } from "@/lib/types";
 import { db } from "@/lib/firebase";
 import { collection, getDocs, query, orderBy, Timestamp } from "firebase/firestore";
 import { format } from 'date-fns';
 import { enUS, es } from 'date-fns/locale';
+import { BadgeCard } from "./BadgeCard"; // Import BadgeCard
 
 export function EducationSection() {
   const { t, locale } = useLanguage();
   const [firestoreDiplomas, setFirestoreDiplomas] = React.useState<FirebaseDiplomaType[]>([]);
   const [isLoadingFirestoreDiplomas, setIsLoadingFirestoreDiplomas] = React.useState(true);
   const [firestoreError, setFirestoreError] = React.useState<string | null>(null);
+
+  const [firestoreBadges, setFirestoreBadges] = React.useState<FirebaseBadgeType[]>([]);
+  const [isLoadingFirestoreBadges, setIsLoadingFirestoreBadges] = React.useState(true);
+  const [firestoreBadgesError, setFirestoreBadgesError] = React.useState<string | null>(null);
 
   const dateLocale = locale === 'es' ? es : enUS;
 
@@ -51,7 +56,35 @@ export function EducationSection() {
       }
     };
 
+    const fetchBadges = async () => {
+      setIsLoadingFirestoreBadges(true);
+      setFirestoreBadgesError(null);
+      try {
+        const badgesCollection = collection(db, "badges");
+        const badgesQuery = query(badgesCollection, orderBy("date", "desc"));
+        const querySnapshot = await getDocs(badgesQuery);
+        const fetchedBadges: FirebaseBadgeType[] = querySnapshot.docs.map((doc) => {
+          const data = doc.data();
+          return {
+            id: doc.id,
+            title: data.title || "Untitled Badge",
+            date: data.date instanceof Timestamp ? data.date.toDate() : new Date(),
+            school: data.school || "Unknown Issuer",
+            src: data.src || "",
+            url: data.url || "#",
+          };
+        });
+        setFirestoreBadges(fetchedBadges);
+      } catch (err) {
+        console.error("Error fetching badges for carousel:", err);
+        setFirestoreBadgesError(t('badgesPage.fetchError', { fallback: "Failed to load badges. Please try again later."}));
+      } finally {
+        setIsLoadingFirestoreBadges(false);
+      }
+    };
+
     fetchDiplomas();
+    fetchBadges();
   }, [t]);
 
   const prepareStaticCertificateInfo = (entry: EducationEntryType): CertificateDisplayInfo => ({
@@ -65,11 +98,9 @@ export function EducationSection() {
   const prepareFirestoreCertificateInfo = (entry: FirebaseDiplomaType): CertificateDisplayInfo => ({
     title: entry.title,
     certificateUrl: entry.src,
-    certificateImageAiHint: "diploma certificate document", // Generic hint for firestore diplomas
+    certificateImageAiHint: "diploma certificate document",
     displayPeriodOrDate: entry.date ? format(entry.date, 'PPP', { locale: dateLocale }) : t('diplomasPage.dateNotAvailable', {fallback: 'Date not available'}),
-    // displayInstitution can be added if available in FirebaseDiplomaType
   });
-
 
   return (
     <Section id="education" title={t('educationSection.title')} icon={GraduationCap}>
@@ -132,8 +163,10 @@ export function EducationSection() {
         ))}
       </div>
 
+      {/* My Certificates Carousel */}
       <div className="mt-16">
-        <h3 className="text-2xl font-semibold mb-6 text-center md:text-left text-foreground">
+        <h3 className="text-2xl font-semibold mb-6 text-center md:text-left text-foreground flex items-center gap-2">
+          <FileText className="h-7 w-7 text-primary" />
           {t('educationSection.myCertificatesTitle', { fallback: "My Certificates"})}
         </h3>
         {isLoadingFirestoreDiplomas && (
@@ -152,7 +185,6 @@ export function EducationSection() {
                 <DialogTrigger asChild>
                   <Card className="min-w-[200px] max-w-[200px] h-[280px] flex flex-col overflow-hidden group cursor-pointer hover:shadow-xl transition-shadow">
                     <div className="relative w-full h-[180px] bg-muted flex-shrink-0">
-                       {/* For Firestore diplomas, we directly use certEntry.src which is the certificate image */}
                       <Image
                         src={certEntry.src}
                         alt={t('educationSection.certificateModalAlt', { replacements: { title: certEntry.title }, fallback: `Certificate for ${certEntry.title}` })}
@@ -187,6 +219,36 @@ export function EducationSection() {
           </p>
         )}
       </div>
+
+      {/* My Badges Carousel */}
+      <div className="mt-16">
+        <h3 className="text-2xl font-semibold mb-6 text-center md:text-left text-foreground flex items-center gap-2">
+          <Star className="h-7 w-7 text-primary" /> {/* Using Star icon for Badges */}
+          {t('educationSection.myBadgesTitle', { fallback: "My Badges" })}
+        </h3>
+        {isLoadingFirestoreBadges && (
+          <div className="flex justify-center items-center py-10">
+            <Loader2 className="h-10 w-10 animate-spin text-primary" />
+            <p className="ml-3 text-muted-foreground">{t('badgesPage.loading', { fallback: "Loading badges..." })}</p>
+          </div>
+        )}
+        {firestoreBadgesError && !isLoadingFirestoreBadges && (
+          <p className="text-center text-destructive py-6">{firestoreBadgesError}</p>
+        )}
+        {!isLoadingFirestoreBadges && !firestoreBadgesError && firestoreBadges.length > 0 && (
+          <div className="flex overflow-x-auto space-x-4 pb-4 -mx-4 px-4">
+            {firestoreBadges.map((badgeEntry) => (
+              <BadgeCard key={`badge-firestore-${badgeEntry.id}`} entry={badgeEntry} />
+            ))}
+          </div>
+        )}
+        {!isLoadingFirestoreBadges && !firestoreBadgesError && firestoreBadges.length === 0 && (
+          <p className="text-center text-muted-foreground py-6">
+            {t('badgesPage.noBadges', { fallback: "No badges to display at the moment." })}
+          </p>
+        )}
+      </div>
+
 
       <div className="mt-12 text-center">
         <Button asChild size="lg">

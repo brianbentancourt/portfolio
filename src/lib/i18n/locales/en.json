@@ -31,10 +31,13 @@
     "viewCertificateButton": "View Certificate",
     "certificateModalTitle": "{title} - Certificate",
     "certificateModalAlt": "Certificate for {title}",
+    "badgeAlt": "Badge for {title}",
     "noCertificateAvailable": "No certificate image available for this entry.",
     "viewCoursesLink": "View All Courses on Platzi",
     "myCertificatesTitle": "My Certificates",
-    "viewButton": "View"
+    "myBadgesTitle": "My Badges",
+    "viewButton": "View Image",
+    "verifyBadgeButton": "Verify Badge"
   },
   "projectsSection": {
     "title": "My Freelance Projects"
@@ -93,6 +96,11 @@
     "loading": "Loading diplomas...",
     "fetchError": "Failed to load diplomas. Please try again later.",
     "dateNotAvailable": "Date not available"
+  },
+  "badgesPage": {
+    "loading": "Loading badges...",
+    "fetchError": "Failed to load badges. Please try again later.",
+    "noBadges": "No badges to display at the moment."
   },
   "footer": {
     "copyright": "© {year} Brian Bentancourt. All rights reserved."

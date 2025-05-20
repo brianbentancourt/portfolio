@@ -28,15 +28,15 @@ export interface ExperienceType {
 
 export interface EducationEntryType {
   id: string;
-  title: string; 
-  institution: string; 
-  period: string; 
-  description?: string; 
-  details?: string[]; 
+  title: string;
+  institution: string;
+  period: string;
+  description?: string;
+  details?: string[];
   logoUrl?: string;
   logoAiHint?: string;
-  certificateUrl?: string; 
-  certificateImageAiHint?: string; 
+  certificateUrl?: string;
+  certificateImageAiHint?: string;
 }
 
 export interface FirebaseDiplomaType {
@@ -45,13 +45,23 @@ export interface FirebaseDiplomaType {
   date: Date; // Converted from Firestore Timestamp
   src: string; // URL to certificate image
   // Optional: Add other fields if they exist in your Firestore documents
-  // institution?: string; 
+  // institution?: string;
+}
+
+export interface FirebaseBadgeType {
+  id: string; // Firestore document ID
+  title: string;
+  date: Date; // Converted from Firestore Timestamp
+  school: string; // Issuing organization (e.g., IBM, Credly)
+  src: string; // URL to badge image
+  url: string; // URL to the badge verification page
 }
 
 export interface CertificateDisplayInfo {
-  title: string; 
+  title: string;
   certificateUrl: string;
   certificateImageAiHint?: string;
-  displayInstitution?: string; 
-  displayPeriodOrDate?: string; 
+  displayInstitution?: string;
+  displayPeriodOrDate?: string;
 }
+

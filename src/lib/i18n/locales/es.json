@@ -31,10 +31,13 @@
     "viewCertificateButton": "Ver Certificado",
     "certificateModalTitle": "{title} - Certificado",
     "certificateModalAlt": "Certificado de {title}",
+    "badgeAlt": "Insignia de {title}",
     "noCertificateAvailable": "No hay imagen de certificado disponible para esta entrada.",
     "viewCoursesLink": "Ver Todos los Cursos en Platzi",
     "myCertificatesTitle": "Mis Certificados",
-    "viewButton": "Ver"
+    "myBadgesTitle": "Mis Insignias",
+    "viewButton": "Ver Imagen",
+    "verifyBadgeButton": "Verificar Insignia"
   },
   "projectsSection": {
     "title": "Mis Proyectos Freelance"
@@ -93,6 +96,11 @@
     "loading": "Cargando diplomas...",
     "fetchError": "Error al cargar los diplomas. Por favor, inténtalo de nuevo más tarde.",
     "dateNotAvailable": "Fecha no disponible"
+  },
+   "badgesPage": {
+    "loading": "Cargando insignias...",
+    "fetchError": "Error al cargar las insignias. Por favor, inténtalo de nuevo más tarde.",
+    "noBadges": "No hay insignias para mostrar en este momento."
   },
   "footer": {
     "copyright": "© {year} Brian Bentancourt. Todos los derechos reservados."
