@@ -24,11 +24,11 @@ About:
 As a software developer, I'm excited to see the world moving towards AI, and it's a direction I would like to follow. I work to create innovative and efficient solutions that meet client needs and follow new industry trends. I focus on good coding practices and improving user experience to deliver high-quality products that meet and go beyond the expectations of end users. My desire to learn and improve has helped me stay updated, especially in the field of AI, and I am eager to bring this passion and experience to support your organization's success.
 
 Skills:
-- Programming Languages: JavaScript (8 years, ES6+, TypeScript), Python (1 year), C# (.NET Framework & Core, 8 years), PHP
-- Web Development: React.js (7 years), Next.js (1 year), Node.js (7 years, Express.js), HTML5, CSS3, Tailwind CSS, SASS/SCSS, jQuery
+- Programming Languages: JavaScript (8 years, ES6+, TypeScript), Python (1 year), C# (.NET Framework & Core, 8 years)
+- Web Development: React.js (7 years), Next.js (1 year), Node.js (7 years, Express.js), HTML5, CSS3, Tailwind CSS, jQuery
 - Mobile Development: React Native (1 year), Xamarin
 - Databases: SQL Server (8 years, T-SQL, Stored Procedures, Triggers), MySQL, Firebase (Firestore, Realtime Database, 7 years), MongoDB
-- Cloud & DevOps: Google Cloud Platform (GCP, 7 years - App Engine, Cloud Functions, Firebase), Docker, Git (7 years), CI/CD
+- Cloud & DevOps: Google Cloud Platform (GCP, 7 years - App Engine, Cloud Functions, Firebase), Git (7 years), CI/CD
 - AI & Machine Learning: Genkit, Google AI (Gemini), IBM Watsonx (1 year), Scikit-learn (1 year), GitHub Copilot (1 year), Basic understanding of LLMs and prompt engineering.
 - Business Intelligence: Power BI (3 years, DAX, Data Modeling)
 - Operating Systems: Windows, Linux
@@ -56,7 +56,7 @@ Education:
 - Continuous Learning: Active on platforms like Platzi (https://platzi.com/p/brianbentancourt/), with numerous courses in web development, AI, cloud technologies, and more. For a detailed list, see https://platzi.com/p/brianbentancourt/.
 
 Freelance Projects:
-- Agustyle (agustyle.com): Barbershop reservation management system. Features social login, real-time availability, admin panel, and calendar integration. (PHP, MySQL)
+- Agustyle (agustyle.com): Barbershop reservation management system. Features social login, real-time availability, admin panel, and calendar integration.
 - Food Store (foodstoreuy.web.app): Order management system for food businesses. Includes customer registration (Google), online purchasing, real-time tracking, stock control, raffles, map visualization, delivery wallet, and reporting. Client implementations: Burger House, Befe Burgers, Pio Pio. (React, Firebase)
 - Transportes Villasboas (transportesvillasboas.web.app): System for managing clients, trips, and truck maintenance for a transport company.
 - Chenlo Seguros (chenloseguros.com): Website for Mapfre insurance broker, showcasing products and facilitating client-seller communication.
@@ -74,11 +74,11 @@ Sobre Mí:
 Como desarrollador de software, me entusiasma ver cómo el mundo avanza hacia la IA, y es una dirección que me gustaría seguir. Trabajo para crear soluciones innovadoras y eficientes que satisfagan las necesidades del cliente y sigan las nuevas tendencias de la industria. Me enfoco en buenas prácticas de codificación y en mejorar la experiencia del usuario para entregar productos de alta calidad que cumplan y superen las expectativas de los usuarios finales. Mi deseo de aprender y mejorar me ha ayudado a mantenerme actualizado, especialmente en el campo de la IA, y estoy ansioso por aportar esta pasión y experiencia para apoyar el éxito de su organización.
 
 Habilidades:
-- Lenguajes de Programación: JavaScript (8 años, ES6+, TypeScript), Python (1 año), C# (.NET Framework & Core, 8 años), PHP
-- Desarrollo Web: React.js (7 años), Next.js (1 año), Node.js (7 años, Express.js), HTML5, CSS3, Tailwind CSS, SASS/SCSS, jQuery
+- Lenguajes de Programación: JavaScript (8 años, ES6+, TypeScript), Python (1 año), C# (.NET Framework & Core, 8 años)
+- Desarrollo Web: React.js (7 años), Next.js (1 año), Node.js (7 años, Express.js), HTML5, CSS3, Tailwind CSS, jQuery
 - Desarrollo Móvil: React Native (1 año), Xamarin
 - Bases de Datos: SQL Server (8 años, T-SQL, Stored Procedures, Triggers), MySQL, Firebase (Firestore, Realtime Database, 7 años), MongoDB
-- Cloud & DevOps: Google Cloud Platform (GCP, 7 años - App Engine, Cloud Functions, Firebase), Docker, Git (7 años), CI/CD
+- Cloud & DevOps: Google Cloud Platform (GCP, 7 años - App Engine, Cloud Functions, Firebase), Git (7 años), CI/CD
 - IA & Machine Learning: Genkit, Google AI (Gemini), IBM Watsonx (1 año), Scikit-learn (1 año), GitHub Copilot (1 año), Comprensión básica de LLMs e ingeniería de prompts.
 - Business Intelligence: Power BI (3 años, DAX, Modelado de Datos)
 - Sistemas Operativos: Windows, Linux
@@ -106,7 +106,7 @@ Educación:
 - Aprendizaje Continuo: Activo en plataformas como Platzi (https://platzi.com/p/brianbentancourt/), con numerosos cursos en desarrollo web, IA, tecnologías en la nube y más. Para una lista detallada, ver https://platzi.com/p/brianbentancourt/.
 
 Proyectos Freelance:
-- Agustyle (agustyle.com): Sistema de gestión de reservas para barbería. Incluye inicio de sesión social, disponibilidad en tiempo real, panel de administración e integración de calendario. (PHP, MySQL)
+- Agustyle (agustyle.com): Sistema de gestión de reservas para barbería. Incluye inicio de sesión social, disponibilidad en tiempo real, panel de administración e integración de calendario.
 - Food Store (foodstoreuy.web.app): Sistema de gestión de pedidos para negocios de comida. Incluye registro de clientes (Google), compras en línea, seguimiento en tiempo real, control de stock, sorteos, visualización en mapa, billetera para repartidores e informes. Implementaciones en clientes: Burger House, Befe Burgers, Pio Pio. (React, Firebase)
 - Transportes Villasboas (transportesvillasboas.web.app): Sistema para gestión de clientes, viajes y mantenimiento de camiones para una empresa de transporte.
 - Chenlo Seguros (chenloseguros.com): Sitio web para corredor de seguros Mapfre, mostrando productos y facilitando la comunicación cliente-vendedor.
