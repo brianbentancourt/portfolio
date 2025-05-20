@@ -5,22 +5,27 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Section } from "@/components/layout/Section";
 import { DiplomaCard } from "./components/DiplomaCard";
-import { Award, Loader2 } from "lucide-react";
+import { BadgeCard } from "@/app/components/BadgeCard"; // Import BadgeCard
+import { Award, Star, Loader2 } from "lucide-react"; // Added Star for Badges
 import { useLanguage } from "@/contexts/LanguageContext";
-import type { FirebaseDiplomaType } from "@/lib/types";
+import type { FirebaseDiplomaType, FirebaseBadgeType } from "@/lib/types";
 import { db } from "@/lib/firebase";
 import { collection, getDocs, query, orderBy, Timestamp } from "firebase/firestore";
 
-export default function DiplomasPage() {
+export default function DiplomasAndBadgesPage() {
   const { t } = useLanguage();
   const [diplomas, setDiplomas] = React.useState<FirebaseDiplomaType[]>([]);
-  const [isLoading, setIsLoading] = React.useState(true);
-  const [error, setError] = React.useState<string | null>(null);
+  const [isLoadingDiplomas, setIsLoadingDiplomas] = React.useState(true);
+  const [diplomasError, setDiplomasError] = React.useState<string | null>(null);
+
+  const [badges, setBadges] = React.useState<FirebaseBadgeType[]>([]);
+  const [isLoadingBadges, setIsLoadingBadges] = React.useState(true);
+  const [badgesError, setBadgesError] = React.useState<string | null>(null);
 
   React.useEffect(() => {
     const fetchDiplomas = async () => {
-      setIsLoading(true);
-      setError(null);
+      setIsLoadingDiplomas(true);
+      setDiplomasError(null);
       try {
         const diplomasCollection = collection(db, "diplomas");
         const diplomasQuery = query(diplomasCollection, orderBy("date", "desc"));
@@ -30,7 +35,6 @@ export default function DiplomasPage() {
           return {
             id: doc.id,
             title: data.title || "Untitled Diploma",
-            // Ensure date is a Firestore Timestamp and convert it
             date: data.date instanceof Timestamp ? data.date.toDate() : new Date(),
             src: data.src || "",
           };
@@ -38,13 +42,41 @@ export default function DiplomasPage() {
         setDiplomas(fetchedDiplomas);
       } catch (err) {
         console.error("Error fetching diplomas:", err);
-        setError(t('diplomasPage.fetchError', { fallback: "Failed to load diplomas. Please try again later."}));
+        setDiplomasError(t('diplomasPage.fetchError', { fallback: "Failed to load diplomas. Please try again later."}));
       } finally {
-        setIsLoading(false);
+        setIsLoadingDiplomas(false);
+      }
+    };
+
+    const fetchBadges = async () => {
+      setIsLoadingBadges(true);
+      setBadgesError(null);
+      try {
+        const badgesCollection = collection(db, "badges");
+        const badgesQuery = query(badgesCollection, orderBy("date", "desc"));
+        const querySnapshot = await getDocs(badgesQuery);
+        const fetchedBadges: FirebaseBadgeType[] = querySnapshot.docs.map((doc) => {
+          const data = doc.data();
+          return {
+            id: doc.id,
+            title: data.title || "Untitled Badge",
+            date: data.date instanceof Timestamp ? data.date.toDate() : new Date(),
+            school: data.school || "Unknown Issuer",
+            src: data.src || "",
+            url: data.url || "#",
+          };
+        });
+        setBadges(fetchedBadges);
+      } catch (err) {
+        console.error("Error fetching badges:", err);
+        setBadgesError(t('badgesPage.fetchError', { fallback: "Failed to load badges. Please try again later."}));
+      } finally {
+        setIsLoadingBadges(false);
       }
     };
 
     fetchDiplomas();
+    fetchBadges();
   }, [t]);
 
   return (
@@ -55,27 +87,58 @@ export default function DiplomasPage() {
           <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
             {t('diplomasPage.description')}
           </p>
-          {isLoading && (
+
+          {/* Diplomas Section */}
+          {isLoadingDiplomas && (
             <div className="flex justify-center items-center py-10">
               <Loader2 className="h-12 w-12 animate-spin text-primary" />
               <p className="ml-4 text-lg text-muted-foreground">{t('diplomasPage.loading', { fallback: "Loading diplomas..."})}</p>
             </div>
           )}
-          {error && (
-            <p className="text-center text-destructive text-lg py-10">{error}</p>
+          {diplomasError && !isLoadingDiplomas &&(
+            <p className="text-center text-destructive text-lg py-10">{diplomasError}</p>
           )}
-          {!isLoading && !error && diplomas.length > 0 && (
+          {!isLoadingDiplomas && !diplomasError && diplomas.length > 0 && (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {diplomas.map((diplomaEntry) => (
                 <DiplomaCard key={diplomaEntry.id} entry={diplomaEntry} />
               ))}
             </div>
           )}
-          {!isLoading && !error && diplomas.length === 0 && (
+          {!isLoadingDiplomas && !diplomasError && diplomas.length === 0 && (
             <p className="text-center text-muted-foreground text-lg py-10">
               {t('diplomasPage.noDiplomas', { fallback: "No diplomas to display at the moment. Please check back later."})}
             </p>
           )}
+
+          {/* Badges Section */}
+          <div className="mt-16">
+            <h3 className="text-2xl font-semibold mb-8 text-center md:text-left text-foreground flex items-center justify-center md:justify-start gap-2">
+              <Star className="h-7 w-7 text-primary" />
+              {t('diplomasPage.badgesTitle', { fallback: "My Badges" })}
+            </h3>
+            {isLoadingBadges && (
+              <div className="flex justify-center items-center py-10">
+                <Loader2 className="h-12 w-12 animate-spin text-primary" />
+                <p className="ml-4 text-lg text-muted-foreground">{t('badgesPage.loading', { fallback: "Loading badges..."})}</p>
+              </div>
+            )}
+            {badgesError && !isLoadingBadges && (
+              <p className="text-center text-destructive text-lg py-10">{badgesError}</p>
+            )}
+            {!isLoadingBadges && !badgesError && badges.length > 0 && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                {badges.map((badgeEntry) => (
+                  <BadgeCard key={`badge-page-${badgeEntry.id}`} entry={badgeEntry} />
+                ))}
+              </div>
+            )}
+            {!isLoadingBadges && !badgesError && badges.length === 0 && (
+              <p className="text-center text-muted-foreground text-lg py-10">
+                {t('badgesPage.noBadges', { fallback: "No badges to display at the moment."})}
+              </p>
+            )}
+          </div>
         </Section>
       </main>
       <Footer />

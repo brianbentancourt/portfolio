@@ -27,7 +27,7 @@
   "educationSection": {
     "title": "Educación y Certificaciones",
     "description": "Mi formación académica y certificaciones clave que han moldeado mi experiencia.",
-    "viewAllDiplomasButton": "Ver Todos los Diplomas",
+    "viewAllDiplomasButton": "Ver Todas las Credenciales",
     "viewCertificateButton": "Ver Certificado",
     "certificateModalTitle": "{title} - Certificado",
     "certificateModalAlt": "Certificado de {title}",
@@ -89,13 +89,14 @@
     }
   },
   "diplomasPage": {
-    "title": "Mis Diplomas y Certificados",
-    "description": "Una colección de mis certificaciones y diplomas adquiridos a lo largo de mi trayectoria profesional. Haz clic en cualquier diploma para verlo en tamaño completo.",
+    "title": "Mis Diplomas, Certificados e Insignias",
+    "description": "Una colección de mis diplomas, certificados e insignias adquiridos a lo largo de mi trayectoria profesional. Haz clic en cualquier elemento para verlo en tamaño completo o verificar.",
     "noDiplomas": "No hay diplomas para mostrar en este momento. Por favor, vuelve más tarde.",
     "viewFullSizeButton": "Ver en Grande",
     "loading": "Cargando diplomas...",
     "fetchError": "Error al cargar los diplomas. Por favor, inténtalo de nuevo más tarde.",
-    "dateNotAvailable": "Fecha no disponible"
+    "dateNotAvailable": "Fecha no disponible",
+    "badgesTitle": "Mis Insignias"
   },
    "badgesPage": {
     "loading": "Cargando insignias...",

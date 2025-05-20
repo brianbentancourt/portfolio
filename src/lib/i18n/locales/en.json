@@ -27,7 +27,7 @@
   "educationSection": {
     "title": "Education & Certifications",
     "description": "My academic background and key certifications that have shaped my expertise.",
-    "viewAllDiplomasButton": "View All Diplomas",
+    "viewAllDiplomasButton": "View All Credentials",
     "viewCertificateButton": "View Certificate",
     "certificateModalTitle": "{title} - Certificate",
     "certificateModalAlt": "Certificate for {title}",
@@ -89,13 +89,14 @@
     }
   },
   "diplomasPage": {
-    "title": "My Diplomas & Certificates",
-    "description": "A collection of my certifications and diplomas acquired throughout my professional journey. Click on any diploma to view it in full size.",
+    "title": "My Diplomas, Certificates & Badges",
+    "description": "A collection of my diplomas, certificates, and badges acquired throughout my professional journey. Click on any item to view it in full size or verify.",
     "noDiplomas": "No diplomas to display at the moment. Please check back later.",
     "viewFullSizeButton": "View Full Size",
     "loading": "Loading diplomas...",
     "fetchError": "Failed to load diplomas. Please try again later.",
-    "dateNotAvailable": "Date not available"
+    "dateNotAvailable": "Date not available",
+    "badgesTitle": "My Badges"
   },
   "badgesPage": {
     "loading": "Loading badges...",
