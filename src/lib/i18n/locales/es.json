@@ -45,7 +45,7 @@
   "projects": {
     "proj_agustyle": {
       "title": "Sistema para Barbería Agustyle",
-      "description": "Sistema para gestionar reservas online con integración de MercadoPago en una barbería.",
+      "description": "Sistema para gestionar reservas online, con pagos en línea vía MercadoPago, en una barbería.",
       "longDescription": "La barbería Agustyle optimizó su proceso de reserva de citas implementando un sistema en línea. Esta plataforma intuitiva permite a los clientes ver fácilmente los horarios disponibles, asegurar sus citas registrándose a través de sus cuentas de Facebook o Google, y realizar pagos en línea utilizando MercadoPago, simplificando el proceso de alta y pago.\nCaracterísticas clave:\n- Inicio de Sesión Social: Registro/inicio de sesión rápido y fácil usando Facebook o Google.\n- Disponibilidad en Tiempo Real: Los clientes ven los horarios de citas actualizados.\n- Pagos en Línea: Integración segura de pagos con MercadoPago para las reservas.\n- Panel de Administración: Los administradores tienen control total para gestionar, modificar o cancelar citas según sea necesario.\n- Integración con Calendario: Los clientes pueden añadir las reservas confirmadas como recordatorios a sus calendarios personales con un solo clic.\nEsta solución digital ha mejorado significativamente la consistencia de la programación a lo largo del mes, llevando a un notable aumento en las reservas. Ha optimizado la eficiencia operativa de la barbería mientras mejora la experiencia de reserva para su clientela."
     },
     "proj_foodstore": {
@@ -80,6 +80,11 @@
       "title": "Servitec - Gestión de Servicios en Campo",
       "description": "Sistema para registrar trabajos de mecánicos, gestionar pagos, agendar visitas con notificaciones y una landing page para información de la empresa.",
       "longDescription": "Servitec comenzó como un sistema para registrar trabajos de mecánicos en el campo, con el objetivo de mantener un historial del trabajo completado y gestionar el pago de los servicios prestados.\nEl sistema incluye una función de agenda que permite al administrador programar visitas futuras y envía notificaciones anticipadas al administrador mediante notificaciones push, correo electrónico y mensajes de WhatsApp.\nPara mejorar la visibilidad en la web, se ha decidido agregar una página de destino que muestre información sobre la empresa y fotos relevantes de los trabajos completados. Esta adición contribuirá a presentar una imagen más profesional y atractiva a los clientes potenciales que visiten el sitio web."
+    },
+    "proj_work_hours": {
+      "title": "Work Hours - Registro de Horas para Personal de Campo",
+      "description": "Sistema para que el personal de campo registre horas de trabajo y uso de vehículos, con vista general para administradores en tiempo real, estadísticas y reportes.",
+      "longDescription": "Work Hours es una solución integral diseñada para empresas con personal de campo. Los empleados pueden registrar fácilmente sus horas de trabajo y especificar los vehículos utilizados directamente desde sus dispositivos móviles mediante una aplicación React Native. Estos datos se sincronizan en tiempo real con un backend de Firebase. Los administradores pueden acceder a un panel web (construido con Next.js) para monitorear las horas registradas, ver estadísticas y generar informes, proporcionando información valiosa sobre las operaciones de campo y la utilización de recursos."
     }
   },
   "chatbotIntroductionSection": {

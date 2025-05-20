@@ -56,7 +56,6 @@ export function ProjectsSection() {
       imageUrl: "https://firebasestorage.googleapis.com/v0/b/servitec-uy.appspot.com/o/posts%2FRgwwdMCE2VFT2xNkINjO%2FRgwwdMCE2VFT2xNkINjO_0?alt=media&token=a3041953-7ee9-425d-b100-0c77e0499829",
       tags: ["Field Service", "Job Tracking", "Scheduling", "Notifications", "Landing Page", "PHP", "MySQL"],
       liveLink: "https://servitecuruguay.com/",
-      // sourceLink: "https://github.com/brianbentancourt/servitec", // Optional: Add if available
       imageAiHint: "mechanic tools",
     },
     {
@@ -80,6 +79,17 @@ export function ProjectsSection() {
       liveLink: "https://electricacaporale.com",
       sourceLink: "https://github.com/brianbentancourt/electrica-caporale",
       imageAiHint: "lighting store interior",
+    },
+    {
+      id: "proj_work_hours",
+      title: t('projects.proj_work_hours.title'),
+      description: t('projects.proj_work_hours.description'),
+      longDescription: t('projects.proj_work_hours.longDescription'),
+      imageUrl: "https://placehold.co/1600x900.png", // Placeholder image
+      tags: ["Next.js", "Firebase", "React Native", "Time Tracking", "Reporting"],
+      liveLink: "https://workhours.vercel.app/",
+      // sourceLink: "https://github.com/your-repo/work-hours", // Add if available
+      imageAiHint: "field worker time tracking",
     },
     {
       id: "proj_portfolio",

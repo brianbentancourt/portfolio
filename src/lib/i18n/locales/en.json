@@ -45,7 +45,7 @@
   "projects": {
     "proj_agustyle": {
       "title": "Agustyle Barbershop System",
-      "description": "System for managing online reservations with MercadoPago integration in a barbershop.",
+      "description": "System for managing online reservations, with online payments via MercadoPago, in a barbershop.",
       "longDescription": "Agustyle barbershop streamlined its appointment booking process by implementing an online system. This user-friendly platform allows clients to effortlessly view available time slots, secure their appointments by registering through their Facebook or Google accounts, and make payments online using MercadoPago, simplifying the onboarding and payment process.\nKey features include:\n- Social Login: Quick and easy registration/login using Facebook or Google.\n- Real-time Availability: Clients see up-to-date appointment slots.\n- Online Payments: Secure payment integration with MercadoPago for reservations.\n- Admin Management Panel: Administrators have full control to manage, modify, or cancel appointments as needed.\n- Calendar Integration: Clients can add confirmed bookings as reminders to their personal calendars with a single click.\nThis digital solution has significantly improved scheduling consistency throughout the month, leading to a notable increase in reservations. It has optimized operational efficiency for the barbershop while enhancing the booking experience for its clientele."
     },
     "proj_foodstore": {
@@ -80,6 +80,11 @@
       "title": "Servitec - Field Service Management",
       "description": "System to record mechanic jobs, manage payments, schedule visits with notifications, and a landing page for company information.",
       "longDescription": "Servitec began as a system to record mechanic jobs in the field, aiming to maintain a history of completed work and manage payment for the services rendered.\nThe system includes an agenda feature that allows the administrator to schedule future visits, and it sends advance notifications to the administrator via push notifications, email, and WhatsApp messages.\nTo enhance web visibility, it has been decided to add a landing page that showcases information about the company and displays relevant photos of completed jobs. This addition will contribute to presenting a more professional and appealing image to potential clients visiting the website."
+    },
+    "proj_work_hours": {
+      "title": "Work Hours - Field Staff Time Tracking",
+      "description": "System for field staff to log working hours and vehicle usage, with real-time admin overview, statistics, and reporting.",
+      "longDescription": "Work Hours is a comprehensive solution designed for companies with field staff. Employees can easily log their working hours and specify the vehicles used directly from their mobile devices using a React Native app. This data is synchronized in real-time with a Firebase backend. Administrators can access a web dashboard (built with Next.js) to monitor logged hours, view statistics, and generate reports, providing valuable insights into field operations and resource utilization."
     }
   },
   "chatbotIntroductionSection": {
