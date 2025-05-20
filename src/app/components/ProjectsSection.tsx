@@ -85,11 +85,11 @@ export function ProjectsSection() {
       title: t('projects.proj_work_hours.title'),
       description: t('projects.proj_work_hours.description'),
       longDescription: t('projects.proj_work_hours.longDescription'),
-      imageUrl: "https://placehold.co/1600x900.png", // Placeholder image
+      imageUrl: "https://images.unsplash.com/photo-1646881478375-2a40ff90b803?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       tags: ["Next.js", "Firebase", "React Native", "Time Tracking", "Reporting"],
       liveLink: "https://workhours.vercel.app/",
       // sourceLink: "https://github.com/your-repo/work-hours", // Add if available
-      imageAiHint: "field worker time tracking",
+      imageAiHint: "worker time tracking",
     },
     {
       id: "proj_portfolio",
@@ -114,3 +114,4 @@ export function ProjectsSection() {
     </Section>
   );
 }
+
