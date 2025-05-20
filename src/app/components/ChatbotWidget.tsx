@@ -24,47 +24,46 @@ About:
 As a software developer, I'm excited to see the world moving towards AI, and it's a direction I would like to follow. I work to create innovative and efficient solutions that meet client needs and follow new industry trends. I focus on good coding practices and improving user experience to deliver high-quality products that meet and go beyond the expectations of end users. My desire to learn and improve has helped me stay updated, especially in the field of AI, and I am eager to bring this passion and experience to support your organization's success.
 
 Skills:
-- JavaScript: 8 years
-- Google Cloud: 7 years
-- .Net: 8 years
-- SQL Server: 8 years
-- Node.js: 7 years
-- React.js: 7 years
-- Firebase: 7 years
-- Git: 7 years
-- PowerBI: 3 years
-- React Native: 1 year
-- Next.js: 1 year
-- Python: 1 year
-- Github Copilot: 1 year
-- Watsonx: 1 year
-- Scikit-learn: 1 year
+- Programming Languages: JavaScript (8 years, ES6+, TypeScript), Python (1 year), C# (.NET Framework & Core, 8 years), PHP
+- Web Development: React.js (7 years), Next.js (1 year), Node.js (7 years, Express.js), HTML5, CSS3, Tailwind CSS, SASS/SCSS, jQuery
+- Mobile Development: React Native (1 year), Xamarin
+- Databases: SQL Server (8 years, T-SQL, Stored Procedures, Triggers), MySQL, Firebase (Firestore, Realtime Database, 7 years), MongoDB
+- Cloud & DevOps: Google Cloud Platform (GCP, 7 years - App Engine, Cloud Functions, Firebase), Docker, Git (7 years), CI/CD
+- AI & Machine Learning: Genkit, Google AI (Gemini), IBM Watsonx (1 year), Scikit-learn (1 year), GitHub Copilot (1 year), Basic understanding of LLMs and prompt engineering.
+- Business Intelligence: Power BI (3 years, DAX, Data Modeling)
+- Operating Systems: Windows, Linux
+- Other Tools: Visual Studio, VS Code, Android Studio, Jira, Trello, Scrum methodology.
 
 Experience:
-1. Senior Software Developer - SONDA (Since 06/2022)
-   - Full stack development and team mentoring.
-2. Software Developer - De Larrobla & Asociados (01/2021 - 06/2022)
-   - Working on financial systems for banks in Peru and Uruguay.
-3. Software Developer - Actualred (09/2016 - 12/2020)
-   - Developing for a primary project and collaborating on other company projects.
-   - Self-training to improve programming skills.
-   - Successfully launched the company's first mobile application for a major client. Developed with Xamarin.
-   - Expert in customer service with excellent problem-solving abilities and effective production system organization.
-4. Service Desk - Urudata S.A. (10/2014 - 09/2016)
-   - Working in a large team, providing support in networks, printers, user access to platforms, automated backups, incident resolution through ticketing platform.
+1. Senior Software Developer - SONDA (06/2022 – Present) Montevideo, Uruguay
+   - Full stack development focusing on .NET and JavaScript technologies.
+   - Team mentoring and leading development efforts on key projects.
+   - Maintenance and evolutionary development of systems for Prosegur.
+2. Software Developer - De Larrobla & Asociados (01/2021 – 06/2022) Montevideo, Uruguay
+   - Worked on critical financial systems for banking institutions in Peru and Uruguay.
+   - Development of functionalities related to OCA credit card systems.
+3. Software Developer - Actualred (09/2016 – 12/2020) Paysandú, Uruguay
+   - Developed and maintained a primary ERP-like system for the company and its clients.
+   - Collaborated on diverse company projects, enhancing skills in various technologies.
+   - Successfully launched the company's first mobile application for a major client, developed with Xamarin.
+   - Provided expert customer service with excellent problem-solving abilities.
+4. Service Desk - Urudata S.A. (10/2014 – 09/2016) Montevideo, Uruguay
+   - Provided IT support in networks, printers, user access, automated backups, and incident resolution.
 
 Education:
-- Programmer Analyst - CTC ORT (Completed 12/2017)
-- Courses and careers: See brianbentancourt.com/courses
-- Bachillerato Tecnológico Informático - Informática ITSP (Completed 12/2012)
+- Programmer Analyst - Universidad ORT Uruguay, Montevideo (Completed 12/2017)
+- Bachillerato Tecnológico Informático (Technical High School Diploma in Informatics) - ITSP, Paysandú (Completed 12/2012)
+- Continuous Learning: Active on platforms like Platzi (platzi.com/@brianbentancourt), with numerous courses in web development, AI, cloud technologies, and more. For a detailed list, see brianbentancourt.com/courses.
 
 Freelance Projects:
-- Agustyle (agustyle.com): System for managing reservations in a barbershop. Agustyle barbershop streamlined its appointment booking process by implementing an online system. Clients can now easily view available time slots and book appointments by registering through Facebook or Google. Administrators have the ability to manage and cancel appointments as needed, and clients can add reminders to their personal calendars upon booking. This solution has resulted in a more consistent schedule throughout the month and a significant increase in reservations, optimizing scheduling efficiency for both the barbershop and its clientele.
-- Transportes Villasboas (transportesvillasboas.web.app): System for managing clients, trips, and truck maintenance.
-- Food Store (foodstoreuy.web.app): Order management system, products, delivery drivers, and cash register, significantly improving each internal process of the company. A web system has been developed with the aim of improving the process of fast food preparation and delivery. The system encompasses various roles for kitchen, delivery, and administration. Its implementation arose from the overwhelming influx of orders experienced by a local company. The system significantly aided in streamlining and expediting the delivery process, ensuring prompt service to customers in record time. Some of the main features of the system include: Customer registration through Google accounts. Online purchases for convenient ordering. Real-time order tracking. Automatic stock control to maintain inventory levels. Raffles for registered customers as an additional incentive. Visualization of orders on a map by administrators and delivery personnel. Real-time wallet for deliveries. Charts and reports generation to analyze sales and average delivery times. Following its remarkable success, in 2023, a new client from a different location began utilizing the system. Client Implementations: Burger House (burgerhouseuy.com), Befe Burgers (befeburgers.com), Pio Pio (piopio-paysandu.web.app - In business process).
-- Chenlo Seguros (chenloseguros.com): Website for Mapfre insurance broker, displaying their products and facilitating communication between the client and the seller.
-- Eléctrica Caporale (electricacaporale.com): Store for lighting and electrical products that features user registration authenticated with social networks, as well as a points accumulation system for purchases.
-- Personal Portfolio Website (this site): Showcases skills and projects. Built with Next.js, TypeScript, Tailwind CSS, ShadCN UI, GenAI chatbot.
+- Agustyle (agustyle.com): Barbershop reservation management system. Features social login, real-time availability, admin panel, and calendar integration. (PHP, MySQL)
+- Food Store (foodstoreuy.web.app): Order management system for food businesses. Includes customer registration (Google), online purchasing, real-time tracking, stock control, raffles, map visualization, delivery wallet, and reporting. Client implementations: Burger House, Befe Burgers, Pio Pio. (React, Firebase)
+- Transportes Villasboas (transportesvillasboas.web.app): System for managing clients, trips, and truck maintenance for a transport company.
+- Chenlo Seguros (chenloseguros.com): Website for Mapfre insurance broker, showcasing products and facilitating client-seller communication.
+- Eléctrica Caporale (electricacaporale.com): E-commerce store for lighting/electrical products with social login and a points accumulation system.
+- Personal Portfolio Website (this site): Showcases skills and projects. Built with Next.js, TypeScript, Tailwind CSS, ShadCN UI, GenAI chatbot, i18n.
+- Law Firm Internal Management System: Desktop system for case, client, deadline, and billing management. (.NET, SQL Server, WinForms, DevExpress)
+- Healthcare Provider Appointment System: Web system for managing medical appointments, patient records, and doctor schedules. (.NET, SQL Server, Web API, React)
 `;
 
 const staticPortfolioContextES = `Brian Bentancourt es un desarrollador de software apasionado y orientado a resultados, radicado en Uruguay.
@@ -75,47 +74,46 @@ Sobre Mí:
 Como desarrollador de software, me entusiasma ver cómo el mundo avanza hacia la IA, y es una dirección que me gustaría seguir. Trabajo para crear soluciones innovadoras y eficientes que satisfagan las necesidades del cliente y sigan las nuevas tendencias de la industria. Me enfoco en buenas prácticas de codificación y en mejorar la experiencia del usuario para entregar productos de alta calidad que cumplan y superen las expectativas de los usuarios finales. Mi deseo de aprender y mejorar me ha ayudado a mantenerme actualizado, especialmente en el campo de la IA, y estoy ansioso por aportar esta pasión y experiencia para apoyar el éxito de su organización.
 
 Habilidades:
-- JavaScript: 8 años
-- Google Cloud: 7 años
-- .Net: 8 años
-- SQL Server: 8 años
-- Node.js: 7 años
-- React.js: 7 años
-- Firebase: 7 años
-- Git: 7 años
-- PowerBI: 3 años
-- React Native: 1 año
-- Next.js: 1 año
-- Python: 1 año
-- Github Copilot: 1 año
-- Watsonx: 1 año
-- Scikit-learn: 1 año
+- Lenguajes de Programación: JavaScript (8 años, ES6+, TypeScript), Python (1 año), C# (.NET Framework & Core, 8 años), PHP
+- Desarrollo Web: React.js (7 años), Next.js (1 año), Node.js (7 años, Express.js), HTML5, CSS3, Tailwind CSS, SASS/SCSS, jQuery
+- Desarrollo Móvil: React Native (1 año), Xamarin
+- Bases de Datos: SQL Server (8 años, T-SQL, Stored Procedures, Triggers), MySQL, Firebase (Firestore, Realtime Database, 7 años), MongoDB
+- Cloud & DevOps: Google Cloud Platform (GCP, 7 años - App Engine, Cloud Functions, Firebase), Docker, Git (7 años), CI/CD
+- IA & Machine Learning: Genkit, Google AI (Gemini), IBM Watsonx (1 año), Scikit-learn (1 año), GitHub Copilot (1 año), Comprensión básica de LLMs e ingeniería de prompts.
+- Business Intelligence: Power BI (3 años, DAX, Modelado de Datos)
+- Sistemas Operativos: Windows, Linux
+- Otras Herramientas: Visual Studio, VS Code, Android Studio, Jira, Trello, Metodología Scrum.
 
 Experiencia:
-1. Desarrollador de Software Senior - SONDA (Desde 06/2022)
-   - Desarrollo full stack y mentoría de equipos.
-2. Desarrollador de Software - De Larrobla & Asociados (01/2021 - 06/2022)
-   - Trabajó en sistemas financieros para bancos en Perú y Uruguay.
-3. Desarrollador de Software - Actualred (09/2016 - 12/2020)
-   - Desarrollo para un proyecto principal y colaboración en otros proyectos de la empresa.
-   - Autoformación para mejorar habilidades de programación.
+1. Desarrollador de Software Senior - SONDA (06/2022 – Presente) Montevideo, Uruguay
+   - Desarrollo full stack enfocado en tecnologías .NET y JavaScript.
+   - Mentoría de equipos y liderazgo en el desarrollo de proyectos clave.
+   - Mantenimiento y desarrollo evolutivo de sistemas para Prosegur.
+2. Desarrollador de Software - De Larrobla & Asociados (01/2021 – 06/2022) Montevideo, Uruguay
+   - Trabajó en sistemas financieros críticos para instituciones bancarias en Perú y Uruguay.
+   - Desarrollo de funcionalidades relacionadas con los sistemas de tarjetas de crédito OCA.
+3. Desarrollador de Software - Actualred (09/2016 – 12/2020) Paysandú, Uruguay
+   - Desarrolló y mantuvo un sistema principal tipo ERP para la empresa y sus clientes.
+   - Colaboró en diversos proyectos de la empresa, mejorando habilidades en variadas tecnologías.
    - Lanzó con éxito la primera aplicación móvil de la empresa para un cliente importante, desarrollada con Xamarin.
-   - Experto en servicio al cliente con excelentes habilidades para resolver problemas y organización efectiva de sistemas de producción.
-4. Mesa de Ayuda - Urudata S.A. (10/2014 - 09/2016)
-   - Trabajó en un equipo grande, brindando soporte en redes, impresoras, acceso de usuarios a plataformas, copias de seguridad automatizadas y resolución de incidentes a través de plataforma de tickets.
+   - Brindó servicio al cliente experto con excelentes habilidades para la resolución de problemas.
+4. Mesa de Ayuda - Urudata S.A. (10/2014 – 09/2016) Montevideo, Uruguay
+   - Brindó soporte de TI en redes, impresoras, acceso de usuarios, copias de seguridad automatizadas y resolución de incidentes.
 
 Educación:
-- Analista Programador - CTC ORT (Completado 12/2017)
-- Cursos y carreras: Ver brianbentancourt.com/courses
-- Bachillerato Tecnológico Informático - Informática ITSP (Completado 12/2012)
+- Analista Programador - Universidad ORT Uruguay, Montevideo (Completado 12/2017)
+- Bachillerato Tecnológico Informático - ITSP, Paysandú (Completado 12/2012)
+- Aprendizaje Continuo: Activo en plataformas como Platzi (platzi.com/@brianbentancourt), con numerosos cursos en desarrollo web, IA, tecnologías en la nube y más. Para una lista detallada, ver brianbentancourt.com/courses.
 
 Proyectos Freelance:
-- Agustyle (agustyle.com): Sistema para gestión de reservas en una barbería. La barbería Agustyle optimizó su proceso de reserva de citas implementando un sistema en línea. Los clientes ahora pueden ver fácilmente los horarios disponibles y reservar citas registrándose a través de Facebook o Google. Los administradores tienen la capacidad de gestionar y cancelar citas según sea necesario, y los clientes pueden agregar recordatorios a sus calendarios personales al reservar. Esta solución ha resultado en un horario más consistente durante todo el mes y un aumento significativo en las reservas, optimizando la eficiencia de la programación tanto para la barbería como para su clientela.
-- Transportes Villasboas (transportesvillasboas.web.app): Sistema para gestión de clientes, viajes y mantenimiento de camiones.
-- Food Store (foodstoreuy.web.app): Sistema de gestión de pedidos, productos, repartidores y caja registradora, mejorando significativamente cada proceso interno de la empresa. Se ha desarrollado un sistema web con el objetivo de mejorar el proceso de preparación y entrega de comida rápida. El sistema abarca varios roles para cocina, reparto y administración. Su implementación surgió de la abrumadora afluencia de pedidos experimentada por una empresa local. El sistema ayudó significativamente a agilizar y acelerar el proceso de entrega, asegurando un servicio rápido a los clientes en tiempo récord. Algunas de las principales características del sistema incluyen: Registro de clientes a través de cuentas de Google. Compras en línea para pedidos convenientes. Seguimiento de pedidos en tiempo real. Control automático de stock para mantener los niveles de inventario. Sorteos para clientes registrados como incentivo adicional. Visualización de pedidos en un mapa por administradores y personal de reparto. Billetera en tiempo real para entregas. Generación de gráficos e informes para analizar ventas y tiempos promedio de entrega. Tras su notable éxito, en 2023, un nuevo cliente de otra localidad comenzó a utilizar el sistema. Implementaciones en Clientes: Burger House (burgerhouseuy.com), Befe Burgers (befeburgers.com), Pio Pio (piopio-paysandu.web.app - En proceso de negocio).
-- Chenlo Seguros (chenloseguros.com): Sitio web para corredor de seguros Mapfre, mostrando sus productos y facilitando la comunicación entre el cliente y el vendedor.
-- Eléctrica Caporale (electricacaporale.com): Tienda de productos de iluminación y eléctricos que cuenta con registro de usuarios autenticado con redes sociales, así como un sistema de acumulación de puntos por compras.
-- Sitio Web de Portafolio Personal (este sitio): Muestra habilidades y proyectos. Construido con Next.js, TypeScript, Tailwind CSS, ShadCN UI, chatbot con GenAI.
+- Agustyle (agustyle.com): Sistema de gestión de reservas para barbería. Incluye inicio de sesión social, disponibilidad en tiempo real, panel de administración e integración de calendario. (PHP, MySQL)
+- Food Store (foodstoreuy.web.app): Sistema de gestión de pedidos para negocios de comida. Incluye registro de clientes (Google), compras en línea, seguimiento en tiempo real, control de stock, sorteos, visualización en mapa, billetera para repartidores e informes. Implementaciones en clientes: Burger House, Befe Burgers, Pio Pio. (React, Firebase)
+- Transportes Villasboas (transportesvillasboas.web.app): Sistema para gestión de clientes, viajes y mantenimiento de camiones para una empresa de transporte.
+- Chenlo Seguros (chenloseguros.com): Sitio web para corredor de seguros Mapfre, mostrando productos y facilitando la comunicación cliente-vendedor.
+- Eléctrica Caporale (electricacaporale.com): Tienda de comercio electrónico para productos de iluminación/eléctricos con inicio de sesión social y sistema de acumulación de puntos.
+- Sitio Web de Portafolio Personal (este sitio): Muestra habilidades y proyectos. Construido con Next.js, TypeScript, Tailwind CSS, ShadCN UI, chatbot con GenAI, i18n.
+- Sistema de Gestión Interna para Estudio Jurídico: Sistema de escritorio para gestión de casos, clientes, plazos y facturación. (.NET, SQL Server, WinForms, DevExpress)
+- Sistema de Turnos para Mutualista: Sistema web para gestionar citas médicas, historias clínicas y horarios de médicos. (.NET, SQL Server, Web API, React)
 `;
 
 interface Message {
@@ -161,9 +159,9 @@ export function ChatbotWidget() {
     if (scrollAreaElement) {
       const viewportElement = scrollAreaElement.children[0] as HTMLDivElement | undefined;
       if (viewportElement) {
-        setTimeout(() => {
+        requestAnimationFrame(() => { // Using requestAnimationFrame for potentially smoother/more reliable scroll
           viewportElement.scrollTo({ top: viewportElement.scrollHeight, behavior: 'smooth' });
-        }, 0);
+        });
       }
     }
   }, [messages]);
@@ -287,3 +285,4 @@ export function ChatbotWidget() {
     
 
     
+
