@@ -1,3 +1,4 @@
+
 export interface ProjectType {
   id: string;
   title: string;
@@ -38,11 +39,5 @@ export interface EducationEntryType {
   certificateImageAiHint?: string; // AI hint for the certificate image
 }
 
-export interface DiplomaType {
-  id: string;
-  title: string;
-  issuer: string;
-  date: string; // e.g., "2021" or "March 2022"
-  imageUrl: string;
-  imageAiHint?: string;
-}
+// DiplomaType is removed as EducationEntryType will be used for diplomas/certificates.
+// Ensure that when an EducationEntryType is treated as a diploma, its certificateUrl is present.

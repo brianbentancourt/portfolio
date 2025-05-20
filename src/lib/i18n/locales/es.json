@@ -29,7 +29,12 @@
     "description": "Mi formación académica y certificaciones clave que han moldeado mi experiencia.",
     "viewAllDiplomasButton": "Ver Todos los Diplomas",
     "viewCertificateButton": "Ver Certificado",
-    "certificateModalTitle": "{title} - Certificado"
+    "certificateModalTitle": "{title} - Certificado",
+    "certificateModalAlt": "Certificado de {title}",
+    "noCertificateAvailable": "No hay imagen de certificado disponible para esta entrada.",
+    "viewCoursesLink": "Ver Todos los Cursos en Platzi",
+    "myCertificatesTitle": "Mis Certificados",
+    "viewButton": "Ver"
   },
   "projectsSection": {
     "title": "Mis Proyectos Freelance"
@@ -82,7 +87,9 @@
   },
   "diplomasPage": {
     "title": "Mis Diplomas y Certificados",
-    "description": "Una colección de mis certificaciones y diplomas adquiridos a lo largo de mi trayectoria profesional."
+    "description": "Una colección de mis certificaciones y diplomas adquiridos a lo largo de mi trayectoria profesional. Haz clic en cualquier diploma para verlo en tamaño completo.",
+    "noDiplomas": "No hay diplomas para mostrar en este momento. Por favor, vuelve más tarde o visita brianbentancourt.com/courses.",
+    "viewFullSizeButton": "Ver en Grande"
   },
   "footer": {
     "copyright": "© {year} Brian Bentancourt. Todos los derechos reservados."
