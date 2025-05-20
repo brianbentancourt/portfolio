@@ -86,16 +86,6 @@ export function AboutSection() {
           </p>
         </div>
 
-        <div className="relative w-full aspect-[4/3] md:aspect-square lg:aspect-[3/4] rounded-lg overflow-hidden shadow-xl group">
-          <Image
-            src="https://images.unsplash.com/photo-1656711103646-b1a400b48b3f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt={t('about.title') + " - workspace"}
-            fill
-            className="object-cover transform group-hover:scale-105 transition-transform duration-300"
-            sizes="(min-width: 1024px) 33vw, 100vw"
-            data-ai-hint="modern workspace desk"
-          />
-        </div>
       </div>
 
       {/* Skills Section */}

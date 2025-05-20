@@ -40,7 +40,7 @@ export function HeroSection() {
         <div className="relative group flex justify-center">
           <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
           <Image
-            src="/img/brian.png"
+            src="https://images.unsplash.com/photo-1656711103646-b1a400b48b3f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt={t('hero.name') + " - Profile"}
             width={400}
             height={400}
@@ -53,4 +53,3 @@ export function HeroSection() {
     </section>
   );
 }
-
