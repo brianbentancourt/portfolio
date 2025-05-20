@@ -42,6 +42,71 @@
   "projectsSection": {
     "title": "Mis Proyectos Freelance"
   },
+  "projects": {
+    "proj_agustyle": {
+      "title": "Sistema para Barbería Agustyle",
+      "description": "Sistema para gestionar reservas online con integración de MercadoPago en una barbería.",
+      "longDescription": "La barbería Agustyle optimizó su proceso de reserva de citas implementando un sistema en línea. Esta plataforma intuitiva permite a los clientes ver fácilmente los horarios disponibles, asegurar sus citas registrándose a través de sus cuentas de Facebook o Google, y realizar pagos en línea utilizando MercadoPago, simplificando el proceso de alta y pago.\nCaracterísticas clave:\n- Inicio de Sesión Social: Registro/inicio de sesión rápido y fácil usando Facebook o Google.\n- Disponibilidad en Tiempo Real: Los clientes ven los horarios de citas actualizados.\n- Pagos en Línea: Integración segura de pagos con MercadoPago para las reservas.\n- Panel de Administración: Los administradores tienen control total para gestionar, modificar o cancelar citas según sea necesario.\n- Integración con Calendario: Los clientes pueden añadir las reservas confirmadas como recordatorios a sus calendarios personales con un solo clic.\nEsta solución digital ha mejorado significativamente la consistencia de la programación a lo largo del mes, llevando a un notable aumento en las reservas. Ha optimizado la eficiencia operativa de la barbería mientras mejora la experiencia de reserva para su clientela."
+    },
+    "proj_foodstore": {
+      "title": "Sistema Food Store",
+      "description": "Sistema de gestión de pedidos, productos, repartidores y caja registradora, mejorando significativamente cada proceso interno de la empresa.",
+      "longDescription": "Un sistema web integral diseñado para revolucionar las operaciones de preparación y entrega de comida rápida. El sistema atiende roles distintos para el personal de cocina, repartidores y administradores, asegurando un flujo de trabajo sin interrupciones desde la realización del pedido hasta la entrega final.\nCaracterísticas clave:\n- Integración con Cuentas de Google para el registro de clientes.\n- Compras en línea y seguimiento de pedidos en tiempo real.\n- Control de stock automatizado.\n- Funciones de participación del cliente como sorteos.\n- Visualización geoespacial de pedidos para administradores y repartidores.\n- Billetera de entrega en tiempo real e informes avanzados.\nTras su éxito, un nuevo cliente comenzó a utilizar el sistema en 2023.",
+      "clientImplementations": {
+        "pioPioStatus": "En proceso de negocio"
+      }
+    },
+    "proj_trans_villasboas": {
+      "title": "Transportes Villasboas",
+      "description": "Sistema para la gestión de clientes, viajes y mantenimiento de camiones.",
+      "longDescription": "Una aplicación web dedicada para Transportes Villasboas, diseñada para optimizar sus operaciones. Este sistema proporciona herramientas completas para gestionar la información de los clientes, rastrear viajes y programar el mantenimiento de los camiones. Su objetivo es mejorar la eficiencia y la organización dentro de la empresa de transporte."
+    },
+    "proj_chenlo_seguros": {
+      "title": "Chenlo Seguros",
+      "description": "Sitio web para corredor de seguros Mapfre, mostrando sus productos y facilitando la comunicación entre el cliente y el vendedor.",
+      "longDescription": "Un sitio web profesional desarrollado para Chenlo Seguros, un corredor de seguros de Mapfre. El sitio muestra diversos productos de seguros ofrecidos y sirve como un centro de comunicación para conectar a los clientes con el vendedor, facilitando consultas e intercambio de información."
+    },
+    "proj_electrica_caporale": {
+      "title": "Eléctrica Caporale",
+      "description": "Tienda de productos de iluminación y eléctricos que cuenta con registro de usuarios autenticados con redes sociales, así como un sistema de acumulación de puntos por compras.",
+      "longDescription": "Una plataforma de comercio electrónico para Eléctrica Caporale, especializada en productos de iluminación y eléctricos. Las características clave incluyen el registro de usuarios con cuentas de redes sociales (inicio de sesión social) y un sistema de puntos de fidelidad para recompensar a los clientes por sus compras, mejorando la participación y retención de clientes."
+    },
+    "proj_portfolio": {
+      "title": "Sitio Web de Portafolio Personal",
+      "description": "El mismo portafolio que estás viendo, construido con Next.js y ShadCN UI.",
+      "longDescription": "Este sitio web de portafolio, la misma plataforma que estás explorando actualmente, sirve como una muestra dinámica de mis habilidades, proyectos y trayectoria profesional. Está meticulosamente construido utilizando tecnologías de vanguardia:\n- Next.js 14 con App Router: Para un rendimiento óptimo, renderizado del lado del servidor y enrutamiento eficiente.\n- TypeScript: Asegurando la seguridad de tipos y un código mantenible.\n- Tailwind CSS: Para un enfoque de utilidad primero en el estilizado, resultando en un diseño limpio y responsivo.\n- ShadCN UI: Aprovechando componentes React preconstruidos, accesibles y personalizables.\n- Integración con GenAI: Presenta un chatbot impulsado por IA para preguntas y respuestas interactivas.\n- Soporte i18n: Totalmente internacionalizado para usuarios de habla inglesa y española.\nEl diseño prioriza una estética limpia y moderna, navegación intuitiva y una experiencia de usuario fluida en todos los dispositivos. Su objetivo es proporcionar una visión general completa de mis capacidades y cómo abordo el desarrollo de software."
+    },
+    "proj_gestion_interna_estudio_juridico": {
+      "title": "Sistema de Gestión Interna para Estudio Jurídico",
+      "description": "Sistema integral para la gestión de casos, clientes, plazos y facturación para un estudio jurídico.",
+      "longDescription": "Este proyecto implicó el desarrollo de un sistema de gestión interna a medida para un estudio jurídico con el fin de optimizar sus operaciones diarias. Las características clave incluyen seguimiento de casos, gestión de base de datos de clientes, recordatorios automáticos de plazos, gestión de documentos y funcionalidades de facturación integradas. El sistema fue construido para garantizar la seguridad de los datos y proporcionar una interfaz de usuario intuitiva para abogados y personal administrativo."
+    },
+    "proj_sistema_turnos_mutualista": {
+      "title": "Sistema de Turnos para Mutualista",
+      "description": "Sistema para la gestión de citas médicas, historias clínicas y horarios de médicos.",
+      "longDescription": "Desarrollé un sistema de programación y gestión de citas para un proveedor de atención médica (mutualista). Este sistema permite a los pacientes reservar citas en línea, ver la disponibilidad de los médicos y recibir recordatorios. Para el proveedor de atención médica, ofrece herramientas para gestionar historias clínicas de pacientes, horarios de médicos y un módulo de informes para análisis administrativos."
+    },
+    "proj_mantenimiento_evolutivo_prosegur": {
+      "title": "Prosegur - Mantenimiento y Evolución de Sistemas",
+      "description": "Mantenimiento y desarrollo evolutivo para los sistemas internos de Prosegur.",
+      "longDescription": "Como parte de mi trabajo en SONDA, contribuí al mantenimiento y desarrollo evolutivo de los sistemas internos de Prosegur. Esto implicó la resolución de problemas, la implementación de nuevas características y asegurar la estabilidad y el rendimiento de aplicaciones críticas utilizadas por la empresa."
+    },
+    "proj_tarjeta_credito_oca": {
+      "title": "Tarjeta de Crédito OCA - Desarrollo de Sistemas",
+      "description": "Desarrollo de funcionalidades relacionadas con los sistemas de tarjetas de crédito OCA.",
+      "longDescription": "Mientras estuve en De Larrobla & Asociados, participé en el desarrollo de funcionalidades para sistemas relacionados con OCA, un importante emisor de tarjetas de crédito en Uruguay. Esto incluyó trabajar en varios módulos de sus plataformas financieras y transaccionales."
+    },
+    "proj_sistema_financiero_peru_uruguay": {
+      "title": "Sistemas Financieros para Bancos (Perú/Uruguay)",
+      "description": "Trabajé en sistemas financieros para bancos en Perú y Uruguay.",
+      "longDescription": "En De Larrobla & Asociados, contribuí al desarrollo y mantenimiento de sistemas financieros utilizados por instituciones bancarias en Perú y Uruguay. Esto implicó comprender complejos requisitos financieros e implementar soluciones de software robustas y seguras."
+    },
+    "proj_app_mobile_xamarin_actualred": {
+      "title": "Aplicación Móvil Xamarin para Cliente Importante (Actualred)",
+      "description": "Lanzamiento exitoso de la primera aplicación móvil de la empresa para un cliente importante, desarrollada con Xamarin.",
+      "longDescription": "Durante mi tiempo en Actualred, lideré el desarrollo y el lanzamiento exitoso de la primera aplicación móvil de la empresa para uno de sus clientes clave. La aplicación fue construida utilizando Xamarin, proporcionando una solución multiplataforma. Este proyecto involucró el ciclo de vida completo del desarrollo, desde la recopilación de requisitos hasta la implementación y el soporte posterior al lanzamiento."
+    }
+  },
   "chatbotIntroductionSection": {
     "title": "Chatea Con Mi Asistente IA",
     "description": "¿Tienes preguntas sobre mis habilidades, proyectos o experiencia? ¡Mi asistente de IA está aquí para ayudarte! Haz clic en el ícono de chat en la esquina inferior derecha para iniciar una conversación. Puedes preguntar cosas como:",
@@ -110,3 +175,5 @@
     "closeButton": "Cerrar"
   }
 }
+
+    

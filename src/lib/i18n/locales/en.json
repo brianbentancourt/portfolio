@@ -42,6 +42,71 @@
   "projectsSection": {
     "title": "My Freelance Projects"
   },
+  "projects": {
+    "proj_agustyle": {
+      "title": "Agustyle Barbershop System",
+      "description": "System for managing online reservations with MercadoPago integration in a barbershop.",
+      "longDescription": "Agustyle barbershop streamlined its appointment booking process by implementing an online system. This user-friendly platform allows clients to effortlessly view available time slots, secure their appointments by registering through their Facebook or Google accounts, and make payments online using MercadoPago, simplifying the onboarding and payment process.\nKey features include:\n- Social Login: Quick and easy registration/login using Facebook or Google.\n- Real-time Availability: Clients see up-to-date appointment slots.\n- Online Payments: Secure payment integration with MercadoPago for reservations.\n- Admin Management Panel: Administrators have full control to manage, modify, or cancel appointments as needed.\n- Calendar Integration: Clients can add confirmed bookings as reminders to their personal calendars with a single click.\nThis digital solution has significantly improved scheduling consistency throughout the month, leading to a notable increase in reservations. It has optimized operational efficiency for the barbershop while enhancing the booking experience for its clientele."
+    },
+    "proj_foodstore": {
+      "title": "Food Store System",
+      "description": "Order management system, products, delivery drivers, and cash register, significantly improving each internal process of the company.",
+      "longDescription": "A comprehensive web system designed to revolutionize fast food preparation and delivery operations. The system caters to distinct roles for kitchen staff, delivery personnel, and administrators, ensuring a seamless workflow from order placement to final delivery.\nKey features:\n- Google Account Integration for customer registration.\n- Online purchasing and real-time order tracking.\n- Automated stock control.\n- Customer engagement features like raffles.\n- Geospatial order visualization for admins and delivery.\n- Real-time delivery wallet and advanced reporting.\nFollowing its success, a new client began using the system in 2023.",
+      "clientImplementations": {
+        "pioPioStatus": "In business process"
+      }
+    },
+    "proj_trans_villasboas": {
+      "title": "Transportes Villasboas",
+      "description": "System for managing clients, trips, and truck maintenance.",
+      "longDescription": "A dedicated web application for Transportes Villasboas, designed to streamline their operations. This system provides comprehensive tools for managing client information, tracking trips, and scheduling truck maintenance. It aims to improve efficiency and organization within the transport company."
+    },
+    "proj_chenlo_seguros": {
+      "title": "Chenlo Seguros",
+      "description": "Website for Mapfre insurance broker, displaying their products and facilitating communication between the client and the seller.",
+      "longDescription": "A professional website developed for Chenlo Seguros, a Mapfre insurance broker. The site showcases various insurance products offered and serves as a communication hub to connect clients with the seller, facilitating inquiries and information sharing."
+    },
+    "proj_electrica_caporale": {
+      "title": "Eléctrica Caporale",
+      "description": "Store for lighting and electrical products that features user registration authenticated with social networks, as well as a points accumulation system for purchases.",
+      "longDescription": "An e-commerce platform for Eléctrica Caporale, specializing in lighting and electrical products. Key features include user registration with social media accounts (social login) and a loyalty points system to reward customers for their purchases, enhancing customer engagement and retention."
+    },
+    "proj_portfolio": {
+      "title": "Personal Portfolio Website",
+      "description": "The very portfolio you are looking at, built with Next.js and ShadCN UI.",
+      "longDescription": "This portfolio website, the very platform you are currently exploring, serves as a dynamic showcase of my skills, projects, and professional journey. It's meticulously built using cutting-edge technologies:\n- Next.js 14 with App Router: For optimal performance, server-side rendering, and efficient routing.\n- TypeScript: Ensuring type safety and maintainable code.\n- Tailwind CSS: For a utility-first approach to styling, resulting in a clean and responsive design.\n- ShadCN UI: Leveraging pre-built, accessible, and customizable React components.\n- GenAI Integration: Features an AI-powered chatbot for interactive Q&A.\n- i18n Support: Fully internationalized for English and Spanish users.\nThe design prioritizes a clean, modern aesthetic, intuitive navigation, and a seamless user experience across all devices. It aims to provide a comprehensive overview of my capabilities and how I approach software development."
+    },
+    "proj_gestion_interna_estudio_juridico": {
+      "title": "Internal Management System for Law Firm",
+      "description": "Comprehensive system for managing cases, clients, deadlines, and billing for a law firm.",
+      "longDescription": "This project involved developing a tailored internal management system for a law firm to optimize their daily operations. Key features include case tracking, client database management, automated deadline reminders, document management, and integrated billing functionalities. The system was built to ensure data security and provide an intuitive user interface for lawyers and administrative staff."
+    },
+    "proj_sistema_turnos_mutualista": {
+      "title": "Appointment System for Healthcare Provider",
+      "description": "System for managing medical appointments, patient records, and doctor schedules.",
+      "longDescription": "Developed an appointment scheduling and management system for a healthcare provider (mutualista). This system allows patients to book appointments online, view doctor availability, and receive reminders. For the healthcare provider, it offers tools for managing patient records, doctor schedules,and a reporting module for administrative insights."
+    },
+    "proj_mantenimiento_evolutivo_prosegur": {
+      "title": "Prosegur - Maintenance and System Evolution",
+      "description": "Maintenance and evolutionary development for Prosegur's internal systems.",
+      "longDescription": "As part of my work at SONDA, I contributed to the maintenance and evolutionary development of internal systems for Prosegur. This involved troubleshooting, implementing new features, and ensuring the stability and performance of critical applications used by the company."
+    },
+    "proj_tarjeta_credito_oca": {
+      "title": "OCA Credit Card - Systems Development",
+      "description": "Development of functionalities related to OCA credit card systems.",
+      "longDescription": "While at De Larrobla & Asociados, I was involved in developing functionalities for systems related to OCA, a major credit card issuer in Uruguay. This included working on various modules of their financial and transactional platforms."
+    },
+    "proj_sistema_financiero_peru_uruguay": {
+      "title": "Financial Systems for Banks (Peru/Uruguay)",
+      "description": "Worked on financial systems for banks in Peru and Uruguay.",
+      "longDescription": "At De Larrobla & Asociados, I contributed to the development and maintenance of financial systems used by banking institutions in Peru and Uruguay. This involved understanding complex financial requirements and implementing robust and secure software solutions."
+    },
+    "proj_app_mobile_xamarin_actualred": {
+      "title": "Xamarin Mobile App for Major Client (Actualred)",
+      "description": "Successfully launched the company's first mobile application for a major client, developed with Xamarin.",
+      "longDescription": "During my time at Actualred, I led the development and successful launch of the company's first mobile application for one of its key clients. The application was built using Xamarin, providing a cross-platform solution. This project involved the full development lifecycle, from requirement gathering to deployment and post-launch support."
+    }
+  },
   "chatbotIntroductionSection": {
     "title": "Chat With My AI Assistant",
     "description": "Have questions about my skills, projects, or experience? My AI assistant is here to help! Click the chat icon in the bottom-right corner to start a conversation. You can ask things like:",
@@ -110,3 +175,5 @@
     "closeButton": "Close"
   }
 }
+
+    
