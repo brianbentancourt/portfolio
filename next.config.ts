@@ -58,6 +58,12 @@ const nextConfig: NextConfig = {
         hostname: 'images.credly.com', // Added for credly.com images (badges)
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'firebasestorage.googleapis.com', // Added for Firebase Storage images
+        port: '',
+        pathname: '/**',
       }
     ],
   },

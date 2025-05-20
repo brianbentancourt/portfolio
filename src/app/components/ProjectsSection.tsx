@@ -53,11 +53,11 @@ export function ProjectsSection() {
       title: t('projects.proj_servitec.title'),
       description: t('projects.proj_servitec.description'),
       longDescription: t('projects.proj_servitec.longDescription'),
-      imageUrl: "https://placehold.co/600x400.png", // Placeholder image
+      imageUrl: "https://firebasestorage.googleapis.com/v0/b/servitec-uy.appspot.com/o/posts%2FRgwwdMCE2VFT2xNkINjO%2FRgwwdMCE2VFT2xNkINjO_0?alt=media&token=a3041953-7ee9-425d-b100-0c77e0499829",
       tags: ["Field Service", "Job Tracking", "Scheduling", "Notifications", "Landing Page", "PHP", "MySQL"],
       liveLink: "https://servitecuruguay.com/",
       // sourceLink: "https://github.com/brianbentancourt/servitec", // Optional: Add if available
-      imageAiHint: "mechanic tools field service",
+      imageAiHint: "mechanic tools",
     },
     {
       id: "proj_chenlo_seguros",
