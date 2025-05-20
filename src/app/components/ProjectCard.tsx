@@ -107,13 +107,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
             ))}
           </div>
         </DialogHeader>
-        <ScrollArea className="flex-grow min-h-0 px-6"> 
-          <DialogDescription className="text-base text-muted-foreground whitespace-pre-line pt-4">
+        <ScrollArea className="flex-grow min-h-0 px-6 py-4"> {/* Added py-4 for vertical padding */}
+          <DialogDescription className="text-base text-muted-foreground whitespace-pre-line"> {/* Removed pt-4 */}
             {project.longDescription || project.description}
           </DialogDescription>
           
           {project.clientImplementations && project.clientImplementations.length > 0 && (
-            <div className="mt-4 pb-4">
+            <div className="mt-4"> {/* Removed pb-4, vertical padding now handled by ScrollArea's py-4 */}
               <h4 className="font-semibold text-foreground mb-2">{t('projects.clientImplementationsTitle')}</h4>
               <ul className="list-disc list-inside space-y-1 text-muted-foreground">
                 {project.clientImplementations.map((client, index) => (
