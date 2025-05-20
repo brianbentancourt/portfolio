@@ -15,6 +15,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { useLanguage } from "@/contexts/LanguageContext"; // Import useLanguage
 
 
 interface ProjectCardProps {
@@ -22,6 +23,8 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
+  const { t } = useLanguage(); // Initialize useLanguage
+
   return (
     <Dialog>
       <Card className="overflow-hidden h-full flex flex-col group transition-all duration-300 ease-in-out hover:shadow-lg transform hover:-translate-y-1">
@@ -85,9 +88,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </Card>
 
       <DialogContent className="sm:max-w-2xl max-h-[90vh] flex flex-col p-0">
-        <DialogHeader className="p-6 pb-0 shrink-0"> {/* Added shrink-0 */}
+        <DialogHeader className="p-6 pb-0 shrink-0">
           <DialogTitle className="text-2xl text-primary">{project.title}</DialogTitle>
-          <div className="relative aspect-video my-2 md:my-3 rounded-lg overflow-hidden max-h-[180px] sm:max-h-[220px] md:max-h-[280px]"> {/* Adjusted margins and max-heights */}
+          <div className="relative aspect-video my-2 md:my-3 rounded-lg overflow-hidden max-h-[180px] sm:max-h-[220px] md:max-h-[280px]">
             <Image
                 src={project.imageUrl}
                 alt={project.title}
@@ -96,7 +99,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 data-ai-hint={project.imageAiHint || "project image"}
               />
           </div>
-          <div className="flex flex-wrap gap-2 mt-2 pb-2"> {/* Added pb-2 for spacing */}
+          <div className="flex flex-wrap gap-2 mt-2 pb-2">
             {project.tags.map((tag) => (
               <Badge key={tag} variant="secondary" className="text-xs">
                 {tag}
@@ -105,13 +108,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </div>
         </DialogHeader>
         <ScrollArea className="flex-grow min-h-0 px-6"> 
-          <DialogDescription className="text-base text-muted-foreground whitespace-pre-line pt-4"> {/* Changed py-4 to pt-4 */}
+          <DialogDescription className="text-base text-muted-foreground whitespace-pre-line pt-4">
             {project.longDescription || project.description}
           </DialogDescription>
-          {/* Client Implementations section, now a sibling to DialogDescription */}
+          
           {project.clientImplementations && project.clientImplementations.length > 0 && (
-            <div className="mt-4 pb-4"> {/* Added pb-4 for spacing and moved out of DialogDescription */}
-              <h4 className="font-semibold text-foreground mb-2">Client Implementations:</h4>
+            <div className="mt-4 pb-4">
+              <h4 className="font-semibold text-foreground mb-2">{t('projects.clientImplementationsTitle')}</h4>
               <ul className="list-disc list-inside space-y-1 text-muted-foreground">
                 {project.clientImplementations.map((client, index) => (
                   <li key={index}>
@@ -125,7 +128,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             </div>
           )}
         </ScrollArea>
-        <div className="flex gap-2 p-6 pt-4 border-t shrink-0"> {/* Added shrink-0 */}
+        <div className="flex gap-2 p-6 pt-4 border-t shrink-0">
             {project.liveLink && (
               <Button asChild>
                 <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
@@ -145,4 +148,3 @@ export function ProjectCard({ project }: ProjectCardProps) {
     </Dialog>
   );
 }
-

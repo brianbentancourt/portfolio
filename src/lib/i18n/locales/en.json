@@ -43,6 +43,7 @@
     "title": "My Freelance Projects"
   },
   "projects": {
+    "clientImplementationsTitle": "Client Implementations:",
     "proj_agustyle": {
       "title": "Agustyle Barbershop System",
       "description": "System for managing online reservations, with online payments via MercadoPago, in a barbershop.",
