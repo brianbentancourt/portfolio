@@ -105,24 +105,25 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </div>
         </DialogHeader>
         <ScrollArea className="flex-grow min-h-0 px-6"> 
-          <DialogDescription className="text-base text-muted-foreground whitespace-pre-line py-4">
+          <DialogDescription className="text-base text-muted-foreground whitespace-pre-line pt-4"> {/* Changed py-4 to pt-4 */}
             {project.longDescription || project.description}
-            {project.clientImplementations && project.clientImplementations.length > 0 && (
-              <div className="mt-4">
-                <h4 className="font-semibold text-foreground mb-2">Client Implementations:</h4>
-                <ul className="list-disc list-inside space-y-1">
-                  {project.clientImplementations.map((client, index) => (
-                    <li key={index}>
-                      <Link href={client.link} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                        {client.name}
-                      </Link>
-                      {client.status && <span className="text-xs text-muted-foreground ml-1">({client.status})</span>}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
           </DialogDescription>
+          {/* Client Implementations section, now a sibling to DialogDescription */}
+          {project.clientImplementations && project.clientImplementations.length > 0 && (
+            <div className="mt-4 pb-4"> {/* Added pb-4 for spacing and moved out of DialogDescription */}
+              <h4 className="font-semibold text-foreground mb-2">Client Implementations:</h4>
+              <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                {project.clientImplementations.map((client, index) => (
+                  <li key={index}>
+                    <Link href={client.link} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      {client.name}
+                    </Link>
+                    {client.status && <span className="text-xs text-muted-foreground ml-1">({client.status})</span>}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </ScrollArea>
         <div className="flex gap-2 p-6 pt-4 border-t shrink-0"> {/* Added shrink-0 */}
             {project.liveLink && (
