@@ -150,7 +150,7 @@
     "noBadges": "No badges to display at the moment."
   },
   "footer": {
-    "copyright": "© {{year}} Brian Bentancourt. All rights reserved."
+    "copyright": "© {year} Brian Bentancourt. All rights reserved."
   },
   "common": {
     "closeButton": "Close"
