@@ -37,6 +37,7 @@ const experiences: ExperienceType[] = [
       "Full stack development focusing on .NET and JavaScript technologies.",
       "Team mentoring and leading development efforts on key projects.",
       "Maintenance and evolutionary development of systems for Prosegur.",
+      "Development and maintenance of critical systems for the Ministry of the Interior of Uruguay, including the 911 emergency system and LPR (License Plate Recognition) camera reading systems.",
     ],
   },
   {
