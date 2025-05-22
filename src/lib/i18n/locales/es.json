@@ -43,8 +43,8 @@
         "title": "Desarrollador de Software",
         "company": "Actualred",
         "duration": "Septiembre 2016 - Diciembre 2020",
-        "desc1": "Desarrolló y mantuvo un sistema principal tipo ERP para la empresa y sus clientes.",
-        "desc2": "Colaboró en diversos proyectos de la empresa, mejorando habilidades en variadas tecnologías.",
+        "desc1": "Desarrolló y mantuvo un sistema principal tipo SaaS para la empresa y sus clientes.",
+        "desc2": "Colaboró en diversos proyectos de la empresa, incluyendo iniciativas con Power BI, mejorando habilidades en variadas tecnologías.",
         "desc3": "Lanzó con éxito la primera aplicación móvil de la empresa para un cliente importante, desarrollada con Xamarin.",
         "desc4": "Brindó servicio al cliente experto con excelentes habilidades para la resolución de problemas."
       },
@@ -188,3 +188,5 @@
     "closeButton": "Cerrar"
   }
 }
+
+    
