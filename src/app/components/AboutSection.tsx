@@ -29,10 +29,11 @@ const skills: SkillType[] = [
 const experiences: ExperienceType[] = [
   {
     id: "exp_sonda",
-    title: "Senior Software Developer",
+    title: "Tech Lead / Senior Software Developer",
     company: "SONDA",
     duration: "June 2022 - Present",
     descriptionItems: [
+      "Promoted to Tech Lead in May 2024, guiding project architecture and leading the development team.",
       "Full stack development focusing on .NET and JavaScript technologies.",
       "Team mentoring and leading development efforts on key projects.",
       "Maintenance and evolutionary development of systems for Prosegur.",
