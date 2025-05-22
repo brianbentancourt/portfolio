@@ -38,7 +38,6 @@ const experienceTranslationKeys = [
       "about.experiences.sonda.desc2",
       "about.experiences.sonda.desc3",
       "about.experiences.sonda.desc4",
-      "about.experiences.sonda.desc5",
     ],
   },
   {
