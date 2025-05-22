@@ -47,7 +47,6 @@ const experienceTranslationKeys = [
     durationKey: "about.experiences.delarrobla.duration",
     descriptionItemKeys: [
       "about.experiences.delarrobla.desc1",
-      "about.experiences.delarrobla.desc2",
     ],
   },
   {
