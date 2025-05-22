@@ -156,7 +156,11 @@ export function ChatbotWidget() {
   }, [isOpen, messages.length, welcomeMessage]);
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (messagesEndRef.current) {
+      setTimeout(() => {
+        messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+      }, 0);
+    }
   }, [messages]);
   
   useEffect(() => {
@@ -204,7 +208,7 @@ export function ChatbotWidget() {
       </Button>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="sm:max-w-md flex flex-col h-[calc(100vh-4rem)] sm:h-[70vh] max-h-[600px] p-0 shadow-2xl rounded-lg">
+        <DialogContent className="sm:max-w-md flex flex-col h-[65vh] sm:h-[70vh] max-h-[600px] p-0 shadow-2xl rounded-lg">
           <DialogHeader className="p-4 border-b flex flex-row items-center justify-between">
             <DialogTitle className="flex items-center gap-2 text-lg">
               <Bot className="h-6 w-6 text-primary" />
