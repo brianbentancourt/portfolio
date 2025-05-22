@@ -4,7 +4,7 @@
 import { Section } from "@/components/layout/Section";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import type { SkillType, ExperienceType } from "@/lib/types";
+import type { SkillType } from "@/lib/types"; // Removed ExperienceType as it's no longer directly used for static data
 import { User, Code, Briefcase, Brain, Palette, Database, Cloud, GitBranch, BarChartBig, Smartphone, Sigma } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -26,49 +26,50 @@ const skills: SkillType[] = [
   { id: "htmlcss", name: "HTML5 & CSS3", icon: Palette},
 ];
 
-const experiences: ExperienceType[] = [
+// Structure for experiences, now using translation keys
+const experienceTranslationKeys = [
   {
     id: "exp_sonda",
-    title: "Tech Lead / Senior Software Developer",
-    company: "SONDA",
-    duration: "June 2022 - Present",
-    descriptionItems: [
-      "Promoted to Tech Lead in May 2024, guiding project architecture and leading the development team.",
-      "Full stack development focusing on .NET and JavaScript technologies.",
-      "Team mentoring and leading development efforts on key projects.",
-      "Maintenance and evolutionary development of systems for Prosegur.",
-      "Development and maintenance of critical systems for the Ministry of the Interior of Uruguay, including the 911 emergency system and LPR (License Plate Recognition) camera reading systems.",
+    titleKey: "about.experiences.sonda.title",
+    companyKey: "about.experiences.sonda.company",
+    durationKey: "about.experiences.sonda.duration",
+    descriptionItemKeys: [
+      "about.experiences.sonda.desc1",
+      "about.experiences.sonda.desc2",
+      "about.experiences.sonda.desc3",
+      "about.experiences.sonda.desc4",
+      "about.experiences.sonda.desc5",
     ],
   },
   {
     id: "exp_delarrobla",
-    title: "Software Developer",
-    company: "De Larrobla & Asociados",
-    duration: "January 2021 - June 2022",
-    descriptionItems: [
-      "Worked on critical financial systems for banking institutions in Peru and Uruguay.",
-      "Development of functionalities related to OCA credit card systems.",
+    titleKey: "about.experiences.delarrobla.title",
+    companyKey: "about.experiences.delarrobla.company",
+    durationKey: "about.experiences.delarrobla.duration",
+    descriptionItemKeys: [
+      "about.experiences.delarrobla.desc1",
+      "about.experiences.delarrobla.desc2",
     ],
   },
   {
     id: "exp_actualred",
-    title: "Software Developer",
-    company: "Actualred",
-    duration: "September 2016 - December 2020",
-    descriptionItems: [
-      "Developed and maintained a primary ERP-like system for the company and its clients.",
-      "Collaborated on diverse company projects, enhancing skills in various technologies.",
-      "Successfully launched the company's first mobile application for a major client, developed with Xamarin.",
-      "Provided expert customer service with excellent problem-solving abilities.",
+    titleKey: "about.experiences.actualred.title",
+    companyKey: "about.experiences.actualred.company",
+    durationKey: "about.experiences.actualred.duration",
+    descriptionItemKeys: [
+      "about.experiences.actualred.desc1",
+      "about.experiences.actualred.desc2",
+      "about.experiences.actualred.desc3",
+      "about.experiences.actualred.desc4",
     ],
   },
   {
     id: "exp_urudata",
-    title: "Service Desk",
-    company: "Urudata S.A.",
-    duration: "October 2014 - September 2016",
-    descriptionItems: [
-      "Provided IT support in networks, printers, user access, automated backups, and incident resolution.",
+    titleKey: "about.experiences.urudata.title",
+    companyKey: "about.experiences.urudata.company",
+    durationKey: "about.experiences.urudata.duration",
+    descriptionItemKeys: [
+      "about.experiences.urudata.desc1",
     ],
   },
 ];
@@ -78,7 +79,7 @@ export function AboutSection() {
 
   return (
     <Section id="about" title={t('about.title')} icon={User}>
-      <div className="mb-12 text-center md:text-left"> {/* Container for text, ensuring full width and bottom margin */}
+      <div className="mb-12 text-center md:text-left">
         <p className="text-lg text-muted-foreground leading-relaxed">
           {t('about.greeting')}
         </p>
@@ -107,18 +108,18 @@ export function AboutSection() {
       <div className="mt-12">
         <h3 className="text-2xl font-semibold mb-6 text-center md:text-left text-foreground">{t('about.experienceTitle')}</h3>
         <Accordion type="single" collapsible className="w-full">
-          {experiences.map((exp) => (
+          {experienceTranslationKeys.map((exp) => (
             <AccordionItem key={exp.id} value={exp.id} className="border-b-0 mb-4 bg-card rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
                 <div className="flex flex-col sm:flex-row justify-between sm:items-center w-full">
-                  <span className="text-lg font-medium text-primary">{exp.title}</span>
-                  <span className="text-sm text-muted-foreground mt-1 sm:mt-0">{exp.company} - {exp.duration}</span>
+                  <span className="text-lg font-medium text-primary">{t(exp.titleKey)}</span>
+                  <span className="text-sm text-muted-foreground mt-1 sm:mt-0">{t(exp.companyKey)} - {t(exp.durationKey)}</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                  {exp.descriptionItems.map((item, index) => (
-                    <li key={index}>{item}</li>
+                  {exp.descriptionItemKeys.map((itemKey, index) => (
+                    <li key={index}>{t(itemKey)}</li>
                   ))}
                 </ul>
               </AccordionContent>

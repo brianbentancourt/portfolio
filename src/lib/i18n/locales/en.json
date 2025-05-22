@@ -22,7 +22,41 @@
     "journey": "My journey in tech began with a fascination for how software can solve real-world problems and enhance human interaction. This curiosity has led me to continuously learn and adapt, always seeking new challenges and opportunities to grow. I thrive in collaborative environments and enjoy bringing ideas to life, from initial concept to final deployment.",
     "hobbies": "When I'm not coding, you can find me exploring new AI research, contributing to open-source projects, or enjoying time with family and friends. I believe in a balanced approach to work and life, fostering creativity and innovation.",
     "skillsTitle": "Key Skills",
-    "experienceTitle": "Professional Experience"
+    "experienceTitle": "Professional Experience",
+    "experiences": {
+      "sonda": {
+        "title": "Tech Lead / Senior Software Developer",
+        "company": "SONDA",
+        "duration": "June 2022 - Present",
+        "desc1": "Promoted to Tech Lead in May 2024, guiding project architecture and leading the development team.",
+        "desc2": "Full stack development focusing on .NET and JavaScript technologies.",
+        "desc3": "Team mentoring and leading development efforts on key projects.",
+        "desc4": "Maintenance and evolutionary development of systems for Prosegur.",
+        "desc5": "Development and maintenance of critical systems for the Ministry of the Interior of Uruguay, including the 911 emergency system and LPR (License Plate Recognition) camera reading systems."
+      },
+      "delarrobla": {
+        "title": "Software Developer",
+        "company": "De Larrobla & Asociados",
+        "duration": "January 2021 - June 2022",
+        "desc1": "Worked on critical financial systems for banking institutions in Peru and Uruguay.",
+        "desc2": "Development of functionalities related to OCA credit card systems."
+      },
+      "actualred": {
+        "title": "Software Developer",
+        "company": "Actualred",
+        "duration": "September 2016 - December 2020",
+        "desc1": "Developed and maintained a primary ERP-like system for the company and its clients.",
+        "desc2": "Collaborated on diverse company projects, enhancing skills in various technologies.",
+        "desc3": "Successfully launched the company's first mobile application for a major client, developed with Xamarin.",
+        "desc4": "Provided expert customer service with excellent problem-solving abilities."
+      },
+      "urudata": {
+        "title": "Service Desk",
+        "company": "Urudata S.A.",
+        "duration": "October 2014 - September 2016",
+        "desc1": "Provided IT support in networks, printers, user access, automated backups, and incident resolution."
+      }
+    }
   },
   "educationSection": {
     "title": "Education & Certifications",
