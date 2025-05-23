@@ -65,7 +65,9 @@
       "detail1": "Object-Oriented Programming.",
       "detail2": "Web Development fundamentals.",
       "detail3": "Database Design and SQL.",
-      "detail4": "Software Engineering Principles."
+      "detail4": "Software Engineering Principles.",
+      "detail5": "JavaScript programming.",
+      "detail6": "C# development with .NET."
     },
     "itsp_bachillerato": {
       "title": "Bachillerato Tecnológico Informático",

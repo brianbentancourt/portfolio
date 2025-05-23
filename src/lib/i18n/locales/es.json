@@ -65,7 +65,9 @@
       "detail1": "Programación Orientada a Objetos.",
       "detail2": "Fundamentos de Desarrollo Web.",
       "detail3": "Diseño de Bases de Datos y SQL.",
-      "detail4": "Principios de Ingeniería de Software."
+      "detail4": "Principios de Ingeniería de Software.",
+      "detail5": "Programación JavaScript.",
+      "detail6": "Desarrollo C# con .NET."
     },
     "itsp_bachillerato": {
       "title": "Bachillerato Tecnológico Informático",

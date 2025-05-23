@@ -1,7 +1,7 @@
 
-import type { EducationEntryType } from "@/lib/types";
+import type { EducationEntryKeysType } from "@/lib/types"; // Ensure EducationEntryKeysType is imported
 
-export const educationData: EducationEntryType[] = [
+export const educationData: EducationEntryKeysType[] = [
   {
     id: "edu_ort_analyst",
     titleKey: "education.ort_analyst.title",
@@ -13,6 +13,8 @@ export const educationData: EducationEntryType[] = [
       "education.ort_analyst.detail2",
       "education.ort_analyst.detail3",
       "education.ort_analyst.detail4",
+      "education.ort_analyst.detail5",
+      "education.ort_analyst.detail6",
     ],
     logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMh6i2GJOjC6DpnfI0rju0zGL9dVVsNH2BGA&s",
     logoAiHint: "university logo",
