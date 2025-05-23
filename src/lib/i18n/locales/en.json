@@ -79,7 +79,7 @@
       "title": "Various Online Courses",
       "institution": "Platzi, Udemy & other platforms",
       "period": "Ongoing",
-      "description": "Continuously updating skills through online courses on platforms like Platzi and Udemy, focusing on technologies such as React, Firebase, .NET, AI, JavaScript, and Python. For a detailed list of my Platzi courses, please visit https://platzi.com/p/brianbentancourt/.",
+      "description": "Continuously updating skills through online courses on platforms like Platzi and Udemy, focusing on technologies such as React, Firebase, .NET, AI, JavaScript, and Python.",
       "detail1": "Key areas include: React, Firebase, .NET, AI, JavaScript, and Python.",
       "detail2": "Active learning across multiple platforms including Platzi and Udemy."
     }
@@ -216,3 +216,5 @@
     "closeButton": "Close"
   }
 }
+
+    
