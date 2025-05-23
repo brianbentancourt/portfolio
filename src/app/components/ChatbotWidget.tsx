@@ -35,16 +35,16 @@ Skills:
 - Other Tools: Visual Studio, VS Code, Android Studio, Jira, Trello, Scrum methodology.
 
 Experience:
-1. Senior Software Developer - SONDA (06/2022 – Present) Montevideo, Uruguay
+1. Tech Lead / Senior Software Developer - SONDA (06/2022 – Present) Montevideo, Uruguay
+   - Promoted to Tech Lead in May 2024, guiding project architecture and leading the development team.
    - Full stack development focusing on .NET and JavaScript technologies.
    - Team mentoring and leading development efforts on key projects.
-   - Maintenance and evolutionary development of systems for Prosegur.
+   - Development and maintenance of critical systems for the Ministry of the Interior of Uruguay, including the 911 emergency system and LPR (License Plate Recognition) camera reading systems.
 2. Software Developer - De Larrobla & Asociados (01/2021 – 06/2022) Montevideo, Uruguay
-   - Worked on critical financial systems for banking institutions in Peru and Uruguay.
-   - Development of functionalities related to OCA credit card systems.
+   - Worked on critical financial systems, including the banking core for a bank in Peru and projects for BROU bank in Uruguay.
 3. Software Developer - Actualred (09/2016 – 12/2020) Paysandú, Uruguay
-   - Developed and maintained a primary ERP-like system for the company and its clients.
-   - Collaborated on diverse company projects, enhancing skills in various technologies.
+   - Developed and maintained a primary SaaS-like system for the company and its clients.
+   - Collaborated on diverse company projects, including initiatives using Power BI, enhancing skills in various technologies.
    - Successfully launched the company's first mobile application for a major client, developed with Xamarin.
    - Provided expert customer service with excellent problem-solving abilities.
 4. Service Desk - Urudata S.A. (10/2014 – 09/2016) Montevideo, Uruguay
@@ -56,7 +56,7 @@ Education:
 - Continuous Learning: Active on platforms like Platzi (https://platzi.com/p/brianbentancourt/), with numerous courses in web development, AI, cloud technologies, and more. For a detailed list, see https://platzi.com/p/brianbentancourt/.
 
 Freelance Projects:
-- Agustyle (agustyle.com): Barbershop reservation management system. Features social login, real-time availability, admin panel, and calendar integration.
+- Agustyle (agustyle.com): Barbershop reservation management system. Features social login, real-time availability, admin panel, MercadoPago integration, and calendar integration.
 - Food Store (foodstoreuy.web.app): Order management system for food businesses. Includes customer registration (Google), online purchasing, real-time tracking, stock control, raffles, map visualization, delivery wallet, and reporting. Client implementations: Burger House, Befe Burgers, Pio Pio. (React, Firebase)
 - Transportes Villasboas (transportesvillasboas.web.app): System for managing clients, trips, and truck maintenance for a transport company.
 - Chenlo Seguros (chenloseguros.com): Website for Mapfre insurance broker, showcasing products and facilitating client-seller communication.
@@ -64,6 +64,8 @@ Freelance Projects:
 - Personal Portfolio Website (this site): Showcases skills and projects. Built with Next.js, TypeScript, Tailwind CSS, ShadCN UI, GenAI chatbot, i18n.
 - Law Firm Internal Management System: Desktop system for case, client, deadline, and billing management. (.NET, SQL Server, WinForms, DevExpress)
 - Healthcare Provider Appointment System: Web system for managing medical appointments, patient records, and doctor schedules. (.NET, SQL Server, Web API, React)
+- Servitec (servitecuruguay.com): System to record mechanic jobs, manage payments, schedule visits with notifications, and a landing page for company information.
+- Work Hours (workhours.vercel.app): System for field staff to log working hours and vehicle usage, with real-time admin overview, statistics, and reporting. (Next.js, Firebase, React Native)
 `;
 
 const staticPortfolioContextES = `Brian Bentancourt es un desarrollador de software apasionado y orientado a resultados, radicado en Uruguay.
@@ -85,16 +87,16 @@ Habilidades:
 - Otras Herramientas: Visual Studio, VS Code, Android Studio, Jira, Trello, Metodología Scrum.
 
 Experiencia:
-1. Desarrollador de Software Senior - SONDA (06/2022 – Presente) Montevideo, Uruguay
+1. Líder Técnico / Desarrollador de Software Senior - SONDA (06/2022 – Presente) Montevideo, Uruguay
+   - Promovido a Líder Técnico en mayo de 2024, guiando la arquitectura de proyectos y liderando el equipo de desarrollo.
    - Desarrollo full stack enfocado en tecnologías .NET y JavaScript.
    - Mentoría de equipos y liderazgo en el desarrollo de proyectos clave.
-   - Mantenimiento y desarrollo evolutivo de sistemas para Prosegur.
+   - Desarrollo y mantenimiento de sistemas críticos para el Ministerio del Interior de Uruguay, incluyendo el sistema de emergencias 911 y sistemas de lectura de cámaras LPR (Reconocimiento de Matrículas).
 2. Desarrollador de Software - De Larrobla & Asociados (01/2021 – 06/2022) Montevideo, Uruguay
-   - Trabajó en sistemas financieros críticos para instituciones bancarias en Perú y Uruguay.
-   - Desarrollo de funcionalidades relacionadas con los sistemas de tarjetas de crédito OCA.
+   - Trabajó en sistemas financieros críticos, incluyendo el core bancario para un banco en Perú y proyectos para el banco BROU en Uruguay.
 3. Desarrollador de Software - Actualred (09/2016 – 12/2020) Paysandú, Uruguay
-   - Desarrolló y mantuvo un sistema principal tipo ERP para la empresa y sus clientes.
-   - Colaboró en diversos proyectos de la empresa, mejorando habilidades en variadas tecnologías.
+   - Desarrolló y mantuvo un sistema principal tipo SaaS para la empresa y sus clientes.
+   - Colaboró en diversos proyectos de la empresa, incluyendo iniciativas con Power BI, mejorando habilidades en variadas tecnologías.
    - Lanzó con éxito la primera aplicación móvil de la empresa para un cliente importante, desarrollada con Xamarin.
    - Brindó servicio al cliente experto con excelentes habilidades para la resolución de problemas.
 4. Mesa de Ayuda - Urudata S.A. (10/2014 – 09/2016) Montevideo, Uruguay
@@ -106,7 +108,7 @@ Educación:
 - Aprendizaje Continuo: Activo en plataformas como Platzi (https://platzi.com/p/brianbentancourt/), con numerosos cursos en desarrollo web, IA, tecnologías en la nube y más. Para una lista detallada, ver https://platzi.com/p/brianbentancourt/.
 
 Proyectos Freelance:
-- Agustyle (agustyle.com): Sistema de gestión de reservas para barbería. Incluye inicio de sesión social, disponibilidad en tiempo real, panel de administración e integración de calendario.
+- Agustyle (agustyle.com): Sistema de gestión de reservas para barbería. Incluye inicio de sesión social, disponibilidad en tiempo real, panel de administración, integración con MercadoPago e integración de calendario.
 - Food Store (foodstoreuy.web.app): Sistema de gestión de pedidos para negocios de comida. Incluye registro de clientes (Google), compras en línea, seguimiento en tiempo real, control de stock, sorteos, visualización en mapa, billetera para repartidores e informes. Implementaciones en clientes: Burger House, Befe Burgers, Pio Pio. (React, Firebase)
 - Transportes Villasboas (transportesvillasboas.web.app): Sistema para gestión de clientes, viajes y mantenimiento de camiones para una empresa de transporte.
 - Chenlo Seguros (chenloseguros.com): Sitio web para corredor de seguros Mapfre, mostrando productos y facilitando la comunicación cliente-vendedor.
@@ -114,6 +116,8 @@ Proyectos Freelance:
 - Sitio Web de Portafolio Personal (este sitio): Muestra habilidades y proyectos. Construido con Next.js, TypeScript, Tailwind CSS, ShadCN UI, chatbot con GenAI, i18n.
 - Sistema de Gestión Interna para Estudio Jurídico: Sistema de escritorio para gestión de casos, clientes, plazos y facturación. (.NET, SQL Server, WinForms, DevExpress)
 - Sistema de Turnos para Mutualista: Sistema web para gestionar citas médicas, historias clínicas y horarios de médicos. (.NET, SQL Server, Web API, React)
+- Servitec (servitecuruguay.com): Sistema para registrar trabajos de mecánicos, gestionar pagos, agendar visitas con notificaciones y una landing page para información de la empresa.
+- Work Hours (workhours.vercel.app): Sistema para que el personal de campo registre horas de trabajo y uso de vehículos, con vista general para administradores en tiempo real, estadísticas y reportes. (Next.js, Firebase, React Native)
 `;
 
 interface Message {
@@ -208,7 +212,7 @@ export function ChatbotWidget() {
       </Button>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="sm:max-w-md flex flex-col h-[65vh] sm:h-[70vh] max-h-[600px] p-0 shadow-2xl rounded-lg">
+        <DialogContent className="sm:max-w-md flex flex-col p-0 shadow-2xl rounded-lg h-[85svh] max-h-[85svh] sm:h-[70vh] sm:max-h-[70vh] max-h-[600px]">
           <DialogHeader className="p-4 border-b flex flex-row items-center justify-between">
             <DialogTitle className="flex items-center gap-2 text-lg">
               <Bot className="h-6 w-6 text-primary" />
@@ -287,3 +291,4 @@ export function ChatbotWidget() {
 
 
     
+
