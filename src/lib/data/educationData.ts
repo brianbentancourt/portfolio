@@ -27,7 +27,7 @@ export const educationData: EducationEntryKeysType[] = [
     institutionKey: "education.itsp_bachillerato.institution",
     periodKey: "education.itsp_bachillerato.period",
     descriptionKey: "education.itsp_bachillerato.description",
-    logoUrl: "https://i.ibb.co/cRgC9hR/itsp.jpg",
+    logoUrl: "https://i.ibb.co/cRgC9hR/itsp.jpg", // Direct link from ibb.co for ITSP
     logoAiHint: "technical school logo",
     certificateUrl: "", 
     certificateImageAiHint: "high school diploma technology",
@@ -46,5 +46,3 @@ export const educationData: EducationEntryKeysType[] = [
     logoAiHint: "platzi logo",
   },
 ];
-
-    

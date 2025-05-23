@@ -77,11 +77,11 @@
     },
     "platzi_courses": {
       "title": "Varios Cursos en Línea",
-      "institution": "Platzi y otras plataformas",
+      "institution": "Platzi, Udemy y otras plataformas",
       "period": "Continuo",
-      "description": "Actualizando continuamente habilidades a través de cursos en línea en plataformas como Platzi, enfocándose en tecnologías emergentes y temas avanzados de desarrollo. Para una lista detallada, ver https://platzi.com/p/brianbentancourt/",
-      "detail1": "Especializaciones en desarrollo web, IA, tecnologías en la nube y más.",
-      "detail2": "Consultar https://platzi.com/p/brianbentancourt/ para una lista detallada."
+      "description": "Actualizando continuamente habilidades a través de cursos en línea en plataformas como Platzi y Udemy, enfocándose en tecnologías como React, Firebase, .NET, IA, JavaScript y Python. Para una lista detallada de mis cursos en Platzi, por favor visita https://platzi.com/p/brianbentancourt/.",
+      "detail1": "Las áreas clave incluyen: React, Firebase, .NET, IA, JavaScript y Python.",
+      "detail2": "Aprendizaje activo en múltiples plataformas, incluyendo Platzi y Udemy."
     }
   },
   "educationSection": {
@@ -216,7 +216,3 @@
     "closeButton": "Cerrar"
   }
 }
-
-    
-
-    
