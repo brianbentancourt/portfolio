@@ -64,9 +64,16 @@ const nextConfig: NextConfig = {
         hostname: 'firebasestorage.googleapis.com', // Added for Firebase Storage images
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'media1.thehungryjpeg.com', // Added for thehungryjpeg.com images
+        port: '',
+        pathname: '/**',
       }
     ],
   },
 };
 
 export default nextConfig;
+

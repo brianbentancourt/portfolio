@@ -27,7 +27,7 @@ export const educationData: EducationEntryKeysType[] = [
     institutionKey: "education.itsp_bachillerato.institution",
     periodKey: "education.itsp_bachillerato.period",
     descriptionKey: "education.itsp_bachillerato.description",
-    logoUrl: "https://i.ibb.co/cRgC9hR/itsp.jpg", // Direct link from ibb.co for ITSP
+    logoUrl: "https://i.ibb.co/cRgC9hR/itsp.jpg", 
     logoAiHint: "technical school logo",
     certificateUrl: "", 
     certificateImageAiHint: "high school diploma technology",
@@ -42,7 +42,8 @@ export const educationData: EducationEntryKeysType[] = [
       "education.platzi_courses.detail1",
       "education.platzi_courses.detail2"
     ],
-    logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvHjIpFwK8LDdteq1cxYCg2x4Cfq7eXB7fVQ&s", 
-    logoAiHint: "platzi logo",
+    logoUrl: "https://media1.thehungryjpeg.com/thumbs/800_4168100_9nt7lswydjsu4p039hmvnnrgka3b42mf87qn5647.jpg", 
+    logoAiHint: "online learning",
   },
 ];
+
