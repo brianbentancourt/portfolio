@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Section } from "@/components/layout/Section";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"; // Removed CardDescription as it's not directly used for static localized data
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { GraduationCap, ExternalLink, FileText, Eye, Loader2, Star } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -123,7 +123,7 @@ export function EducationSection() {
                 />
               )}
               <div className="flex-1">
-                <CardTitle className="text-xl text-primary">{t(entry.titleKey)}</CardTitle>
+                <CardTitle className="text-xl text-primary -mt-1">{t(entry.titleKey)}</CardTitle>
                 <p className="text-sm font-medium text-foreground">{t(entry.institutionKey)}</p>
                 <p className="text-xs text-muted-foreground">{t(entry.periodKey)}</p>
               </div>
@@ -261,7 +261,6 @@ export function EducationSection() {
     </Section>
   );
 }
-
     
 
     
