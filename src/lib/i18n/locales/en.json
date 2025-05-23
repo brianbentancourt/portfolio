@@ -56,6 +56,32 @@
       }
     }
   },
+  "education": {
+    "ort_analyst": {
+      "title": "Programmer Analyst",
+      "institution": "Universidad ORT Uruguay (CTC ORT)",
+      "period": "Completed 12/2017",
+      "description": "Graduated as a Programmer Analyst, acquiring a solid foundation in software development, algorithms, data structures, and database management.",
+      "detail1": "Object-Oriented Programming.",
+      "detail2": "Web Development fundamentals.",
+      "detail3": "Database Design and SQL.",
+      "detail4": "Software Engineering Principles."
+    },
+    "itsp_bachillerato": {
+      "title": "Bachillerato Tecnológico Informático",
+      "institution": "Informática ITSP",
+      "period": "Completed 12/2012",
+      "description": "Completed technical high school degree with a specialization in informatics, providing early exposure to computer science concepts and programming."
+    },
+    "platzi_courses": {
+      "title": "Various Online Courses",
+      "institution": "Platzi & other platforms",
+      "period": "Ongoing",
+      "description": "Continuously updating skills through online courses on platforms like Platzi, focusing on emerging technologies and advanced development topics. For a detailed list, see https://platzi.com/p/brianbentancourt/",
+      "detail1": "Specializations in web development, AI, cloud technologies, and more.",
+      "detail2": "Refer to https://platzi.com/p/brianbentancourt/ for a detailed list."
+    }
+  },
   "educationSection": {
     "title": "Education & Certifications",
     "description": "My academic background and key certifications that have shaped my expertise.",
@@ -188,5 +214,7 @@
     "closeButton": "Close"
   }
 }
+
+    
 
     

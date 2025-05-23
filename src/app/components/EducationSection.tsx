@@ -3,20 +3,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Section } from "@/components/layout/Section";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"; // Removed CardDescription as it's not directly used for static localized data
 import { Button } from "@/components/ui/button";
-import { GraduationCap, ExternalLink, FileText, Eye, Loader2, Star } from "lucide-react"; // Added Star for Badges
+import { GraduationCap, ExternalLink, FileText, Eye, Loader2, Star } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import * as React from "react";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import { educationData } from "@/lib/data/educationData";
 import { CertificateDialogContent } from "./CertificateDialogContent";
-import type { EducationEntryType, CertificateDisplayInfo, FirebaseDiplomaType, FirebaseBadgeType } from "@/lib/types";
+import type { CertificateDisplayInfo, FirebaseDiplomaType, FirebaseBadgeType, EducationEntryKeysType } from "@/lib/types";
 import { db } from "@/lib/firebase";
 import { collection, getDocs, query, orderBy, Timestamp } from "firebase/firestore";
 import { format } from 'date-fns';
 import { enUS, es } from 'date-fns/locale';
-import { BadgeCard } from "./BadgeCard"; // Import BadgeCard
+import { BadgeCard } from "./BadgeCard";
 
 export function EducationSection() {
   const { t, locale } = useLanguage();
@@ -87,12 +87,12 @@ export function EducationSection() {
     fetchBadges();
   }, [t]);
 
-  const prepareStaticCertificateInfo = (entry: EducationEntryType): CertificateDisplayInfo => ({
-    title: entry.title,
+  const prepareStaticCertificateInfo = (entry: EducationEntryKeysType): CertificateDisplayInfo => ({
+    title: t(entry.titleKey),
     certificateUrl: entry.certificateUrl!,
     certificateImageAiHint: entry.certificateImageAiHint,
-    displayInstitution: entry.institution,
-    displayPeriodOrDate: entry.period,
+    displayInstitution: t(entry.institutionKey),
+    displayPeriodOrDate: t(entry.periodKey),
   });
 
   const prepareFirestoreCertificateInfo = (entry: FirebaseDiplomaType): CertificateDisplayInfo => ({
@@ -115,7 +115,7 @@ export function EducationSection() {
               {entry.logoUrl && (
                 <Image
                   src={entry.logoUrl}
-                  alt={`${entry.institution} logo`}
+                  alt={`${t(entry.institutionKey)} logo`}
                   width={60}
                   height={60}
                   className="rounded-md object-contain"
@@ -123,17 +123,17 @@ export function EducationSection() {
                 />
               )}
               <div className="flex-1">
-                <CardTitle className="text-xl text-primary">{entry.title}</CardTitle>
-                <p className="text-sm font-medium text-foreground">{entry.institution}</p>
-                <p className="text-xs text-muted-foreground">{entry.period}</p>
+                <CardTitle className="text-xl text-primary">{t(entry.titleKey)}</CardTitle>
+                <p className="text-sm font-medium text-foreground">{t(entry.institutionKey)}</p>
+                <p className="text-xs text-muted-foreground">{t(entry.periodKey)}</p>
               </div>
             </CardHeader>
             <CardContent className="flex-grow">
-              {entry.description && <p className="text-muted-foreground mb-3">{entry.description}</p>}
-              {entry.details && entry.details.length > 0 && (
+              {entry.descriptionKey && <p className="text-muted-foreground mb-3">{t(entry.descriptionKey)}</p>}
+              {entry.detailKeys && entry.detailKeys.length > 0 && (
                 <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                  {entry.details.map((detail, index) => (
-                    <li key={index}>{detail}</li>
+                  {entry.detailKeys.map((detailKey, index) => (
+                    <li key={index}>{t(detailKey)}</li>
                   ))}
                 </ul>
               )}
@@ -223,7 +223,7 @@ export function EducationSection() {
       {/* My Badges Carousel */}
       <div className="mt-16">
         <h3 className="text-2xl font-semibold mb-6 text-center md:text-left text-foreground flex items-center gap-2">
-          <Star className="h-7 w-7 text-primary" /> {/* Using Star icon for Badges */}
+          <Star className="h-7 w-7 text-primary" />
           {t('educationSection.myBadgesTitle', { fallback: "My Badges" })}
         </h3>
         {isLoadingFirestoreBadges && (
@@ -261,3 +261,5 @@ export function EducationSection() {
     </Section>
   );
 }
+
+    

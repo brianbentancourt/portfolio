@@ -15,7 +15,7 @@ export interface ProjectType {
 export interface SkillType {
   id: string;
   name: string;
-  icon?: React.ElementType; // Optional: For displaying icons next to skills
+  icon?: React.ElementType; 
 }
 
 export interface ExperienceType {
@@ -26,37 +26,38 @@ export interface ExperienceType {
   descriptionItems: string[];
 }
 
-export interface EducationEntryType {
+// For static data in educationData.ts, using translation keys
+export interface EducationEntryKeysType {
   id: string;
-  title: string;
-  institution: string;
-  period: string;
-  description?: string;
-  details?: string[];
+  titleKey: string;
+  institutionKey: string;
+  periodKey: string;
+  descriptionKey?: string;
+  detailKeys?: string[];
   logoUrl?: string;
   logoAiHint?: string;
-  certificateUrl?: string;
+  certificateUrl?: string; 
   certificateImageAiHint?: string;
 }
 
+// For data fetched from Firestore
 export interface FirebaseDiplomaType {
-  id: string; // Firestore document ID
+  id: string; 
   title: string;
-  date: Date; // Converted from Firestore Timestamp
-  src: string; // URL to certificate image
-  // Optional: Add other fields if they exist in your Firestore documents
-  // institution?: string;
+  date: Date; 
+  src: string; 
 }
 
 export interface FirebaseBadgeType {
-  id: string; // Firestore document ID
+  id: string; 
   title: string;
-  date: Date; // Converted from Firestore Timestamp
-  school: string; // Issuing organization (e.g., IBM, Credly)
-  src: string; // URL to badge image
-  url: string; // URL to the badge verification page
+  date: Date; 
+  school: string; 
+  src: string; 
+  url: string; 
 }
 
+// Generic type for displaying certificate/badge info in modal
 export interface CertificateDisplayInfo {
   title: string;
   certificateUrl: string;
@@ -65,3 +66,4 @@ export interface CertificateDisplayInfo {
   displayPeriodOrDate?: string;
 }
 
+    

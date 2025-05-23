@@ -56,6 +56,32 @@
       }
     }
   },
+  "education": {
+    "ort_analyst": {
+      "title": "Analista Programador",
+      "institution": "Universidad ORT Uruguay (CTC ORT)",
+      "period": "Completado 12/2017",
+      "description": "Graduado como Analista Programador, adquiriendo una sólida base en desarrollo de software, algoritmos, estructuras de datos y gestión de bases de datos.",
+      "detail1": "Programación Orientada a Objetos.",
+      "detail2": "Fundamentos de Desarrollo Web.",
+      "detail3": "Diseño de Bases de Datos y SQL.",
+      "detail4": "Principios de Ingeniería de Software."
+    },
+    "itsp_bachillerato": {
+      "title": "Bachillerato Tecnológico Informático",
+      "institution": "Informática ITSP",
+      "period": "Completado 12/2012",
+      "description": "Completó el bachillerato técnico con especialización en informática, proporcionando una exposición temprana a conceptos de ciencias de la computación y programación."
+    },
+    "platzi_courses": {
+      "title": "Varios Cursos en Línea",
+      "institution": "Platzi y otras plataformas",
+      "period": "Continuo",
+      "description": "Actualizando continuamente habilidades a través de cursos en línea en plataformas como Platzi, enfocándose en tecnologías emergentes y temas avanzados de desarrollo. Para una lista detallada, ver https://platzi.com/p/brianbentancourt/",
+      "detail1": "Especializaciones en desarrollo web, IA, tecnologías en la nube y más.",
+      "detail2": "Consultar https://platzi.com/p/brianbentancourt/ para una lista detallada."
+    }
+  },
   "educationSection": {
     "title": "Educación y Certificaciones",
     "description": "Mi formación académica y certificaciones clave que han moldeado mi experiencia.",
@@ -188,5 +214,7 @@
     "closeButton": "Cerrar"
   }
 }
+
+    
 
     
