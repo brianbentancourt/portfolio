@@ -118,12 +118,12 @@ export function EducationSection() {
                   alt={`${t(entry.institutionKey)} logo`}
                   width={60}
                   height={60}
-                  className="rounded-md object-contain"
+                  className="rounded-md object-contain flex-shrink-0 mt-0"
                   data-ai-hint={entry.logoAiHint || "education logo"}
                 />
               )}
               <div className="flex-1">
-                <CardTitle className="text-xl text-primary -mt-1">{t(entry.titleKey)}</CardTitle>
+                <CardTitle className="text-xl text-primary leading-tight">{t(entry.titleKey)}</CardTitle>
                 <p className="text-sm font-medium text-foreground">{t(entry.institutionKey)}</p>
                 <p className="text-xs text-muted-foreground">{t(entry.periodKey)}</p>
               </div>
