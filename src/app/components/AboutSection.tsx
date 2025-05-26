@@ -5,8 +5,9 @@ import { Section } from "@/components/layout/Section";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import type { SkillType } from "@/lib/types"; // Removed ExperienceType as it's no longer directly used for static data
-import { User, Code, Briefcase, Brain, Palette, Database, Cloud, GitBranch, BarChartBig, Smartphone, Sigma } from "lucide-react";
+import { User, Code, Briefcase, Brain, Palette, Database, Cloud, GitBranch, BarChartBig, Smartphone, Sigma, Download } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Button } from "@/components/ui/button";
 
 const skills: SkillType[] = [
   { id: "javascript", name: "JavaScript (ES6+, TypeScript)", icon: Code },
@@ -87,6 +88,14 @@ export function AboutSection() {
         <p className="text-lg text-muted-foreground leading-relaxed mt-4">
           {t('about.hobbies')}
         </p>
+         <div className="mt-8 text-center md:text-left">
+          <Button asChild size="lg" className="shadow-lg hover:shadow-primary/50 transition-shadow">
+            <a href="/Brian_Bentancourt_CV.pdf" download="Brian_Bentancourt_CV.pdf">
+              <Download className="mr-2 h-5 w-5" />
+              {t('about.downloadCvButton')}
+            </a>
+          </Button>
+        </div>
       </div>
 
       {/* Skills Section */}
