@@ -42,7 +42,7 @@ export const educationData: EducationEntryKeysType[] = [
       "education.platzi_courses.detail1",
       "education.platzi_courses.detail2"
     ],
-    logoUrl: "https://media1.thehungryjpeg.com/thumbs/800_4168100_9nt7lswydjsu4p039hmvnnrgka3b42mf87qn5647.jpg", 
+    logoUrl: "https://png.pngtree.com/png-vector/20190615/ourmid/pngtree-documentfilecomputercvbook--flat-color-icon--vector-icon-png-image_1486062.jpg", 
     logoAiHint: "online learning",
   },
 ];
