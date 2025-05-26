@@ -27,8 +27,12 @@ export function Footer() {
       try {
         await navigator.share(shareData);
         // Optional: toast for successful native share if desired
+        // toast({
+        //   title: t('footer.shareSuccessTitle', { fallback: "Shared successfully!" }),
+        // });
       } catch (err) {
         console.error("Error sharing:", err);
+        // Display a toast message if navigator.share() fails
         toast({
           variant: "destructive",
           title: t('footer.shareErrorTitle', { fallback: "Sharing Error" }),
@@ -83,3 +87,4 @@ export function Footer() {
     </footer>
   );
 }
+
