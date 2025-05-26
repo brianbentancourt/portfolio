@@ -3,7 +3,7 @@ import { Inter, Roboto_Mono } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { LanguageProvider } from '@/contexts/LanguageContext';
-import { ThemeProvider } from '@/components/ThemeProvider'; // Changed from next-themes directly for better organization if needed
+import { ThemeProvider } from '@/components/ThemeProvider';
 
 const fontSans = Inter({
   variable: '--font-sans',
@@ -18,6 +18,9 @@ const fontMono = Roboto_Mono({
 export const metadata: Metadata = {
   title: 'Brian Bentancourt - Software Developer',
   description: 'Portfolio of Brian Bentancourt, a software developer specializing in web technologies and AI solutions.',
+  icons: {
+    icon: '/icon.svg', // Path to the new SVG favicon in the public directory
+  },
 };
 
 export default function RootLayout({

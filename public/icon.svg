@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <style>
+    @media (prefers-color-scheme: light) {
+      text { fill: #1A9CB0; } /* Primary color for light mode (HSL 205 90% 40%) */
+    }
+    @media (prefers-color-scheme: dark) {
+      text { fill: #00B3B3; } /* Primary color for dark mode (HSL 180 100% 35%) */
+    }
+    /* Fallback if prefers-color-scheme is not supported */
+    text { fill: #00B3B3; }
+  </style>
+  <text
+    x="50%"
+    y="50%"
+    dy="0.35em"
+    textAnchor="middle"
+    fontFamily="Consolas, 'Courier New', Courier, monospace"
+    fontSize="9.5"
+    fontWeight="600"
+  >
+    &lt;B/&gt;
+  </text>
+</svg>
