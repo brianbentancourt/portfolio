@@ -63,7 +63,7 @@ export function ProjectsSection() {
       title: t('projects.proj_chenlo_seguros.title'),
       description: t('projects.proj_chenlo_seguros.description'),
       longDescription: t('projects.proj_chenlo_seguros.longDescription'),
-      imageUrl: "https://aproase.com.uy/wp-content/uploads/2017/09/1587x643-logo.mapfre.jpg?image=422",
+      imageUrl: "https://www.sau.org.uy/wp-content/uploads/portada_mapfre.jpg", // Using www.sau.org.uy as per next.config
       tags: ["Website", "Insurance", "Lead Generation", "Communication"],
       liveLink: "https://chenloseguros.com",
       sourceLink: "https://github.com/brianbentancourt/chenlo-seguros",
@@ -88,7 +88,6 @@ export function ProjectsSection() {
       imageUrl: "https://images.unsplash.com/photo-1646881478375-2a40ff90b803?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       tags: ["Next.js", "Firebase", "React Native", "Time Tracking", "Reporting"],
       liveLink: "https://workhours.vercel.app/",
-      // sourceLink: "https://github.com/your-repo/work-hours", // Add if available
       imageAiHint: "worker time tracking",
     },
     {
@@ -98,7 +97,7 @@ export function ProjectsSection() {
       longDescription: t('projects.proj_portfolio.longDescription'),
       imageUrl: "https://images.unsplash.com/photo-1653387300291-bfa1eeb90e16?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "ShadCN UI", "GenAI", "i18n"],
-      liveLink: "https://brianbentancourt.com",
+      // liveLink removed for this project
       sourceLink: "https://github.com/brianbentancourt/portfolio-nextjs-shadcn-genai",
       imageAiHint: "website design portfolio",
     },
