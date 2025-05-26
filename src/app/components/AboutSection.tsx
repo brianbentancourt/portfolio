@@ -88,6 +88,7 @@ export function AboutSection() {
         <p className="text-lg text-muted-foreground leading-relaxed mt-4">
           {t('about.hobbies')}
         </p>
+        {/*
          <div className="mt-8 text-center md:text-left">
           <Button asChild size="lg" className="shadow-lg hover:shadow-primary/50 transition-shadow">
             <a href="/Brian_Bentancourt_CV.pdf" download="Brian_Bentancourt_CV.pdf">
@@ -96,6 +97,7 @@ export function AboutSection() {
             </a>
           </Button>
         </div>
+        */}
       </div>
 
       {/* Skills Section */}

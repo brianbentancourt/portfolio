@@ -68,11 +68,11 @@ export function TestimonialsSection() {
                 </div>
               </div>
               <div className="relative">
-                <Quote className="h-10 w-10 text-primary/20 absolute -top-4 -left-2 transform -translate-x-1/2 -translate-y-1/2 rotate-180" />
+                <Quote className="h-10 w-10 text-primary/20 absolute top-2 left-2 transform -translate-x-1/2 -translate-y-1/2 rotate-180" />
                 <blockquote className="text-muted-foreground italic leading-relaxed text-center md:text-left">
-                  "{t(testimonial.feedbackKey)}"
+                  {t(testimonial.feedbackKey)}
                 </blockquote>
-                <Quote className="h-10 w-10 text-primary/20 absolute -bottom-4 -right-2 transform translate-x-1/2 translate-y-1/2" />
+                <Quote className="h-10 w-10 text-primary/20 absolute bottom-2 right-2 transform translate-x-1/2 translate-y-1/2" />
               </div>
             </CardContent>
           </Card>
@@ -81,3 +81,4 @@ export function TestimonialsSection() {
     </Section>
   );
 }
+
