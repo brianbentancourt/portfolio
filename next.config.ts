@@ -70,6 +70,12 @@ const nextConfig: NextConfig = {
         hostname: 'media1.thehungryjpeg.com', // Added for thehungryjpeg.com images
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'png.pngtree.com', // Added for png.pngtree.com images
+        port: '',
+        pathname: '/**',
       }
     ],
   },
