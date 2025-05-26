@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -88,9 +87,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </Card>
 
       <DialogContent className="sm:max-w-2xl max-h-[90vh] flex flex-col min-h-0 p-0">
-        <DialogHeader className="p-6 pb-0 shrink-0">
+        <DialogHeader className="p-6 pb-4 shrink-0">
           <DialogTitle className="text-2xl text-primary">{project.title}</DialogTitle>
-          <div className="relative aspect-video my-2 md:my-3 rounded-lg overflow-hidden max-h-[180px] sm:max-h-[220px] md:max-h-[280px]">
+        </DialogHeader>
+        
+        <div className="flex-1 min-h-0 overflow-y-auto px-6">
+          <div className="relative aspect-video mb-4 rounded-lg overflow-hidden w-full max-h-[180px] sm:max-h-[220px] md:max-h-[280px]">
             <Image
                 src={project.imageUrl}
                 alt={project.title}
@@ -99,21 +101,21 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 data-ai-hint={project.imageAiHint || "project image"}
               />
           </div>
-          <div className="flex flex-wrap gap-2 mt-2 pb-2">
+          
+          <div className="flex flex-wrap gap-2 mb-4">
             {project.tags.map((tag) => (
               <Badge key={tag} variant="secondary" className="text-xs">
                 {tag}
               </Badge>
             ))}
           </div>
-        </DialogHeader>
-        <ScrollArea className="flex-grow basis-0 overflow-y-auto px-6 py-4">
-          <DialogDescription className="text-base text-muted-foreground whitespace-pre-line">
+
+          <DialogDescription className="text-base text-muted-foreground whitespace-pre-line mb-4">
             {project.longDescription || project.description}
           </DialogDescription>
           
           {project.clientImplementations && project.clientImplementations.length > 0 && (
-            <div className="mt-4">
+            <div className="mb-4">
               <h4 className="font-semibold text-foreground mb-2">{t('projects.clientImplementationsTitle')}</h4>
               <ul className="list-disc list-inside space-y-1 text-muted-foreground">
                 {project.clientImplementations.map((client, index) => (
@@ -127,7 +129,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
               </ul>
             </div>
           )}
-        </ScrollArea>
+        </div>
+        
         <div className="flex gap-2 p-6 pt-4 border-t shrink-0">
             {project.liveLink && (
               <Button asChild variant="outline">

@@ -6,7 +6,8 @@ import { HeroSection } from "./components/HeroSection";
 import { AboutSection } from "./components/AboutSection";
 import { EducationSection } from "./components/EducationSection";
 import { ProjectsSection } from "./components/ProjectsSection";
-import { ChatbotIntroductionSection } from "./components/ChatbotIntroductionSection"; // New import
+import { TestimonialsSection } from "./components/TestimonialsSection"; // New import
+import { ChatbotIntroductionSection } from "./components/ChatbotIntroductionSection";
 import { ContactSection } from "./components/ContactSection";
 import { ChatbotWidget } from "./components/ChatbotWidget";
 import { Button } from "@/components/ui/button";
@@ -34,7 +35,8 @@ export default function HomePage() {
         <AboutSection />
         <EducationSection />
         <ProjectsSection />
-        <ChatbotIntroductionSection /> {/* Replaced AiOptimizerSection */}
+        <TestimonialsSection /> {/* New section added */}
+        <ChatbotIntroductionSection />
         <ContactSection />
       </main>
       <Footer />
@@ -55,3 +57,5 @@ export default function HomePage() {
     </div>
   );
 }
+
+    

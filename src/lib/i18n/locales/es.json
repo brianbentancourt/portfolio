@@ -116,7 +116,7 @@
       "description": "Sistema de gestión de pedidos, productos, repartidores y caja registradora, mejorando significativamente cada proceso interno de la empresa.",
       "longDescription": "Un sistema web integral diseñado para revolucionar las operaciones de preparación y entrega de comida rápida. El sistema atiende roles distintos para el personal de cocina, repartidores y administradores, asegurando un flujo de trabajo sin interrupciones desde la realización del pedido hasta la entrega final.\nCaracterísticas clave:\n- Integración con Cuentas de Google para el registro de clientes.\n- Compras en línea y seguimiento de pedidos en tiempo real.\n- Control de stock automatizado.\n- Funciones de participación del cliente como sorteos.\n- Visualización geoespacial de pedidos para administradores y repartidores.\n- Billetera de entrega en tiempo real e informes avanzados.\nTras su éxito, un nuevo cliente comenzó a utilizar el sistema en 2023.",
       "clientImplementations": {
-        "pioPioStatus": "En proceso de negocio"
+        "pioPioStatus": "Próximamente"
       }
     },
     "proj_trans_villasboas": {
@@ -148,6 +148,14 @@
       "title": "Work Hours - Registro de Horas para Personal de Campo",
       "description": "Sistema para que el personal de campo registre horas de trabajo y uso de vehículos, con vista general para administradores en tiempo real, estadísticas y reportes.",
       "longDescription": "Work Hours es una solución integral diseñada para empresas con personal de campo. Los empleados pueden registrar fácilmente sus horas de trabajo y especificar los vehículos utilizados directamente desde sus dispositivos móviles mediante una aplicación React Native. Estos datos se sincronizan en tiempo real con un backend de Firebase. Los administradores pueden acceder a un panel web (construido con Next.js) para monitorear las horas registradas, ver estadísticas y generar informes, proporcionando información valiosa sobre las operaciones de campo y la utilización de recursos."
+    }
+  },
+  "testimonialsSection": {
+    "title": "Testimonios de Clientes",
+    "agustin_ceballos": {
+      "name": "Agustín Ceballos",
+      "role": "Dueño en Agustyle",
+      "feedback": "Mi nombre es Agustín y me dedico a trabajar en el área de estética masculina más precisamente en el corte de cabello y barba, llevo más o menos 5 años en el rubro y hace aproximadamente 3 años atrás, me ví obligado por causa de la pandemia a organizar mi clientela, hasta el momento trabajaba por orden de llegada, llegando a tener en el local de 5 a 8 personas esperando para ser atendidos, comencé a usar métodos como reservas por WhatsApp, pero aún así, no encontraba la solución para lograr un orden y una eficiencia, ya que tenía que estar atento al teléfono y a la ves atendiendo a los clientes, Gracias a Brian Bentancourt encontré la solución a mi problema, me diseño una aplicación de agenda web por la cual los clientes se pueden agrandar ellos mismos, y así yo poder trabajar tranquilo y no estar pendiente al teléfono, hoy día ya a un poco más de 1 año pasada la pandemia sigo trabajando de la misma manera, ya que la aplicación web tuvo muy buena aceptación por los clientes y resultó una herramienta de solución para mí, siendo también una novedad en mi rubro."
     }
   },
   "chatbotIntroductionSection": {
@@ -218,3 +226,5 @@
     "closeButton": "Cerrar"
   }
 }
+
+    

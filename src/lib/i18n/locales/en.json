@@ -116,7 +116,7 @@
       "description": "Order management system, products, delivery drivers, and cash register, significantly improving each internal process of the company.",
       "longDescription": "A comprehensive web system designed to revolutionize fast food preparation and delivery operations. The system caters to distinct roles for kitchen staff, delivery personnel, and administrators, ensuring a seamless workflow from order placement to final delivery.\nKey features:\n- Google Account Integration for customer registration.\n- Online purchasing and real-time order tracking.\n- Automated stock control.\n- Customer engagement features like raffles.\n- Geospatial order visualization for admins and delivery.\n- Real-time delivery wallet and advanced reporting.\nFollowing its success, a new client began using the system in 2023.",
       "clientImplementations": {
-        "pioPioStatus": "In business process"
+        "pioPioStatus": "Coming soon"
       }
     },
     "proj_trans_villasboas": {
@@ -148,6 +148,14 @@
       "title": "Work Hours - Field Staff Time Tracking",
       "description": "System for field staff to log working hours and vehicle usage, with real-time admin overview, statistics, and reporting.",
       "longDescription": "Work Hours is a comprehensive solution designed for companies with field staff. Employees can easily log their working hours and specify the vehicles used directly from their mobile devices using a React Native app. This data is synchronized in real-time with a Firebase backend. Administrators can access a web dashboard (built with Next.js) to monitor logged hours, view statistics, and generate reports, providing valuable insights into field operations and resource utilization."
+    }
+  },
+  "testimonialsSection": {
+    "title": "Client Testimonials",
+    "agustin_ceballos": {
+      "name": "Agustin Ceballos",
+      "role": "Owner at Agustyle",
+      "feedback": "My name is Agustín, and I work in men's aesthetics, specifically in hair and beard cutting. I've been in the field for about 5 years, and approximately 3 years ago, due to the pandemic, I was forced to organize my clientele. Until then, I worked on a first-come, first-served basis, often having 5 to 8 people waiting in the shop. I started using methods like WhatsApp reservations, but I still couldn't find a solution for order and efficiency, as I had to be attentive to the phone while serving clients. Thanks to Brian Bentancourt, I found the solution to my problem. He designed a web scheduling application through which clients can book themselves, allowing me to work peacefully without being tied to the phone. Today, a little over a year after the pandemic, I continue to work the same way, as the web application was very well received by clients and proved to be a solution for me, also being an innovation in my field."
     }
   },
   "chatbotIntroductionSection": {
@@ -218,3 +226,5 @@
     "closeButton": "Close"
   }
 }
+
+    
