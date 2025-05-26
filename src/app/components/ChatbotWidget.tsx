@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
@@ -81,7 +80,7 @@ Habilidades:
 - Desarrollo Móvil: React Native (1 año), Xamarin
 - Bases de Datos: SQL Server (8 años, T-SQL, Stored Procedures, Triggers), MySQL, Firebase (Firestore, Realtime Database, 7 años), MongoDB
 - Cloud & DevOps: Google Cloud Platform (GCP, 7 años - App Engine, Cloud Functions, Firebase), Git (7 años), CI/CD
-- IA & Machine Learning: Genkit, Google AI (Gemini), IBM Watsonx (1 año), Scikit-learn (1 año), GitHub Copilot (1 año), Comprensión básica de LLMs e ingeniería de prompts.
+- IA & Machine Learning: Genkit, Google AI (Gemini), IBM Watsonx (1 año), Scikit-learn (1 año), GitHub Copilot (1 year), Comprensión básica de LLMs e ingeniería de prompts.
 - Business Intelligence: Power BI (3 años, DAX, Modelado de Datos)
 - Sistemas Operativos: Windows, Linux
 - Otras Herramientas: Visual Studio, VS Code, Android Studio, Jira, Trello, Metodología Scrum.
@@ -200,6 +199,16 @@ export function ChatbotWidget() {
     }
   };
 
+  const handleInputFocus = () => {
+    // Corresponds to Tailwind's default `sm` breakpoint (640px).
+    // We target screens smaller than this.
+    if (typeof window !== 'undefined' && window.matchMedia('(max-width: 639px)').matches) {
+      setTimeout(() => {
+        inputRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 300); // Delay to allow keyboard to animate and layout to reflow
+    }
+  };
+
   return (
     <>
       <Button
@@ -271,6 +280,7 @@ export function ChatbotWidget() {
                 placeholder={inputPlaceholder}
                 disabled={isLoading}
                 className="flex-grow"
+                onFocus={handleInputFocus}
               />
               <Button type="submit" size="icon" disabled={isLoading || inputValue.trim() === ''} aria-label={sendButtonSrText}>
                 <Send className="h-4 w-4" />
@@ -288,7 +298,5 @@ export function ChatbotWidget() {
 
     
 
-
-
     
-
+    
