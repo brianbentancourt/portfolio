@@ -104,6 +104,8 @@
   },
   "projects": {
     "clientImplementationsTitle": "Implementaciones en Clientes:",
+    "viewDetailsButton": "Ver Detalles",
+    "liveDemoButton": "Demo en Vivo",
     "proj_agustyle": {
       "title": "Sistema para Barbería Agustyle",
       "description": "Sistema para gestionar reservas online, con pagos en línea vía MercadoPago, en una barbería.",
@@ -216,5 +218,3 @@
     "closeButton": "Cerrar"
   }
 }
-
-    

@@ -60,11 +60,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
             ))}
           </div>
         </CardContent>
-        <CardFooter className="p-6 pt-0 border-t mt-auto">
+        <CardFooter className="px-6 pt-4 pb-4 border-t mt-auto"> {/* Changed padding here */}
           <div className="flex w-full justify-between items-center gap-2">
             <DialogTrigger asChild>
               <Button variant="outline" size="sm">
-                View Details
+                {t('projects.viewDetailsButton', { fallback: "View Details"})}
               </Button>
             </DialogTrigger>
             <div className="flex gap-2">
@@ -107,13 +107,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
             ))}
           </div>
         </DialogHeader>
-        <ScrollArea className="flex-grow basis-0 overflow-y-auto px-6 py-4"> {/* Added py-4 for vertical padding */}
-          <DialogDescription className="text-base text-muted-foreground whitespace-pre-line"> {/* Removed pt-4 */}
+        <ScrollArea className="flex-grow basis-0 overflow-y-auto px-6 py-4">
+          <DialogDescription className="text-base text-muted-foreground whitespace-pre-line">
             {project.longDescription || project.description}
           </DialogDescription>
           
           {project.clientImplementations && project.clientImplementations.length > 0 && (
-            <div className="mt-4"> {/* Removed pb-4, vertical padding now handled by ScrollArea's py-4 */}
+            <div className="mt-4">
               <h4 className="font-semibold text-foreground mb-2">{t('projects.clientImplementationsTitle')}</h4>
               <ul className="list-disc list-inside space-y-1 text-muted-foreground">
                 {project.clientImplementations.map((client, index) => (
@@ -132,7 +132,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             {project.liveLink && (
               <Button asChild variant="outline">
                 <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                  <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
+                  <ExternalLink className="mr-2 h-4 w-4" /> {t('projects.liveDemoButton', { fallback: "Live Demo"})}
                 </Link>
               </Button>
             )}
