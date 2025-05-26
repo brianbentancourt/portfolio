@@ -231,7 +231,17 @@
     "noBadges": "No hay insignias para mostrar en este momento."
   },
   "footer": {
-    "copyright": "© {year} Brian Bentancourt. Todos los derechos reservados."
+    "copyright": "© {year} Brian Bentancourt. Todos los derechos reservados.",
+    "shareAriaLabel": "Compartir este portafolio",
+    "shareDefaultText": "¡Mira el portafolio de Brian Bentancourt!",
+    "linkCopiedSuccessTitle": "¡Enlace Copiado!",
+    "linkCopiedSuccessDescription": "El enlace del portafolio ha sido copiado a tu portapapeles.",
+    "linkCopiedErrorTitle": "Error al Copiar",
+    "linkCopiedErrorDescription": "No se pudo copiar el enlace a tu portapapeles.",
+    "shareErrorTitle": "Error al Compartir",
+    "shareErrorDescription": "No se pudo compartir el enlace en este momento.",
+    "shareNotSupportedTitle": "Función No Soportada",
+    "shareNotSupportedDescription": "Tu navegador no soporta esta función de compartir. Por favor, copia la URL manualmente."
   },
   "common": {
     "closeButton": "Cerrar"

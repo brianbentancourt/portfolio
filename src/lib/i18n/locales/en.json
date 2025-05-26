@@ -231,7 +231,17 @@
     "noBadges": "No badges to display at the moment."
   },
   "footer": {
-    "copyright": "© {year} Brian Bentancourt. All rights reserved."
+    "copyright": "© {year} Brian Bentancourt. All rights reserved.",
+    "shareAriaLabel": "Share this portfolio",
+    "shareDefaultText": "Check out Brian Bentancourt's portfolio!",
+    "linkCopiedSuccessTitle": "Link Copied!",
+    "linkCopiedSuccessDescription": "The portfolio link has been copied to your clipboard.",
+    "linkCopiedErrorTitle": "Copy Failed",
+    "linkCopiedErrorDescription": "Could not copy the link to your clipboard.",
+    "shareErrorTitle": "Sharing Error",
+    "shareErrorDescription": "Could not share the link at this time.",
+    "shareNotSupportedTitle": "Feature Not Supported",
+    "shareNotSupportedDescription": "Your browser doesn't support this sharing feature. Please copy the URL manually."
   },
   "common": {
     "closeButton": "Close"
