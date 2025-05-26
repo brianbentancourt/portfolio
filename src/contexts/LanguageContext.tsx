@@ -21,23 +21,42 @@ const translations: Record<Locale, TranslationKeys> = { en, es };
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [locale, setLocaleState] = useState<Locale>('en'); // Default to English
+  const [locale, setLocaleState] = useState<Locale>('en'); // Default to English initially
 
   useEffect(() => {
-    const storedLocale = localStorage.getItem('locale') as Locale | null;
+    let initialLocale: Locale = 'en'; // Default fallback
+
+    // 1. Check browser language
+    if (typeof navigator !== 'undefined') {
+      const browserLang = navigator.language.toLowerCase().split('-')[0];
+      if (browserLang === 'es') {
+        initialLocale = 'es';
+      }
+    }
+
+    // 2. Check localStorage (overrides browser language if set by user previously)
+    const storedLocale = typeof localStorage !== 'undefined' ? localStorage.getItem('locale') as Locale | null : null;
     if (storedLocale && (storedLocale === 'en' || storedLocale === 'es')) {
-      setLocaleState(storedLocale);
+      initialLocale = storedLocale;
+    }
+    
+    setLocaleState(initialLocale);
+    if (typeof document !== 'undefined') {
+        document.documentElement.lang = initialLocale;
     }
   }, []);
 
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale);
-    localStorage.setItem('locale', newLocale);
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem('locale', newLocale);
+    }
     if (typeof document !== 'undefined') {
         document.documentElement.lang = newLocale;
     }
   };
   
+  // This effect ensures document.lang is updated if locale changes after initial load
   useEffect(() => {
     if (typeof document !== 'undefined') {
         document.documentElement.lang = locale;
