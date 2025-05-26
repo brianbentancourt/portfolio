@@ -9,12 +9,11 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
+import { generateCvContent } from './generate-cv-content-flow'; // Import the new flow
 
 const PortfolioChatbotInputSchema = z.object({
   userQuery: z.string().describe('The user question or message.'),
   portfolioContext: z.string().describe('Contextual information about Brian Bentancourt, his skills, projects, and experience.'),
-  // Optional: For more advanced conversation, include history
-  // history: z.array(z.object({ role: z.enum(['user', 'model']), content: z.string() })).optional(),
 });
 export type PortfolioChatbotInput = z.infer<typeof PortfolioChatbotInputSchema>;
 
@@ -24,10 +23,24 @@ const PortfolioChatbotOutputSchema = z.object({
 export type PortfolioChatbotOutput = z.infer<typeof PortfolioChatbotOutputSchema>;
 
 export async function portfolioChatbot(input: PortfolioChatbotInput): Promise<PortfolioChatbotOutput> {
+  const lowerCaseQuery = input.userQuery.toLowerCase();
+  // Basic intent detection for CV request
+  if (lowerCaseQuery.includes('cv') || lowerCaseQuery.includes('resume') || lowerCaseQuery.includes('curriculum')) {
+    try {
+      const cvResult = await generateCvContent({ portfolioContext: input.portfolioContext });
+      return {
+        response: `Here is the content for Brian Bentancourt's CV, formatted in Markdown:\n\n${cvResult.cvText}\n\nYou can copy and paste this text into a document editor (like Word or Google Docs) to finalize the formatting and save it as a PDF.`
+      };
+    } catch (error) {
+      console.error("Error generating CV content:", error);
+      return { response: "I encountered an issue while trying to generate the CV content. Please try asking something else." };
+    }
+  }
+  // If not a CV request, proceed with the standard chatbot prompt
   return portfolioChatbotFlow(input);
 }
 
-const prompt = ai.definePrompt({
+const portfolioChatbotPrompt = ai.definePrompt({
   name: 'portfolioChatbotPrompt',
   input: {schema: PortfolioChatbotInputSchema},
   output: {schema: PortfolioChatbotOutputSchema},
@@ -49,7 +62,7 @@ const prompt = ai.definePrompt({
   User's question: {{{userQuery}}}
 
   Your response:`,
-   config: { // Loosen safety settings slightly for more conversational responses
+   config: {
     safetySettings: [
       {
         category: 'HARM_CATEGORY_HATE_SPEECH',
@@ -78,8 +91,10 @@ const portfolioChatbotFlow = ai.defineFlow(
     outputSchema: PortfolioChatbotOutputSchema,
   },
   async input => {
-    const {output} = await prompt(input);
-    return output!;
+    const {output} = await portfolioChatbotPrompt(input);
+    if (!output) {
+      throw new Error('Failed to get a response from the chatbot prompt.');
+    }
+    return output;
   }
 );
-
