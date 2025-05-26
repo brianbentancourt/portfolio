@@ -23,11 +23,22 @@ const testimonialsData: Testimonial[] = [
     nameKey: "testimonialsSection.agustin_ceballos.name",
     roleKey: "testimonialsSection.agustin_ceballos.role",
     feedbackKey: "testimonialsSection.agustin_ceballos.feedback",
-    // avatarSrc: "https://placehold.co/100x100.png", // Placeholder for Agustin's photo
     avatarFallback: "AC",
-    // avatarAiHint: "portrait business",
   },
-  // Add more testimonials here
+  {
+    id: "bruno_fiorelli",
+    nameKey: "testimonialsSection.bruno_fiorelli.name",
+    roleKey: "testimonialsSection.bruno_fiorelli.role",
+    feedbackKey: "testimonialsSection.bruno_fiorelli.feedback",
+    avatarFallback: "BF",
+  },
+  {
+    id: "sebastian_fagundez",
+    nameKey: "testimonialsSection.sebastian_fagundez.name",
+    roleKey: "testimonialsSection.sebastian_fagundez.role",
+    feedbackKey: "testimonialsSection.sebastian_fagundez.feedback",
+    avatarFallback: "SF",
+  },
 ];
 
 export function TestimonialsSection() {
@@ -70,5 +81,3 @@ export function TestimonialsSection() {
     </Section>
   );
 }
-
-    
