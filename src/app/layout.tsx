@@ -23,7 +23,7 @@ const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID;
 const siteUrl = 'https://brianbentancourt.com';
 const siteName = 'Brian Bentancourt - Software Developer';
 const siteDescription = 'Portfolio of Brian Bentancourt, a software developer specializing in web technologies and AI solutions.';
-const twitterHandle = '@bbentancourt_'; // TODO: Replace with your Twitter handle or remove if not applicable
+// const twitterHandle = '@bbentancourt_'; // Removed as per user request
 
 export const metadata: Metadata = {
   title: {
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteName,
     description: siteDescription,
-    creator: twitterHandle, 
+    // creator: twitterHandle, // Removed as per user request
     images: [`${siteUrl}/og-image.png`], 
   },
   icons: {
