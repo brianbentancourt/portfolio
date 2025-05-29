@@ -23,7 +23,6 @@ const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID;
 const siteUrl = 'https://brianbentancourt.com';
 const siteName = 'Brian Bentancourt - Software Developer';
 const siteDescription = 'Portfolio of Brian Bentancourt, a software developer specializing in web technologies and AI solutions.';
-// const twitterHandle = '@bbentancourt_'; // Removed as per user request
 
 export const metadata: Metadata = {
   title: {
@@ -31,25 +30,20 @@ export const metadata: Metadata = {
     template: `%s | Brian Bentancourt`,
   },
   description: siteDescription,
-  metadataBase: new URL(siteUrl), // Essential for resolving relative image paths
+  metadataBase: new URL(siteUrl), 
   alternates: {
     canonical: '/',
-    // Example for language alternates if you add them later
-    // languages: {
-    //   'en-US': '/en',
-    //   'es-UY': '/es',
-    // },
   },
   openGraph: {
     type: 'website',
-    locale: 'en_US', // Default locale, can be dynamic based on LanguageContext if needed for more advanced setup
+    locale: 'en_US', 
     url: siteUrl,
     title: siteName,
     description: siteDescription,
     siteName: siteName,
     images: [
       {
-        url: `${siteUrl}/og-image.png`, // Assumes og-image.png is in /public
+        url: `${siteUrl}/og-image.png`, 
         width: 1200,
         height: 630,
         alt: `Portfolio of ${siteName}`,
@@ -60,11 +54,12 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteName,
     description: siteDescription,
-    // creator: twitterHandle, // Removed as per user request
     images: [`${siteUrl}/og-image.png`], 
   },
   icons: {
-    icon: '/icon.svg', 
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml', sizes: 'any' }
+    ],
     // apple: '/apple-touch-icon.png', 
   },
   robots: { 
@@ -78,12 +73,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  // Optional: Add keywords if desired, though less impactful for SEO nowadays
-  // keywords: ['software developer', 'Next.js', 'React', 'AI', 'portfolio', 'Brian Bentancourt'],
-  // Optional: Verification for search consoles
-  // verification: {
-  //   google: 'your-google-site-verification-code',
-  // },
 };
 
 export default function RootLayout({
