@@ -1,5 +1,5 @@
+# robots.txt
 User-agent: *
 Allow: /
 
-# TODO: Add the following line once your sitemap is ready and deployed
-# Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://brianbentancourt.com/sitemap.xml
