@@ -19,11 +19,11 @@ const fontMono = Roboto_Mono({
 
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID;
 
-// SEO Configuration - Update these placeholders
-const siteUrl = 'https://your-domain.com'; // TODO: Replace with your actual domain
+// SEO Configuration
+const siteUrl = 'https://brianbentancourt.com';
 const siteName = 'Brian Bentancourt - Software Developer';
 const siteDescription = 'Portfolio of Brian Bentancourt, a software developer specializing in web technologies and AI solutions.';
-const twitterHandle = '@yourtwitterhandle'; // TODO: Replace with your Twitter handle or remove if not applicable
+const twitterHandle = '@bbentancourt_'; // TODO: Replace with your Twitter handle or remove if not applicable
 
 export const metadata: Metadata = {
   title: {
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     siteName: siteName,
     images: [
       {
-        url: `${siteUrl}/og-image.png`, // TODO: Create this image (1200x630px) and place in /public
+        url: `${siteUrl}/og-image.png`, // Assumes og-image.png is in /public
         width: 1200,
         height: 630,
         alt: `Portfolio of ${siteName}`,
@@ -60,14 +60,14 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteName,
     description: siteDescription,
-    creator: twitterHandle, // Your Twitter handle
-    images: [`${siteUrl}/og-image.png`], // Must be an absolute URL
+    creator: twitterHandle, 
+    images: [`${siteUrl}/og-image.png`], 
   },
   icons: {
-    icon: '/icon.svg', // Path to your SVG favicon in the public directory
-    // apple: '/apple-touch-icon.png', // Optional: if you add an apple touch icon
+    icon: '/icon.svg', 
+    // apple: '/apple-touch-icon.png', 
   },
-  robots: { // Basic robots directives
+  robots: { 
     index: true,
     follow: true,
     googleBot: {
