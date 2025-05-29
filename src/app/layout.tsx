@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { Inter, Roboto_Mono } from 'next/font/google';
 import './globals.css';
@@ -18,12 +19,71 @@ const fontMono = Roboto_Mono({
 
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID;
 
+// SEO Configuration - Update these placeholders
+const siteUrl = 'https://your-domain.com'; // TODO: Replace with your actual domain
+const siteName = 'Brian Bentancourt - Software Developer';
+const siteDescription = 'Portfolio of Brian Bentancourt, a software developer specializing in web technologies and AI solutions.';
+const twitterHandle = '@yourtwitterhandle'; // TODO: Replace with your Twitter handle or remove if not applicable
+
 export const metadata: Metadata = {
-  title: 'Brian Bentancourt - Software Developer',
-  description: 'Portfolio of Brian Bentancourt, a software developer specializing in web technologies and AI solutions.',
-  icons: {
-    icon: '/icon.svg', // Path to the new SVG favicon in the public directory
+  title: {
+    default: siteName,
+    template: `%s | Brian Bentancourt`,
   },
+  description: siteDescription,
+  metadataBase: new URL(siteUrl), // Essential for resolving relative image paths
+  alternates: {
+    canonical: '/',
+    // Example for language alternates if you add them later
+    // languages: {
+    //   'en-US': '/en',
+    //   'es-UY': '/es',
+    // },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US', // Default locale, can be dynamic based on LanguageContext if needed for more advanced setup
+    url: siteUrl,
+    title: siteName,
+    description: siteDescription,
+    siteName: siteName,
+    images: [
+      {
+        url: `${siteUrl}/og-image.png`, // TODO: Create this image (1200x630px) and place in /public
+        width: 1200,
+        height: 630,
+        alt: `Portfolio of ${siteName}`,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteName,
+    description: siteDescription,
+    creator: twitterHandle, // Your Twitter handle
+    images: [`${siteUrl}/og-image.png`], // Must be an absolute URL
+  },
+  icons: {
+    icon: '/icon.svg', // Path to your SVG favicon in the public directory
+    // apple: '/apple-touch-icon.png', // Optional: if you add an apple touch icon
+  },
+  robots: { // Basic robots directives
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  // Optional: Add keywords if desired, though less impactful for SEO nowadays
+  // keywords: ['software developer', 'Next.js', 'React', 'AI', 'portfolio', 'Brian Bentancourt'],
+  // Optional: Verification for search consoles
+  // verification: {
+  //   google: 'your-google-site-verification-code',
+  // },
 };
 
 export default function RootLayout({
