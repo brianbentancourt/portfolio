@@ -4,6 +4,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { LanguageProvider } from '@/contexts/LanguageContext';
 import { ThemeProvider } from '@/components/ThemeProvider';
+import Script from 'next/script';
 
 const fontSans = Inter({
   variable: '--font-sans',
@@ -14,6 +15,8 @@ const fontMono = Roboto_Mono({
   variable: '--font-mono',
   subsets: ['latin'],
 });
+
+const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export const metadata: Metadata = {
   title: 'Brian Bentancourt - Software Developer',
@@ -42,6 +45,28 @@ export default function RootLayout({
             <Toaster />
           </LanguageProvider>
         </ThemeProvider>
+
+        {/* Google Analytics Scripts */}
+        {GA_TRACKING_ID && (
+          <>
+            <Script
+              strategy="afterInteractive"
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+            />
+            <Script
+              id="gtag-init"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${GA_TRACKING_ID}');
+                `,
+              }}
+            />
+          </>
+        )}
       </body>
     </html>
   );
