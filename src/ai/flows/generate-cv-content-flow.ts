@@ -11,12 +11,12 @@ import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
 const GenerateCvContentInputSchema = z.object({
-  portfolioContext: z.string().describe('Comprehensive information about Brian Bentancourt, including his summary, skills, professional experience, education, and freelance projects.'),
+  portfolioContext: z.string().describe('Comprehensive information about Brian Bentancourt, including his summary, skills, professional experience, education, and freelance projects. This context will be in a specific language (e.g., English or Spanish).'),
 });
 export type GenerateCvContentInput = z.infer<typeof GenerateCvContentInputSchema>;
 
 const GenerateCvContentOutputSchema = z.object({
-  cvText: z.string().describe('The generated CV content in well-structured Markdown format.'),
+  cvText: z.string().describe('The generated CV content in well-structured Markdown format, in the same language as the portfolioContext.'),
 });
 export type GenerateCvContentOutput = z.infer<typeof GenerateCvContentOutputSchema>;
 
@@ -29,6 +29,7 @@ const cvPrompt = ai.definePrompt({
   input: {schema: GenerateCvContentInputSchema},
   output: {schema: GenerateCvContentOutputSchema},
   prompt: `You are a professional CV writer. Based on the following comprehensive information about Brian Bentancourt, generate his CV content in well-structured Markdown format.
+**Important: Generate the CV content in the same language as the provided 'portfolioContext'. For example, if the context is in Spanish, the entire CV must be in Spanish.**
 
 The CV should include the following sections, using the information provided in the portfolio context:
 1.  **Full Name and Title** (e.g., Brian Bentancourt - Software Developer)
@@ -40,12 +41,13 @@ The CV should include the following sections, using the information provided in 
 7.  **Education** (For each entry: Degree/Title, Institution, Location, Completion Date/Period. List key learning points or relevant coursework if available.)
 8.  **Freelance Projects** (For each project: Title, Live Link (if available), a brief description including key technologies or features.)
 
-Ensure dates are formatted consistently. Use Markdown for headings (e.g., ## Skills), bullet points (e.g., * Item), and bolding for emphasis (e.g., **Tech Lead**).
+Ensure dates are formatted consistently according to the language of the context (e.g., MM/DD/YYYY for English, DD/MM/YYYY for Spanish if appropriate, or named months in the context's language).
+Use Markdown for headings (e.g., ## Skills), bullet points (e.g., * Item), and bolding for emphasis (e.g., **Tech Lead**).
 
-Portfolio Context:
+Portfolio Context (this context is in a specific language):
 {{{portfolioContext}}}
 
-Generated CV Text (Markdown):
+Generated CV Text (Markdown, in the same language as the portfolioContext):
 `,
 });
 
