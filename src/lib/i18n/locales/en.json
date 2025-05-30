@@ -88,7 +88,7 @@
   "educationSection": {
     "title": "Education & Certifications",
     "description": "My academic background and key certifications that have shaped my expertise.",
-    "viewAllDiplomasButton": "View All Credentials",
+    "viewAllDiplomasButton": "View All Diplomas",
     "viewCertificateButton": "View Certificate",
     "certificateModalTitle": "{title} - Certificate",
     "certificateModalAlt": "Certificate for {title}",
@@ -247,3 +247,5 @@
     "closeButton": "Close"
   }
 }
+
+    

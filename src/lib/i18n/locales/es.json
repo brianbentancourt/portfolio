@@ -88,7 +88,7 @@
   "educationSection": {
     "title": "Educación y Certificaciones",
     "description": "Mi formación académica y certificaciones clave que han moldeado mi experiencia.",
-    "viewAllDiplomasButton": "Ver Todas las Credenciales",
+    "viewAllDiplomasButton": "Ver Todos los Diplomas",
     "viewCertificateButton": "Ver Certificado",
     "certificateModalTitle": "{title} - Certificado",
     "certificateModalAlt": "Certificado de {title}",
@@ -247,3 +247,5 @@
     "closeButton": "Cerrar"
   }
 }
+
+    
