@@ -15,7 +15,7 @@ export function ProjectsSection() {
       title: t('projects.proj_pili_market.title'),
       description: t('projects.proj_pili_market.description'),
       longDescription: t('projects.proj_pili_market.longDescription'),
-      imageUrl: "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      imageUrl: "https://images.unsplash.com/photo-1592890288564-76628a30a657?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       tags: ["Next.js", "Firebase", "Mapbox", "Push Notifications", "Google Auth"],
       liveLink: "https://pili.market/",
       imageAiHint: "online grocery",
