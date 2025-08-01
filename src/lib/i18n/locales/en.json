@@ -109,8 +109,8 @@
     "liveDemoButton": "Live Demo",
     "proj_pili_market": {
       "title": "Pili Market Digital",
-      "description": "E-commerce platform for a local mini-supermarket, allowing users to place online orders for home delivery.",
-      "longDescription": "Pili Market Digital is a modern e-commerce solution for a neighborhood supermarket, built with Next.js. It allows customers to browse products and place orders online, which are then delivered to their homes. The project integrates several key technologies to create a seamless user experience, including Firebase for the backend and database, Google Authentication for easy sign-in, Mapbox for potential delivery tracking features, and push notifications to keep customers updated on their order status. The project started in July 2025."
+      "description": "E-commerce platform for an online-only grocery service, allowing users to place orders for home delivery.",
+      "longDescription": "Pili Market Digital is a modern e-commerce solution for an online-only grocery venture that operates entirely through its digital platform, without a physical store. Built with Next.js, it allows customers to browse products and place orders online, which are then delivered to their homes. The project integrates several key technologies to create a seamless user experience, including Firebase for the backend and database, Google Authentication for easy sign-in, Mapbox for potential delivery tracking features, and push notifications to keep customers updated on their order status. The project started in July 2025."
     },
     "proj_agustyle": {
       "title": "Agustyle Barbershop System",
