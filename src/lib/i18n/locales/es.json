@@ -107,6 +107,11 @@
     "clientImplementationsTitle": "Implementaciones en Clientes:",
     "viewDetailsButton": "Ver Detalles",
     "liveDemoButton": "Demo en Vivo",
+    "proj_pili_market": {
+      "title": "Pili Market Digital",
+      "description": "Plataforma de e-commerce para un mini supermercado local, permitiendo a los usuarios realizar pedidos en línea para entrega a domicilio.",
+      "longDescription": "Pili Market Digital es una solución moderna de e-commerce para un supermercado de barrio, construida con Next.js. Permite a los clientes explorar productos y realizar pedidos en línea, que luego se entregan en sus hogares. El proyecto integra varias tecnologías clave para crear una experiencia de usuario fluida, incluyendo Firebase para el backend y la base de datos, autenticación de Google para un inicio de sesión fácil, Mapbox para posibles funciones de seguimiento de entregas y notificaciones push para mantener a los clientes actualizados sobre el estado de sus pedidos. El proyecto comenzó en julio de 2025."
+    },
     "proj_agustyle": {
       "title": "Sistema para Barbería Agustyle",
       "description": "Sistema para gestionar reservas online, con pagos en línea vía MercadoPago, en una barbería.",
@@ -247,5 +252,3 @@
     "closeButton": "Cerrar"
   }
 }
-
-    

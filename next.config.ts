@@ -76,6 +76,12 @@ const nextConfig: NextConfig = {
         hostname: 'png.pngtree.com', // Added for png.pngtree.com images
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'pili.market', // Added for pili.market images
+        port: '',
+        pathname: '/**',
       }
     ],
   },
